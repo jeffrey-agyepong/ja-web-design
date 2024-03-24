@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: J.A Web Design
+  site: 'https://jawebdesign.ca/'
   base: '/'
   trailingSlash: false
 
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: J.A Web Design
+    template: '%s — J.A Web Design'
+  description: "\U0001F680 J.A Web Design is your go-to source for top-notch custom web development and design services in Edmonton, Alberta. With five years of experience and a focus on quality and customer satisfaction, we specialize in creating modern, user-friendly websites for small businesses, e-commerce stores, and personal portfolios. Our fully responsive websites are optimized for performance and search engine rankings, using the latest technology. Contact us today for high-quality work that exceeds your expectations."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: J.A Web Design
     images:
       - url: '~/assets/images/default.png'
         width: 1200

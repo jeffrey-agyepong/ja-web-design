@@ -5,12 +5,14 @@ import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
+import Features4 from '~/components/widgets/Features4.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
-// import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+
+import { getPermalink } from '../utils/permalinks';
 
 const metadata = {
   title: 'J.A Web Design | Edmonton Web Design & Development',
@@ -47,7 +49,7 @@ const metadata = {
 
   <!-- Features2 Widget ************** -->
 
-  <Features2
+  <Features4
     title="Services"
     subtitle="These are the services we offer "
     tagline=""
@@ -55,7 +57,7 @@ const metadata = {
       {
         title: 'All India Restaurant',
         description: 'WordPress, Genesis Framework',
-        icon: 'flat-color-icons:template',
+        src: 'https://ik.imagekit.io/boxhuwbys/sale.webp?updatedAt=1709093134528',
       },
       {
         title: 'Valencia Prep Academy',
@@ -72,7 +74,7 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Features2>
+  </Features4>
 
   <!-- Steps Widget ****************** -->
 
@@ -86,8 +88,8 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      src: 'https://ik.imagekit.io/boxhuwbys/jeff.webp?updatedAt=1711694070119',
+      alt: 'Jeffrey Agyepong',
     }}
   />
 
@@ -150,7 +152,7 @@ const metadata = {
         name: 'Michael Appiah-Boateng',
         job: 'Accountant',
         image: {
-          src: '',
+          src: 'https://ik.imagekit.io/boxhuwbys/mike.webp?updatedAt=1711693732280',
           alt: 'Michael Appiah-Boateng Image',
         },
       },
@@ -159,7 +161,7 @@ const metadata = {
         name: 'Darcy Hodge',
         job: 'Genetal Manager',
         image: {
-          src: '',
+          src: 'https://ik.imagekit.io/boxhuwbys/darcy.webp?updatedAt=1711693732156',
           alt: 'Darcy Hodge Image',
         },
       },
@@ -168,7 +170,7 @@ const metadata = {
         name: 'Kareena Virdi',
         job: 'Social Media Consultant',
         image: {
-          src: '',
+          src: 'https://ik.imagekit.io/boxhuwbys/kreen.webp?updatedAt=1711693732194',
           alt: 'Kareena Virdi Image',
         },
       },
@@ -190,34 +192,34 @@ const metadata = {
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: ' How do you approach designing a website?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          "When approaching website design, I begin with thorough research and planning, followed by gathering inspiration from design sources. Next, I create a wireframe to establish the site's structure, and then focus on user experience (UX) design and intuitive navigation. Once the wireframe is finalized, I move on to visually designing the website, incorporating branding elements. After design approval, I code the website using HTML, CSS, and JavaScript, ensuring responsiveness and compatibility. Testing and iteration are crucial before launching, followed by ongoing maintenance and support. This systematic approach ensures a visually appealing, functional, and user-friendly website.",
       },
       {
-        title: 'What do I need to start?',
+        title: 'Are your websites mobile-friendly and responsive?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          "Absolutely! Ensuring that websites I design are mobile-friendly and responsive is a top priority for me. I understand the importance of providing an optimal user experience across various devices, screen sizes, and orientations. By implementing responsive design techniques and leveraging mobile-friendly practices, I ensure that your website adapts seamlessly to different platforms, providing a consistent and engaging experience for all users.",
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'How long does it take to design a website?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          'The time required to design a website varies depending on the type and complexity of the site. A simple landing page can typically be designed within a few days, while a more intricate e-commerce site may take several weeks to complete. The duration of the design process is influenced by factors such as the scope of the project, the availability of resources, and the level of customization needed. ',
       },
       {
-        title: "What's something that you don't understand?",
+        title: " What platforms or tool do you use?",
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          "I primarily utilize a range of platforms and tools to design and develop websites. These include HTML, CSS, JavaScript, Vue.js, Vite, PHP, Figma, Netlify, Cloudflare, and WordPress. HTML and CSS serve as the foundation for structuring and styling web pages, while JavaScript adds interactivity and dynamic features. ",
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: 'How often should a website be updated?',
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+          "To keep a website fresh and relevant, it is recommended to have periodic updates. The frequency of updates can vary depending on the specific needs and goals of the website. Factors such as the industry, target audience, content type, and technological advancements play a role in determining the update schedule. Some websites may require frequent updates, such as news or e-commerce sites, while others may need less frequent updates. Regularly assessing and evaluating the website's performance, content, and design can help determine the appropriate update intervals to ensure the website remains engaging, functional, and aligned with your business objectives. ",
       },
       {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        title: 'Can you help with maintenance/updates after launch?',
         description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          "Absolutely! I provide comprehensive ongoing maintenance services to ensure that websites remain up-to-date, secure, and optimized. After the website is launched, I offer support and assistance with regular updates, such as content updates, software updates, security patches, and bug fixes. I can also help implement new features, functionalities, or design enhancements as your business evolves. Whether it's maintaining compatibility with the latest web standards, addressing security vulnerabilities, or optimizing performance, I am committed to ensuring your website continues to operate smoothly and effectively even after the initial launch.",
       },
     ]}
   />
@@ -229,8 +231,7 @@ const metadata = {
       {
         variant: 'primary',
         text: 'Contact Us',
-        href: '#',
-        target: '_blank',
+        href: getPermalink('/contact'),
       },
     ]}
   >

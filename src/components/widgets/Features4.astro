@@ -1,36 +1,62 @@
----
-import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
-import Headline from '~/components/ui/Headline.astro';
-import ItemGrid3 from '~/components/ui/ItemGrid3.astro';
-import type { Features } from '~/types';
-
-const {
-  title = await Astro.slots.render('title'),
-  subtitle = await Astro.slots.render('subtitle'),
-  tagline = await Astro.slots.render('tagline'),
-  items = [],
-  columns = 3,
-  image = await Astro.slots.render('image'),
-
-  id,
-  isDark = false,
-  classes = {},
-  bg = await Astro.slots.render('bg'),
-} = Astro.props as Features;
----
-
-<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-7xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
-  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline} />
-  <ItemGrid3
-    items={items}
-    columns={columns}
-    image={image}
-    classes={{
-      container: 'gap-4 md:gap-6',
-      panel:
-        'rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6',
-      image: 'w-12 h-12 mb-6 text-primary',
-      ...((classes?.items as {}) ?? {}),
-    }}
-  />
-</WidgetWrapper>
+<astro:fragment>
+  <section class="projects" id="projects">
+    <div class="container py-16 md:py-20 lg:px-8 px-4 mx-auto">
+      <h2 class="font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl md:text-4xl text-center">
+        Projects
+      </h2>
+      <p class="mt-4 text-muted text-xl text-center">
+        These are some of the projects we've worked on.
+      </p>
+      <div class="mx-auto grid w-full grid-cols-1 gap-8 pt-12 pb-12 sm:w-3/4 md:gap-10 lg:w-5/6 lg:grid-cols-2">
+        <!-- Project 1 -->
+        <a href="https://allindiarestaurant.com/" target="_blank" class="mx-auto transform transition-all hover:scale-105 md:mx-0 bg-slate-900 dark:bg-ternary-dark rounded-xl project-card hover:drop-shadow-3xl">
+          <img src="https://ik.imagekit.io/boxhuwbys/all-india.webp?updatedAt=1711694804962" class="w-full shadow rounded-t-xl" alt="All India Restaurant and Sweets">
+          <div class="px-4 py-6">
+            <p class="font-general-semibold text-xl text-white font-semibold mb-2">
+              All India Restaurant and Sweets
+            </p>
+            <p class="font-general-medium text-lg text-white">
+              WordPress, Genesis Framework
+            </p>
+          </div>
+        </a>
+        <!-- Project 2 -->
+        <a href="https://vpahockey.com/" target="_blank" class="mx-auto transform transition-all hover:scale-105 md:mx-0 bg-slate-900 dark:bg-ternary-dark rounded-xl project-card hover:drop-shadow-3xl">
+          <img src="https://ik.imagekit.io/boxhuwbys/vpahockey.webp?updatedAt=1711694804612" class="w-full shadow rounded-t-xl" alt="Valencia Prep Hockey Academy">
+          <div class="px-4 py-6">
+            <p class="font-general-semibold text-xl text-white font-semibold mb-2">
+              Valencia Prep Hockey Academy
+            </p>
+            <p class="font-general-medium text-lg text-white">
+              WordPress, Elementor
+            </p>
+          </div>
+        </a>
+        <!-- Project 3 -->
+        <a href="https://i.ibb.co/t2H7pxN/iha.webp" target="_blank" class="mx-auto transform transition-all hover:scale-105 md:mx-0 bg-slate-900 dark:bg-ternary-dark rounded-xl project-card hover:drop-shadow-3xl">
+          <img src="https://ik.imagekit.io/boxhuwbys/international-hockey-academy.webp?updatedAt=1711694804557" class="w-full shadow rounded-t-xl" alt="International Hockey Academy">
+          <div class="px-4 py-6">
+            <p class="font-general-semibold text-xl text-white font-semibold mb-2">
+              International Hockey Academy
+            </p>
+            <p class="font-general-medium text-lg text-white">
+              WordPress, Elementor
+            </p>
+          </div>
+        </a>
+        <!-- Project 4 -->
+        <a href="index.html" class="mx-auto transform transition-all hover:scale-105 md:mx-0 bg-slate-900 dark:bg-ternary-dark rounded-xl project-card hover:drop-shadow-3xl">
+          <img src="https://ik.imagekit.io/boxhuwbys/ja-web-design.webp?updatedAt=1711694803558" class="w-full shadow rounded-t-xl" alt="J.A Web Design">
+          <div class="px-4 py-6 text-white">
+            <p class="font-general-semibold text-xl font-semibold mb-2">
+              J.A Web Design
+            </p>
+            <p class="font-general-medium text-lg">
+              Astrojs, Tailwind CSS, Cloudfare Pages
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</astro:fragment>

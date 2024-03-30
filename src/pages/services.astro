@@ -1,10 +1,12 @@
 ---
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Content from '~/components/widgets/Content.astro';
-import Features2 from '~/components/widgets/Features2.astro';
+import Features3 from '~/components/widgets/Features3.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
+
+import { getPermalink } from '../utils/permalinks';
 
 const metadata = {
   title: 'Services',
@@ -14,78 +16,71 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero
-    tagline="Services"
-    title="Elevate your projects with our stunning templates"
-    subtitle="Explore our meticulously crafted templates tailored to various industries and purposes. From captivating presentations to functional website designs, we offer the tools you need to succeed."
-    actions={[{ variant:"primary", target: '_blank', text: 'Start exploring', href: '/' }]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'AstroWind Hero Image',
-    }}
-  />
+  <section
+    class="mt-16 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] min-h-fit dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]"
+  >
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
+      <h2
+        class="max-w-24ch mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-left capitalize"
+      >
+        Services
+      </h2>
+    </div>
+    <div
+      class="bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900 w-full h-full absolute top-0 left-0 z-0"
+    >
+    </div>
+  </section>
 
   <!-- Features2 Widget ************** -->
 
-  <Features2
-    title="Explore our diverse templates"
-    subtitle="Discover our selection below to streamline and elevate your projects."
-    columns={3}
+  <Features3
+    title=""
+    subtitle="These are the services we offer "
+    tagline=""
     items={[
       {
-        title: 'Educational',
+        title: 'Web Development ',
         description:
-          'By harmonizing instructional design and visual appeal, templates streamline content creation for varied materials, expediting development and cultivating engaging educational spaces.',
-        icon: 'tabler:school',
+          'Our web development services bring your ideas to life with expert coding and programming. We build custom websites that are visually engaging, user-friendly, and optimized for performance, ensuring a seamless browsing experience for your visitors.',
+        image: 'https://ik.imagekit.io/boxhuwbys/icon-development-white.svg?updatedAt=1711779871947',
       },
       {
-        title: 'Interior Design',
+        title: 'Web Design',
         description:
-          'Crafting functional, visually appealing spaces for residential and commercial use. Templates emphasize layout, colors, and furniture setups, offering a versatile toolkit for your design vision.',
-        icon: 'tabler:home-star',
+          "Our creative web design solutions combine aesthetics and functionality to create visually stunning websites that capture your brand's essence. We focus on user experience, ensuring intuitive navigation, appealing layouts, and responsive design for a seamless interaction across all devices.",
+        image: 'https://ik.imagekit.io/boxhuwbys/icon-graphics-white.svg?updatedAt=1711779872004',
       },
       {
-        title: 'Photography',
-        description: `Empowering photographers, our templates facilitate captivating storytelling. With a keen focus on layout, galleries, and typography, they cater to both professionals and enthusiasts.`,
-        icon: 'tabler:photo',
-      },
-      {
-        title: 'E-commerce',
+        title: 'Website Maintenance ',
         description:
-          'Developing engaging online stores, our E-commerce templates ensure a dynamic presence to effectively showcase products. Ideal for startups or revamps.',
-        icon: 'tabler:shopping-cart',
+          "Our website maintenance services ensure that your website remains up-to-date, secure, and optimized. We handle regular updates, security patches, backups, and performance monitoring, allowing you to focus on your core business while we take care of your website's maintenance needs.",
+        image: 'https://ik.imagekit.io/boxhuwbys/web-maintenance-white.svg?updatedAt=1711779871951',
       },
       {
-        title: 'Blog',
+        title: 'SEO',
         description:
-          'With attention to typography, these templates empower effective content presentation for writers at any stage, ensuring visually engaging and user-friendly blogs.',
-        icon: 'tabler:article',
+          "Our SEO services help your website rank higher in search engine results, driving organic traffic and increasing visibility. We employ proven strategies to optimize your website's structure, content, and keywords, ensuring that potential customers can easily find you online. ",
+        image: 'https://ik.imagekit.io/boxhuwbys/seo-white.svg?updatedAt=1711779871975',
       },
       {
-        title: 'Business',
+        title: 'Graphic Design ',
         description:
-          'Providing polished options for effective visual communication, these templates empower both startups and established companies for a professional brand presence.',
-        icon: 'tabler:building-store',
+          'Our graphic design services bring visual appeal and professionalism to your brand. From logos and branding materials to digital graphics and promotional materials, we create eye-catching designs that make a lasting impression on your audience and align with your brand identity.',
+        image: 'https://ik.imagekit.io/boxhuwbys/graphic-design-white.svg?updatedAt=1711779871901',
       },
       {
-        title: 'Branding',
+        title: 'Social Media Marketing',
         description:
-          'Offering pre-designed elements for a consistent brand identity, including logos and marketing materials. Ideal for new ventures or revamps.',
-        icon: 'tabler:arrow-big-up-lines',
-      },
-      {
-        title: 'Medical',
-        description: `From presentations to patient forms, these tools enhance communication effectiveness for healthcare professionals. Ideal for medical practices and research pursuits.`,
-        icon: 'tabler:vaccine',
-      },
-      {
-        title: 'Fashion Design',
-        description:
-          'With attention to detail, customization, and contemporary design, they empower designers to showcase ideas cohesively. Ideal for all levels of designers.',
-        icon: 'tabler:tie',
+          'With our social media marketing expertise, we help you leverage the power of platforms like Facebook, Instagram, and Twitter to reach and engage your target audience. We create compelling content, manage campaigns, and analyze results to maximize your social media presence and grow your following.',
+        image: 'https://ik.imagekit.io/boxhuwbys/icon-mobile-white.svg?updatedAt=1711779872029',
       },
     ]}
-  />
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features3>
 
   <!-- Content Widget **************** -->
 
@@ -211,12 +206,14 @@ const metadata = {
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    actions={[{
-      variant: "primary",
-      text: 'Start exploring',
-      href: '/',
-    }]}
-    title="Dive into our template collection"
-    subtitle="Whether you're in business, design, or education, our templates are here to elevate your projects."
-  />
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Contact Us',
+        href: getPermalink('/contact'),
+      },
+    ]}
+  >
+    <Fragment slot="title"> Have any questions? </Fragment></CallToAction
+  >
 </Layout>

@@ -4,15 +4,11 @@ export const headerData = {
   links: [
     {
       text: 'Projects',
-      href: getPermalink('/projects'),
+      href: getPermalink('/index.html#projects'),
     },
     {
       text: 'Services',
       links: [
-        {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
-        },
         {
           text: 'Services',
           href: getPermalink('/services'),
@@ -21,22 +17,7 @@ export const headerData = {
           text: 'Pricing',
           href: getPermalink('/pricing'),
         },
-        {
-          text: 'About us',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Contact',
-          href: getPermalink('/contact'),
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
-        },
+
       ],
     },
     {
@@ -45,7 +26,7 @@ export const headerData = {
     },
     {
       text: 'Testimonials',
-      href: getPermalink('/testimonials'),
+      href: getPermalink('/index.html#testimonials'),
     },
     {
       text: 'Contact',

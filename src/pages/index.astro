@@ -2,12 +2,9 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Features4 from '~/components/widgets/Features4.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Projects from '~/components/widgets/Projects.astro';
 import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
@@ -23,10 +20,7 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero
-    actions={[{ text: 'Learn more', href: '#features' }]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
-  >
+  <Hero actions={[{ text: 'View Portfolio', href: '#features' }]}>
     <Fragment slot="title">
       <h2
         class="max-w-24ch mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-left capitalize"
@@ -43,42 +37,11 @@ const metadata = {
     </Fragment>
   </Hero>
 
-  <!-- Note Widget ******************* -->
+  <!-- Projects Widget ************** -->
 
+  <Projects />
 
-
-  <!-- Features2 Widget ************** -->
-
-  <Features4
-    title="Projects"
-    subtitle="These are some of the projects we've worked on."
-    items={[
-      {
-        title: 'All India Restaurant',
-        description: 'WordPress, Genesis Framework',
-        image: 'https://ik.imagekit.io/boxhuwbys/all-india.webp?updatedAt=1711694804962',
-        link: 'http://example.com/all-india-restaurant',
-      },
-      {
-        title: 'Valencia Prep Academy',
-        description: 'WordPress, Elementor',
-        image: 'https://ik.imagekit.io/boxhuwbys/vpahockey.webp?updatedAt=1711694804612',
-      },
-      {
-        title: 'J.A Web Design',
-        description: 'Astrojs, Tailwind CSS, Cloudfare Pages',
-        image: 'https://ik.imagekit.io/boxhuwbys/ja-web-design.webp?updatedAt=1711694803558',
-      },
-    ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Features4>
-
-
-
-  <!-- Steps Widget ****************** -->
+  <!-- About Us Widget ****************** -->
 
   <Steps
     title="A little bit about me"
@@ -95,57 +58,54 @@ const metadata = {
     }}
   />
 
-  <!-- Features2 Widget ************** -->
+  <!-- Services Widget ************** -->
 
-  <Features2
+  <Features3
     title="Services"
     subtitle="These are the services we offer "
     tagline=""
     items={[
       {
         title: 'Web Development ',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
+
+        image: 'https://ik.imagekit.io/boxhuwbys/icon-development-white.svg?updatedAt=1711779871947',
       },
       {
         title: 'Web Design',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
+
+        image: 'https://ik.imagekit.io/boxhuwbys/icon-graphics-white.svg?updatedAt=1711779872004',
       },
       {
-        title: 'Website Maintenance ',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
+        title: 'Website Maintenance',
+
+        image: 'https://ik.imagekit.io/boxhuwbys/web-maintenance-white.svg?updatedAt=1711779871951',
       },
       {
-        title: 'Seo',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
+        title: 'SEO',
+
+        image: 'https://ik.imagekit.io/boxhuwbys/seo-white.svg?updatedAt=1711779871975',
       },
       {
         title: 'Graphic Design ',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
+
+        image: 'https://ik.imagekit.io/boxhuwbys/graphic-design-white.svg?updatedAt=1711779871901',
       },
       {
         title: 'Social Media Marketing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
+
+        image: 'https://ik.imagekit.io/boxhuwbys/icon-mobile-white.svg?updatedAt=1711779872029',
       },
     ]}
   >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Features2>
+  </Features3>
 
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
+    id="testimonials"
     title="Testimonials"
     ,
     testimonials={[
@@ -201,7 +161,7 @@ const metadata = {
       {
         title: 'Are your websites mobile-friendly and responsive?',
         description:
-          "Absolutely! Ensuring that websites I design are mobile-friendly and responsive is a top priority for me. I understand the importance of providing an optimal user experience across various devices, screen sizes, and orientations. By implementing responsive design techniques and leveraging mobile-friendly practices, I ensure that your website adapts seamlessly to different platforms, providing a consistent and engaging experience for all users.",
+          'Absolutely! Ensuring that websites I design are mobile-friendly and responsive is a top priority for me. I understand the importance of providing an optimal user experience across various devices, screen sizes, and orientations. By implementing responsive design techniques and leveraging mobile-friendly practices, I ensure that your website adapts seamlessly to different platforms, providing a consistent and engaging experience for all users.',
       },
       {
         title: 'How long does it take to design a website?',
@@ -209,9 +169,9 @@ const metadata = {
           'The time required to design a website varies depending on the type and complexity of the site. A simple landing page can typically be designed within a few days, while a more intricate e-commerce site may take several weeks to complete. The duration of the design process is influenced by factors such as the scope of the project, the availability of resources, and the level of customization needed. ',
       },
       {
-        title: " What platforms or tool do you use?",
+        title: ' What platforms or tool do you use?',
         description:
-          "I primarily utilize a range of platforms and tools to design and develop websites. These include HTML, CSS, JavaScript, Vue.js, Vite, PHP, Figma, Netlify, Cloudflare, and WordPress. HTML and CSS serve as the foundation for structuring and styling web pages, while JavaScript adds interactivity and dynamic features. ",
+          'I primarily utilize a range of platforms and tools to design and develop websites. These include HTML, CSS, JavaScript, Vue.js, Vite, PHP, Figma, Netlify, Cloudflare, and WordPress. HTML and CSS serve as the foundation for structuring and styling web pages, while JavaScript adds interactivity and dynamic features. ',
       },
       {
         title: 'How often should a website be updated?',

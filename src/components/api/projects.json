@@ -1,0 +1,33 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "title": "All India Restaurant and Sweets",
+        "link": "https://allindiarestaurant.com/",
+        "image": "https://ik.imagekit.io/boxhuwbys/all-india.webp?updatedAt=1711694804962",
+        "description": "WordPress, Genesis Framework"
+      },
+      {
+        "id": 2,
+        "title": "Valencia Prep Hockey Academy",
+        "link": "https://vpahockey.com/",
+        "image": "https://ik.imagekit.io/boxhuwbys/vpahockey.webp?updatedAt=1711694804612",
+        "description": "WordPress, Elementor"
+      },
+      {
+        "id": 3,
+        "title": "International Hockey Academy",
+        "link": "https://i.ibb.co/t2H7pxN/iha.webp",
+        "image": "https://ik.imagekit.io/boxhuwbys/international-hockey-academy.webp?updatedAt=1711694804557",
+        "description": "WordPress, Elementor"
+      },
+      {
+        "id": 4,
+        "title": "J.A Web Design",
+        "link": "index.html",
+        "image": "https://ik.imagekit.io/boxhuwbys/ja-web-design.webp?updatedAt=1711694803558",
+        "description": "Astrojs, Tailwind CSS, Cloudfare Pages"
+      }
+    ]
+  }
+  

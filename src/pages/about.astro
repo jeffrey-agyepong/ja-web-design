@@ -1,6 +1,5 @@
 ---
-import Features2 from '~/components/widgets/Features2.astro';
-import Features3 from '~/components/widgets/Features3.astro';
+import Badges from '~/components/widgets/Badges.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Layout from '~/layouts/PageLayout.astro';
@@ -24,31 +23,24 @@ const metadata = {
       About Us <br />
       <span class="text-accent dark:text-white highlight"> </span>
     </Fragment>
-
-
   </Hero>
 
-  
   <!-- Steps2 Widget ****************** -->
 
   <Steps
-  title="A little bit about me"
-  items={[
-    {
-      title: '',
-      description:
-        'As a self-taught freelancer turned NAIT student based in Edmonton, Alberta, with five years of experience, I am a passionate web developer and designer with a keen eye for quality and customer satisfaction. My experience includes developing modern, user-friendly websites for small businesses, e-commerce stores, and personal portfolios.',
-    },
-  ]}
-  image={{
-    src: 'https://ik.imagekit.io/boxhuwbys/jeff.webp?updatedAt=1711694070119',
-    alt: 'Jeffrey Agyepong',
-  }}
-/>
+    title="A little bit about me"
+    items={[
+      {
+        title: '',
+        description:
+          'As a self-taught freelancer turned NAIT student based in Edmonton, Alberta, with five years of experience, I am a passionate web developer and designer with a keen eye for quality and customer satisfaction. My experience includes developing modern, user-friendly websites for small businesses, e-commerce stores, and personal portfolios.',
+      },
+    ]}
+    image={{
+      src: 'https://ik.imagekit.io/boxhuwbys/jeff.webp?updatedAt=1711694070119',
+      alt: 'Jeffrey Agyepong',
+    }}
+  />
 
-  <!-- Steps2 Widget ****************** -->
-
-
-
-
+  <Badges />
 </Layout>

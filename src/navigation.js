@@ -48,18 +48,7 @@ export const footerData = {
         { text: 'Pricing', href: getPermalink('/pricing') },
       ],
     },
-    {
-      title: 'Company',
-      links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
-      ],
-    },
+
   ],
   secondaryLinks: [
     { text: 'Privacy Policy', href: getPermalink('/privacy') },

@@ -158,4 +158,9 @@ import { UI } from '~/utils/config';
     onLoad();
     onPageShow();
   });
+
+const script = document.createElement('script');
+script.src = 'https://app.trustanalytica.com/badge/reputation/aHJymmOiu8KLCaApdDS-YwflxAl_YfS2JlhGzmpM-Bx9Rz5TocleQrMmOepN_-IWA_bLLA.js';
+script.async = true;
+document.getElementById('trustanalytica-badge').appendChild(script);
 </script>

@@ -8,17 +8,7 @@ export const headerData = {
     },
     {
       text: 'Services',
-      links: [
-        {
-          text: 'Services',
-          href: getPermalink('/services'),
-        },
-        {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
-        },
-
-      ],
+      href: getPermalink('/services'),
     },
     {
       text: 'About',

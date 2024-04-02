@@ -1,0 +1,64 @@
+{
+  "skills": [
+    {
+      "id": 1,
+      "name": "HTML",
+      "icon": "https://ik.imagekit.io/boxhuwbys/html-5-svgrepo-com.svg?updatedAt=1712022545255"
+    },
+    {
+      "id": 2,
+      "name": "CSS3",
+      "icon": "https://ik.imagekit.io/boxhuwbys/css-3-svgrepo-com.svg?updatedAt=1712022545142"
+    },
+    {
+      "id": 3,
+      "name": "JavaScript",
+      "icon": "https://ik.imagekit.io/boxhuwbys/javascript-svgrepo-com.svg?updatedAt=1712022545111"
+    },
+    {
+      "id": 4,
+      "name": "WordPress",
+      "icon": "https://ik.imagekit.io/boxhuwbys/wordpress-color-svgrepo-com.svg?updatedAt=1712022545610"
+    },
+    {
+      "id": 5,
+      "name": "Vue.js",
+      "icon": "https://ik.imagekit.io/boxhuwbys/vue-svgrepo-com.svg?updatedAt=1712022545251"
+    },
+    {
+      "id": 6,
+      "name": "PHP",
+      "icon": "https://ik.imagekit.io/boxhuwbys/php-svgrepo-com.svg?updatedAt=1712022545467"
+    },
+    {
+      "id": 7,
+      "name": "Vite",
+      "icon": "https://ik.imagekit.io/boxhuwbys/vitejs-svgrepo-com.svg?updatedAt=1712022546901"
+    },
+    {
+      "id": 8,
+      "name": "Tailwind CSS",
+      "icon": "https://ik.imagekit.io/boxhuwbys/tailwind-svgrepo-com.svg?updatedAt=1712022546423"
+    },
+    {
+      "id": 9,
+      "name": "Figma",
+      "icon": "https://ik.imagekit.io/boxhuwbys/figma-svgrepo-com.svg?updatedAt=1712022545465"
+    },
+    {
+      "id": 10,
+      "name": "Netlify",
+      "icon": "https://ik.imagekit.io/boxhuwbys/netlify-svgrepo-com.svg?updatedAt=1712022545350"
+    },
+    {
+      "id": 11,
+      "name": "Github",
+      "icon": "https://ik.imagekit.io/boxhuwbys/github-142-svgrepo-com.svg?updatedAt=1712022545109"
+    },
+    {
+      "id": 12,
+      "name": "Cloudflare",
+      "icon": "https://ik.imagekit.io/boxhuwbys/cloudflare-svgrepo-com.svg?updatedAt=1712022545183"
+    }
+  ]
+}

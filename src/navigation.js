@@ -31,10 +31,10 @@ export const footerData = {
     {
       title: 'Quick Links',
       links: [
-        { text: 'About', href: '#' },
-        { text: 'Projects', href: '#' },
-        { text: 'Services', href: '#' },
-        { text: 'Contact', href: '#' },
+        { text: 'About', href: getPermalink('/about') },
+        { text: 'Projects', href: getPermalink('/index.html#projects') },
+        { text: 'Services', href: getPermalink('/services') },
+        { text: 'Contact', href: getPermalink('/contact') },
         { text: 'Pricing', href: getPermalink('/pricing') },
       ],
     },

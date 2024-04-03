@@ -42,7 +42,7 @@ export const footerData = {
   ],
   secondaryLinks: [
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
-    { text: 'Sitemap', href: getPermalink('/privacy') },
+    { text: 'Sitemap', href: 'https://jawebdesign.ca/sitemap-0.xml' },
   ],
   socialLinks: [
     { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/company/j-a-web-design/' },

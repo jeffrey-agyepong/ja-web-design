@@ -12,6 +12,8 @@ import SiteVerification from '~/components/common/SiteVerification.astro';
 import Analytics from '~/components/common/Analytics.astro';
 import BasicScripts from '~/components/common/BasicScripts.astro';
 
+import { ViewTransitions } from 'astro:transitions';
+
 // Uncomment line below to activate View Transitions
 // import { ViewTransitions } from 'astro:transitions';
 
@@ -39,7 +41,7 @@ const { language, textDirection } = I18N;
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     <!-- Uncomment line below to activate View Transitions -->
-    <!-- <ViewTransitions fallback="swap" /> -->
+    <ViewTransitions fallback="swap" />
   </head>
 
   <body class="antialiased text-default bg-page tracking-tight">

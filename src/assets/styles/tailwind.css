@@ -104,8 +104,10 @@ h1,
 h2,
 h3,
 .font-heading,
-.text-default {
-  font-family: "Marcellus SC", serif;
+.text-default,
+.font-general,
+.font-general-semibold {
+  font-family: "Marcellus SC", serif !important;
 }
 
 p {

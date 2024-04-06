@@ -13,8 +13,9 @@ import projectsData from '../api/projects.json';
         {
           projectsData.projects.map((project) => (
             <a
-              href="{project.link}"
+              href={project.link}
               target="_blank"
+              key="{project.id}"
               class="mx-auto transform transition-all hover:scale-105 md:mx-0 bg-slate-900 dark:bg-ternary-dark rounded-xl project-card hover:drop-shadow-3xl"
             >
               <img src={project.image} alt="{project.title}" class="w-full shadow rounded-t-xl" />

@@ -9,7 +9,7 @@ import projectsData from '../api/projects.json';
         Projects
       </h2>
       <p class="mt-4 text-muted text-xl text-center">A selection of projects I've worked on.</p>
-      <div class="mx-auto grid w-full grid-cols-1 gap-4 pt-12 pb-12 sm:w-4/4 md:gap-10 lg:w-6/6 lg:grid-cols-3">
+      <div class="mx-auto grid w-full grid-cols-1 gap-8 pt-12 pb-12 sm:w-4/4 md:gap-7 lg:w-6/6 lg:grid-cols-3">
         {
           projectsData.projects.map((project) => (
             <a
@@ -17,7 +17,7 @@ import projectsData from '../api/projects.json';
               target="_blank"
               rel="noopener noreferrer"
               key="{project.id}"
-              class="mx-auto transform transition-all hover:scale-105 md:mx-0 bg-slate-900 dark:bg-ternary-dark rounded-xl project-card hover:drop-shadow-3xl"
+              class="mx-auto transform transition-all hover:scale-105 md:mx-0 bg-slate-900 shadow-lg dark:bg-ternary-dark rounded-xl project-card hover:drop-shadow-3xl"
             >
               <img src={project.image} alt="{project.title}" class="w-full shadow rounded-t-xl" />
 

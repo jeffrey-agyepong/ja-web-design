@@ -11,7 +11,7 @@ metadata:
   title:
     default: J.A Web Design
     template: '%s — J.A Web Design'
-  description: "\U0001F680 J.A Web Design is your go-to source for top-notch custom web development and design services in Edmonton, Alberta. With five years of experience and a focus on quality and customer satisfaction, we specialize in creating modern, user-friendly websites for small businesses, e-commerce stores, and personal portfolios. Our fully responsive websites are optimized for performance and search engine rankings, using the latest technology. Contact us today for high-quality work that exceeds your expectations."
+  description: "\J.A Web Design is your go-to source for custom web development and design services in Edmonton, Alberta. With five years of experience and a focus on quality and customer satisfaction, we specialize in creating modern, user-friendly websites for small businesses, e-commerce stores, and personal portfolios. Our fully responsive websites are optimized for performance and search engine rankings, using the latest technology. Contact us today for high-quality work that exceeds your expectations."
   robots:
     index: true
     follow: true

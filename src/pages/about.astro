@@ -1,15 +1,20 @@
 ---
 import Badges from '~/components/widgets/Badges.astro';
-import Hero from '~/components/widgets/Hero.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Layout from '~/layouts/PageLayout.astro';
 import Skills from '~/components/widgets/Skills.astro';
 
+import { AstroSeo } from '@astrolib/seo';
+
 const metadata = {
-  title: 'About us',
+  title: 'About Us',
 };
 ---
 
+<AstroSeo
+  title={metadata.title}
+  description="Get to know the face behind J.A Web Design - a self-taught freelancer turned NAIT student with a passion for crafting modern, user-friendly websites. With five years of experience in web development and design, I specialize in creating fully responsive websites using the latest technologies. From small businesses to personal portfolios, I am committed to delivering high-quality work that exceeds client expectations."
+/>
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 

@@ -1,40 +1,78 @@
----
-import FormContainer from '~/components/ui/Form.astro';
-import Headline from '~/components/ui/Headline.astro';
-import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
-import type { Contact } from '~/types';
-
-const {
-  title = await Astro.slots.render('title'),
-  subtitle = await Astro.slots.render('subtitle'),
-  tagline = await Astro.slots.render('tagline'),
-  inputs,
-  textarea,
-  disclaimer,
-  button,
-  description,
-
-  id,
-  isDark = false,
-  classes = {},
-  bg = await Astro.slots.render('bg'),
-} = Astro.props as Contact;
----
-
-<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-7xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
-  <Headline title={title} subtitle={subtitle} tagline={tagline} />
-
-  {
-    inputs && (
-      <div class="flex flex-col max-w-xl mx-auto rounded-lg backdrop-blur border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow p-4 sm:p-6 lg:p-8 w-full">
-        <FormContainer
-          inputs={inputs}
-          textarea={textarea}
-          disclaimer={disclaimer}
-          button={button}
-          description={description}
-        />
+<section class="pt-20 lg:pt-[80px] pb-10 lg:pb-[20px] dark:text-white">
+  <div class="container mx-auto">
+    <div class="container mx-auto py-5 md:py-10 md:mt-10">
+      <div class="w-full mx-auto">
+        <div
+          class="leading-loose max-w-xl m-4 p-7 bg-blue-900 dark:bg-dark-blue rounded-xl shadow-xl text-left mx-auto"
+        >
+          <p class="font-general-medium text-primary-dark dark:text-primary-light text-2xl mb-8">Contact Form</p>
+          <form
+            class="font-general-regular space-y-7 mx-auto"
+            method="POST"
+            data-netlify="true"
+            data-netlify-recaptcha="true"
+            netlify
+          >
+            <div>
+              <label class="block mb-2 text-lg text-primary-dark dark:text-primary-light" for="name">Full Name</label>
+              <input
+                class="w-full px-5 py-3 border border-gray-300 dark:border-primary-dark border-opacity-50 text-black rounded-md shadow-sm text-md"
+                id="name"
+                name="name"
+                placeholder="Full Name"
+                aria-label="name"
+                type="text"
+                required
+              />
+            </div>
+            <div>
+              <label class="block mb-2 text-lg text-primary-dark dark:text-primary-light" for="email">Email</label>
+              <input
+                class="w-full px-5 py-3 border border-gray-300 dark:border-primary-dark border-opacity-50 text-black rounded-md shadow-sm text-md"
+                id="email"
+                name="email"
+                placeholder="Email"
+                aria-label="email"
+                type="email"
+                required
+              />
+            </div>
+            <div>
+              <label class="block mb-2 text-lg text-primary-dark dark:text-primary-light" for="subject">Subject</label>
+              <input
+                class="w-full px-5 py-3 border border-gray-300 dark:border-primary-dark border-opacity-50 text-black rounded-md shadow-sm text-md"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+                aria-label="subject"
+                type="text"
+                required
+              />
+            </div>
+            <div>
+              <label class="block text-lg text-primary-dark dark:text-primary-light mb-2" for="message">Message</label>
+              <textarea
+                class="w-full px-5 py-2 border border-gray-300 dark:border-primary-dark border-opacity-50 text-black rounded-md shadow-sm text-md"
+                id="message"
+                name="message"
+                aria-label="message"
+                placeholder="Message"
+                cols="14"
+                rows="6"></textarea>
+            </div>
+            <div data-netlify-recaptcha="true"></div>
+            <div>
+              <button
+                class="px-4 py-2.5 text-white tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-lg duration-500"
+                type="submit"
+                aria-label="Send Message"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
-    )
-  }
-</WidgetWrapper>
+    </div>
+  </div>
+</section>

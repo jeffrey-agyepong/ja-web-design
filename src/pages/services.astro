@@ -1,18 +1,21 @@
 ---
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import Content from '~/components/widgets/Content.astro';
 import Features3 from '~/components/widgets/Features3.astro';
-import Hero from '~/components/widgets/Hero.astro';
-import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 import { getPermalink } from '../utils/permalinks';
+
+import { AstroSeo } from '@astrolib/seo';
 
 const metadata = {
   title: 'Services',
 };
 ---
 
+<AstroSeo
+  title={metadata.title}
+  description="Experience our tailored web design services at J.A Web Design. We specialize in crafting captivating websites that embody your brand essence. From concept to launch, our services ensure your online presence stands out. Contact us today to kick-start your custom web design project."
+/>
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 

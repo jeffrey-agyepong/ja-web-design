@@ -22,27 +22,20 @@
       },
       {
         "id": 4,
-        "title": "Italy's Golden Era - Catalogue Project  ",
-        "link": "http://jagyepong1.dmitstudent.ca/dmit2025/catalog-final-project/public/index.php",
-        "image": "https://ik.imagekit.io/boxhuwbys/Italy's%20Golden%20Era.webp?updatedAt=1712454563050",
-        "description": "PHP, MySQL, Tailwind CSS"
-      },
-      {
-        "id": 5,
         "title": "J.A Web Design",
         "link": "index.html",
         "image": "https://ik.imagekit.io/boxhuwbys/ja-web-design.webp?updatedAt=1712392723033",
         "description": "Astrojs, Tailwind CSS, Cloudfare Pages"
       },
       {
-        "id": 6,
+        "id": 5,
         "title": "Valencia Prep Hockey Academy",
         "link": "https://vpahockey.com/",
         "image": "https://ik.imagekit.io/boxhuwbys/vpahockey.webp?updatedAt=1711694804612",
         "description": "WordPress, Elementor"
       },
       {
-        "id": 7,
+        "id": 6,
         "title": "International Hockey Academy",
         "link": "https://i.ibb.co/t2H7pxN/iha.webp",
         "image": "https://ik.imagekit.io/boxhuwbys/international-hockey-academy.webp?updatedAt=1711694804557",

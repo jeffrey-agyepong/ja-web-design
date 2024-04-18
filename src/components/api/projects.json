@@ -7,35 +7,42 @@
         "image": "https://ik.imagekit.io/boxhuwbys/nest.webp?updatedAt=1712387929263",
         "description": "WordPress, Divi Theme"
       },
-      {"id": 2,
+      {
+        "id": 2,
+        "title": "Open Sky Mental Health - NAIT Capstone",
+        "link": "https://naitsa-a.web.dmitcapstone.ca/open-sky-mental-health/",
+        "image": "https://ik.imagekit.io/boxhuwbys/open-sky.webp?updatedAt=1713471562802",
+        "description": "WordPress, Underscores"
+      },
+      {"id": 3,
       "title": "MAB Accounting and Tax Services",
       "link": "https://mabtaxservices.com/",
         "image":"https://ik.imagekit.io/boxhuwbys/mab-taxes.webp?updatedAt=1712451800248",
         "description": "WinterCMS, Tailwind CSS"
       },
       {
-        "id": 3,
+        "id": 4,
         "title": "All India Restaurant and Sweets",
         "link": "https://allindiarestaurant.com/",
         "image": "https://ik.imagekit.io/boxhuwbys/all-india.webp?updatedAt=1711694804962",
         "description": "WordPress, Genesis Framework"
       },
       {
-        "id": 4,
+        "id": 5,
         "title": "J.A Web Design",
         "link": "index.html",
         "image": "https://ik.imagekit.io/boxhuwbys/ja-web-design.webp?updatedAt=1712392723033",
         "description": "Astrojs, Tailwind CSS, Cloudfare Pages"
       },
       {
-        "id": 5,
+        "id": 6,
         "title": "Valencia Prep Hockey Academy",
         "link": "https://vpahockey.com/",
         "image": "https://ik.imagekit.io/boxhuwbys/vpahockey.webp?updatedAt=1711694804612",
         "description": "WordPress, Elementor"
       },
       {
-        "id": 6,
+        "id": 7,
         "title": "International Hockey Academy",
         "link": "https://i.ibb.co/t2H7pxN/iha.webp",
         "image": "https://ik.imagekit.io/boxhuwbys/international-hockey-academy.webp?updatedAt=1711694804557",

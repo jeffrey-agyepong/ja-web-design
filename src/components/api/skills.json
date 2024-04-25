@@ -2,14 +2,15 @@
   "skills": [
     {
       "id": 1,
-      "name": "Astrojs",
-      "icon": "https://ik.imagekit.io/boxhuwbys/astrojs.svg?updatedAt=1712025376703"
+      "name": "PHP",
+      "icon": "https://ik.imagekit.io/boxhuwbys/php-svgrepo-com.svg?updatedAt=1712022545467"
     },
     {
       "id": 2,
-      "name": "CSS3",
-      "icon": "https://ik.imagekit.io/boxhuwbys/css-3-svgrepo-com.svg?updatedAt=1712022545142"
+      "name": "WordPress",
+      "icon": "https://ik.imagekit.io/boxhuwbys/wordpress-color-svgrepo-com.svg?updatedAt=1712022545610"
     },
+
     {
       "id": 3,
       "name": "JavaScript",
@@ -17,23 +18,25 @@
     },
     {
       "id": 4,
-      "name": "WordPress",
-      "icon": "https://ik.imagekit.io/boxhuwbys/wordpress-color-svgrepo-com.svg?updatedAt=1712022545610"
-    },
-    {
-      "id": 5,
       "name": "Vue.js",
       "icon": "https://ik.imagekit.io/boxhuwbys/vue-svgrepo-com.svg?updatedAt=1712022545251"
     },
+
+    {
+      "id": 5,
+      "name": "Astrojs",
+      "icon": "https://ik.imagekit.io/boxhuwbys/astrojs.svg?updatedAt=1712025376703"
+    },
+
     {
       "id": 6,
-      "name": "PHP",
-      "icon": "https://ik.imagekit.io/boxhuwbys/php-svgrepo-com.svg?updatedAt=1712022545467"
+      "name": "Vite",
+      "icon": "https://ik.imagekit.io/boxhuwbys/vitejs-svgrepo-com.svg?updatedAt=1712022546901"
     },
     {
       "id": 7,
-      "name": "Vite",
-      "icon": "https://ik.imagekit.io/boxhuwbys/vitejs-svgrepo-com.svg?updatedAt=1712022546901"
+      "name": "React",
+      "icon": "https://ik.imagekit.io/boxhuwbys/react-1-logo-svg-vector.svg?updatedAt=1714022220725"
     },
     {
       "id": 8,
@@ -42,23 +45,23 @@
     },
     {
       "id": 9,
-      "name": "Figma",
-      "icon": "https://ik.imagekit.io/boxhuwbys/figma-svgrepo-com.svg?updatedAt=1712022545465"
+      "name": "Joomla",
+      "icon": "https://ik.imagekit.io/boxhuwbys/joomla-logo.png?updatedAt=1714022985183"
     },
     {
       "id": 10,
-      "name": "Netlify",
-      "icon": "https://ik.imagekit.io/boxhuwbys/netlify-svgrepo-com.svg?updatedAt=1712022545350"
+      "name": "WinterCMS",
+      "icon": "https://ik.imagekit.io/boxhuwbys/wintercms2.png?updatedAt=1714022367748"
     },
     {
       "id": 11,
-      "name": "Github",
-      "icon": "https://ik.imagekit.io/boxhuwbys/github-142-svgrepo-com.svg?updatedAt=1712022545109"
+      "name": "CSS3",
+      "icon": "https://ik.imagekit.io/boxhuwbys/css-3-svgrepo-com.svg?updatedAt=1712022545142"
     },
     {
       "id": 12,
-      "name": "Cloudflare",
-      "icon": "https://ik.imagekit.io/boxhuwbys/cloudflare-svgrepo-com.svg?updatedAt=1712022545183"
+      "name": "Figma",
+      "icon": "https://ik.imagekit.io/boxhuwbys/figma-svgrepo-com.svg?updatedAt=1712022545465"
     }
   ]
 }

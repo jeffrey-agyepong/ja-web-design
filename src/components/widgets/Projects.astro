@@ -19,7 +19,13 @@ import projectsData from '../api/projects.json';
               key="{project.id}"
               class="mx-auto transform transition-all hover:scale-105 md:mx-0 bg-slate-900 shadow-lg dark:bg-ternary-dark rounded-xl project-card hover:drop-shadow-3xl"
             >
-              <img src={project.image} alt="{project.title}" class="w-full shadow rounded-t-xl" />
+              <img
+                src={project.image}
+                alt="{project.title}"
+                class="w-full shadow rounded-t-xl"
+                width="800"
+                height="400"
+              />
 
               <div class="px-4 py-6">
                 <p class="font-general-semibold text-xl text-white font-semibold mb-2">{project.title}</p>

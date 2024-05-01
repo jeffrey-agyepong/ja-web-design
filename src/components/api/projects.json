@@ -39,7 +39,7 @@
       "id": 5,
       "title": "J.A Web Design",
       "link": "index.html",
-      "image": "https://ik.imagekit.io/boxhuwbys/ja-web-design.webp?updatedAt=1712392723033",
+      "image": "https://ik.imagekit.io/boxhuwbys/jawebdesign.webp?updatedAt=1714550475083",
       "description": "Astrojs, Tailwind CSS, Cloudfare Pages"
     },
     {
@@ -53,7 +53,7 @@
       "id": 7,
       "title": "International Hockey Academy",
       "link": "https://web.archive.org/web/20230111165209/https://ihahockey.ca/",
-      "image": "https://ik.imagekit.io/boxhuwbys/international-hockey-academy.webp?updatedAt=1711694804557",
+      "image": "https://ik.imagekit.io/boxhuwbys/iha.webp?updatedAt=1714551614270",
       "description": "WordPress, Elementor"
     }
   ]

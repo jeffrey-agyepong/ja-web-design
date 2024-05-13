@@ -4,35 +4,35 @@
       "id": 1,
       "title": "Nest Eatery - NAIT Capstone",
       "link": "https://threefolddesigns.ca/work/nest-eatery/",
-      "image": "/src/assets/images/nest.webp",
+      "image": "/assets/images/nest.webp",
       "description": "WordPress, PHP, Divi Theme"
     },
     {
       "id": 2,
       "title": "Open Sky - NAIT Capstone",
       "link": "https://threefolddesigns.ca/work/open-sky",
-      "image": "/src/assets/images/open-sky.webp",
+      "image": "/assets/images/open-sky.webp",
       "description": "WordPress, PHP, Underscores"
     },
     {
       "id": 3,
       "title": "Threefold Designs",
       "link": "https://threefolddesigns.ca/",
-      "image": "src/assets/images/threefold.webp",
+      "image": "/assets/images/threefold.webp",
       "description": "Astrojs"
     },
     {
       "id": 4,
       "title": "MAB Accounting and Tax Services",
       "link": "https://mabtaxservices.com/",
-      "image": "src/assets/images/mab.webp",
+      "image": "/assets/images/mab.webp",
       "description": "WinterCMS, Tailwind CSS"
     },
     {
       "id": 5,
       "title": "All India Restaurant and Sweets",
       "link": "https://jawebdesign.ca/posts/all-india",
-      "image": "/src/assets/images/allindia.webp",
+      "image": "/assets/images/allindia.webp",
       "description": "WordPress, Genesis Framework"
     },
    
@@ -40,21 +40,21 @@
       "id": 7,
       "title": "J.A Web Design",
       "link": "index.html",
-      "image": "src/assets/images/jawebdesign.webp",
+      "image": "/assets/images/jawebdesign.webp",
       "description": "Astrojs, Tailwind CSS, Cloudfare Pages"
     },
     {
       "id": 8,
       "title": "Valencia Prep Hockey Academy",
       "link": "https://vpahockey.com/",
-      "image": "src/assets/images/vpahockey.webp",
+      "image": "/assets/images/vpahockey.webp",
       "description": "WordPress, Elementor"
     },
     {
       "id": 9,
       "title": "International Hockey Academy",
       "link": "https://web.archive.org/web/20230111165209/https://ihahockey.ca/",
-      "image": "src/assets/images/iha.webp",
+      "image": "/assets/images/iha.webp",
       "description": "WordPress, Elementor"
     }
   ]

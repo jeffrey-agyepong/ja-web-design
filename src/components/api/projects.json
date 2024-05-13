@@ -4,56 +4,57 @@
       "id": 1,
       "title": "Nest Eatery - NAIT Capstone",
       "link": "https://threefolddesigns.ca/work/nest-eatery/",
-      "image": "https://ik.imagekit.io/boxhuwbys/nest.webp?updatedAt=1714555353113",
+      "image": "src/assets/images/nest.webp",
       "description": "WordPress, PHP, Divi Theme"
     },
     {
       "id": 2,
       "title": "Open Sky - NAIT Capstone",
       "link": "https://threefolddesigns.ca/work/open-sky",
-      "image": "https://ik.imagekit.io/boxhuwbys/open-sky.webp?updatedAt=1714554984426",
+      "image": "src/assets/images/open-sky.webp",
       "description": "WordPress, PHP, Underscores"
     },
     {
-      "id": 1,
+      "id": 3,
       "title": "Threefold Designs",
       "link": "https://threefolddesigns.ca/",
-      "image": "https://ik.imagekit.io/boxhuwbys/threefold.webp?updatedAt=1714554276666",
+      "image": "src/assets/images/threefold.webp",
       "description": "Astrojs"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "MAB Accounting and Tax Services",
       "link": "https://mabtaxservices.com/",
-      "image": "https://ik.imagekit.io/boxhuwbys/mab.webp?updatedAt=1714553877481",
+      "image": "src/assets/images/mab.webp",
       "description": "WinterCMS, Tailwind CSS"
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "All India Restaurant and Sweets",
       "link": "https://jawebdesign.ca/posts/all-india",
-      "image": "https://ik.imagekit.io/boxhuwbys/allindia.webp?updatedAt=1714553068241",
+      "image": "src/assets/images/allindia.webp",
       "description": "WordPress, Genesis Framework"
     },
+    
     {
-      "id": 5,
+      "id": 7,
       "title": "J.A Web Design",
       "link": "index.html",
-      "image": "https://ik.imagekit.io/boxhuwbys/jawebdesign.webp?updatedAt=1714550475083",
+      "image": "src/assets/images/jawebdesign.webp",
       "description": "Astrojs, Tailwind CSS, Cloudfare Pages"
     },
     {
-      "id": 6,
+      "id": 8,
       "title": "Valencia Prep Hockey Academy",
       "link": "https://vpahockey.com/",
-      "image": "https://ik.imagekit.io/boxhuwbys/vpahockey.webp?updatedAt=1714552553548",
+      "image": "src/assets/images/vpahockey.webp",
       "description": "WordPress, Elementor"
     },
     {
-      "id": 7,
+      "id": 9,
       "title": "International Hockey Academy",
       "link": "https://web.archive.org/web/20230111165209/https://ihahockey.ca/",
-      "image": "https://ik.imagekit.io/boxhuwbys/iha.webp?updatedAt=1714551614270",
+      "image": "src/assets/images/iha.webp",
       "description": "WordPress, Elementor"
     }
   ]

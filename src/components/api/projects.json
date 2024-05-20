@@ -2,52 +2,62 @@
   "projects": [
     {
       "id": 1,
+      "title": "India Garden",
+      "link": "https://jagyepong.com/indiagarden/image",
+      "image": "https://ik.imagekit.io/boxhuwbys/indiagarden.webp?updatedAt=1714556895773",
+      "description": "WordPress, WP Rig Theme"
+    },
+    {
+      "id": 2,
       "title": "Nest Eatery - NAIT Capstone",
       "link": "https://jagyepong.com/nest",
       "image": "https://ik.imagekit.io/boxhuwbys/nest.webp?updatedAt=1714555353113",
       "description": "WordPress, PHP, Divi Theme"
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "Open Sky - NAIT Capstone",
       "link": "https://openskymentalhealth.com/",
       "image": "https://ik.imagekit.io/boxhuwbys/open-sky.webp?updatedAt=1714554984426",
       "description": "WordPress, PHP, Underscores"
     },
+
     {
-      "id": 1,
+      "id": 4,
       "title": "Threefold Designs",
       "link": "https://threefolddesigns.ca/",
       "image": "https://ik.imagekit.io/boxhuwbys/threefold.webp?updatedAt=1714554276666",
       "description": "Astrojs"
     },
+   
     {
-      "id": 3,
-      "title": "MAB Accounting and Tax Services",
-      "link": "https://mabtaxservices.com/",
-      "image": "https://ik.imagekit.io/boxhuwbys/mab.webp?updatedAt=1714553877481",
-      "description": "WinterCMS, Tailwind CSS"
-    },
-    {
-      "id": 4,
+      "id": 5,
       "title": "All India Restaurant and Sweets",
       "link": "https://jawebdesign.ca/posts/all-india",
       "image": "https://ik.imagekit.io/boxhuwbys/allindia.webp?updatedAt=1714553068241",
       "description": "WordPress, Genesis Framework"
     },
-    {
-      "id": 5,
-      "title": "J.A Web Design",
-      "link": "index.html",
-      "image": "https://ik.imagekit.io/boxhuwbys/jawebdesign.webp?updatedAt=1714550475083",
-      "description": "Astrojs, Tailwind CSS, Cloudfare Pages"
-    },
+ 
     {
       "id": 6,
       "title": "Valencia Prep Hockey Academy",
       "link": "https://vpahockey.com/",
       "image": "https://ik.imagekit.io/boxhuwbys/vpahockey.webp?updatedAt=1714552553548",
       "description": "WordPress, Elementor"
+    },
+    {
+      "id": 7,
+      "title": "MAB Accounting and Tax Services",
+      "link": "https://mabtaxservices.com/",
+      "image": "https://ik.imagekit.io/boxhuwbys/mab.webp?updatedAt=1714553877481",
+      "description": "WinterCMS, Tailwind CSS"
+    },
+    {
+      "id": 8,
+      "title": "J.A Web Design",
+      "link": "index.html",
+      "image": "https://ik.imagekit.io/boxhuwbys/jawebdesign.webp?updatedAt=1714550475083",
+      "description": "Astrojs, Tailwind CSS, Cloudfare Pages"
     }
   ]
 }

@@ -4,7 +4,6 @@ import Logo from '~/components/Logo.astro';
 import ToggleTheme from '~/components/common/ToggleTheme.astro';
 import ToggleMenu from '~/components/common/ToggleMenu.astro';
 
-
 import { getHomePermalink } from '~/utils/permalinks';
 import { trimSlash, getAsset } from '~/utils/permalinks';
 import type { CallToAction } from '~/types';
@@ -71,7 +70,6 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
         <h1>
           <Logo />
         </h1>
-
       </a>
       <div class="flex items-center md:hidden">
         <ToggleMenu />
@@ -138,22 +136,13 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
         {
           actions?.length ? (
             <span class="ml-4 rtl:ml-0 rtl:mr-4">
-              <!-- Calendly link widget begin -->
-            <a href="#" class="capitalize font-bold
-                items-center
-                justify-center
-                py-2
-                px-2
-                rounded-full
-                text-white bg-blue-700
-                dark:bg-blue-700
-                hover:bg-opacity-50 dark:hover:bg-opacity-50 hover:shadow-lg
-                transition
-                duration-300
-                  ease-in-out"
-              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jawebdesign'});return false;">Book
-              consultation</a>
-            <!-- Calendly link widget end -->
+              {/* CALL NOW BUTTON  */}
+              <a
+                href="tel:+17809837309"
+                class="bg-red-700 border-none hover:bg-red-500 text-white focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-700 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+              >
+                Call Now
+              </a>
             </span>
           ) : (
             ''

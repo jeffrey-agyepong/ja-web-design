@@ -49,9 +49,7 @@ const { language, textDirection } = I18N;
 
   <body class="antialiased text-default bg-page tracking-tight">
     <slot />
-  <!-- Calendly badge widget begin -->
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-  <!-- Calendly badge widget end -->
+
     <BasicScripts />
 
     <style is:global>
@@ -59,7 +57,5 @@ const { language, textDirection } = I18N;
         content-visibility: auto;
       }
     </style>
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-    <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/jawebdesign/30min', text: 'Book Consultation Call', color: '#ff000d', textColor: '#ffffff', branding: undefined }); }</script>
   </body>
 </html>

@@ -135,9 +135,9 @@ p {
 .logos-slider-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   gap: 5rem;
-  overflow: scroll;
+  overflow:scroll;
 }
 
 @media screen and (min-width: 768px) {

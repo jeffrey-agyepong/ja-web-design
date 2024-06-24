@@ -96,11 +96,11 @@
   margin-top: 0;
 }
 
-header {
+/* header {
   font-family: 'Marcellus SC', serif;
-}
+} */
 
-h1,
+/* h1,
 h2,
 h3,
 .font-heading,
@@ -108,7 +108,7 @@ h3,
 .font-general,
 .font-general-semibold {
   font-family: 'Marcellus SC', serif !important;
-}
+} */
 
 p {
   font-family: 'Sintony', sans-serif !important;

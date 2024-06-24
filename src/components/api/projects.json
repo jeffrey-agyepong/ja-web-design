@@ -14,24 +14,9 @@
       "image": "https://ik.imagekit.io/boxhuwbys/nest.webp?updatedAt=1714555353113",
       "description": "WordPress, PHP, Divi Theme"
     },
-    {
-      "id": 3,
-      "title": "Open Sky - NAIT Capstone",
-      "link": "https://jagyepong.com/openskymentalhealth/",
-      "image": "https://ik.imagekit.io/boxhuwbys/open-sky.webp?updatedAt=1714554984426",
-      "description": "WordPress, PHP, Underscores"
-    },
-
-    {
-      "id": 4,
-      "title": "Threefold Designs",
-      "link": "https://threefolddesigns.ca/",
-      "image": "https://ik.imagekit.io/boxhuwbys/threefold.webp?updatedAt=1714554276666",
-      "description": "Astrojs"
-    },
    
     {
-      "id": 5,
+      "id": 3,
       "title": "All India Restaurant and Sweets",
       "link": "https://jawebdesign.ca/posts/all-india",
       "image": "https://ik.imagekit.io/boxhuwbys/allindia.webp?updatedAt=1714553068241",
@@ -39,21 +24,21 @@
     },
  
     {
-      "id": 6,
+      "id": 4,
       "title": "Valencia Prep Hockey Academy",
       "link": "https://vpahockey.com/",
       "image": "https://ik.imagekit.io/boxhuwbys/vpahockey.webp?updatedAt=1714552553548",
       "description": "WordPress, Elementor"
     },
     {
-      "id": 7,
+      "id": 5,
       "title": "MAB Accounting and Tax Services",
       "link": "https://mabtaxservices.com/",
       "image": "https://ik.imagekit.io/boxhuwbys/mab.webp?updatedAt=1714553877481",
       "description": "WinterCMS, Tailwind CSS"
     },
     {
-      "id": 8,
+      "id": 6,
       "title": "J.A Web Design",
       "link": "index.html",
       "image": "https://ik.imagekit.io/boxhuwbys/jawebdesign.webp?updatedAt=1714550475083",

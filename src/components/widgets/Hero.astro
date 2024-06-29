@@ -1,5 +1,4 @@
 ---
-import Image from '~/components/common/Image.astro';
 import Button from '~/components/ui/Button.astro';
 import type { CallToAction } from '~/types';
 
@@ -20,7 +19,6 @@ const {
   tagline,
   content = await Astro.slots.render('content'),
   actions = await Astro.slots.render('actions'),
-  image = await Astro.slots.render('image'),
 } = Astro.props;
 ---
 

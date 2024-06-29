@@ -26,10 +26,10 @@ export interface Props {
 const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme = 'light' } = Astro.props;
 ---
 
-<footer class:list={[{ dark: theme === 'dark' }, 'relative border-t border-gray-200 dark:border-slate-900 not-prose']}>
-  <div class="dark:bg-dark absolute inset-0 pointer-events-none" aria-hidden="true"></div>
+<footer class:list={[{ dark: theme === 'dark' }, 'relative border-t border-gray-200 dark:border-slate-900 not-prose dark:bg-blue-700']}>
+  <div class="dark:bg-slate-900 absolute inset-0 pointer-events-none" aria-hidden="true"></div>
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 dark:text-slate-300">
-    <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 py-8 md:py-12">
+    <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 py-8 md:py-8">
       <div class="col-span-12 lg:col-span-4">
         <div class="mb-2">
           <a class="inline-block font-bold text-xl" href={getHomePermalink()}>{SITE?.name}</a>
@@ -85,8 +85,8 @@ const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme 
         </div>
       </div>
     </div>
-    </div>
-    <div class="md:flex md:items-center md:justify-between py-6 md:py-8">
+   
+    <div class="md:flex md:items-center md:justify-between py-6 md:py-4">
       {
         socialLinks?.length ? (
           <ul class="flex mb-4 md:order-1 -ml-2 md:ml-4 md:mb-0 rtl:ml-0 rtl:-mr-2 rtl:md:ml-0 rtl:md:mr-4">
@@ -114,92 +114,3 @@ const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme 
     </div>
   </div>
 </footer>
-
-<!-- <footer>
-  <div class="my-10 md:flex gap-x-24 px-4 md:px-0 justify-stretch">
-    <section class="mb-8">
-      <a href="/" class="text-lg">
-        <Picture src={} alt="Alberta Vision Care" class="w-48 md:w-64" />
-      </a>
-      <p class="text-sm text-white mt-4 max-w-64">
-        Alberta Vision Care is committed to serving patients in Edmonton,
-        Sherwood Park, St. Alberta and Spruce Grove.
-      </p>
-    </section>
-    <section class="mb-8">
-      <h2
-        class="text-3xl font-extrabold tracking-tight leading-tight text-gray-900 md:text-2xl">
-        Useful Links
-      </h2>
-      <hr class="w-24 h-1 my-4 bg-blue-400 border-0 rounded md:my-4" />
-      <ul>
-        <li class="mt-4">
-          <a href="#" class="text-base text-white hover:underline"
-            >Book An Appointment</a
-          >
-        </li>
-        <li class="mt-4">
-          <a href="#" class="text-base text-white hover:underline"
-            >Contact Us</a
-          >
-        </li>
-
-        <li class="mt-4">
-          <a href="#" class="text-base text-white hover:underline"
-            >About Us</a
-          >
-        </li>
-        <li class="mt-4">
-          <a href="#" class="text-base text-white hover:underline"
-            >Our Optometrists</a
-          >
-        </li>
-      </ul>
-    </section>
-    <section class="mb-8">
-      <h2
-        class="text-3xl font-extrabold tracking-tight leading-tight text-gray-900 md:text-2xl">
-        Our Locations
-      </h2>
-      <hr class="w-24 h-1 my-4 bg-blue-400 border-0 rounded md:my-4" />
-      <ul>
-        <li class="mt-4">
-          <a href="#" class="text-base text-white hover:underline"
-            >Edmonton</a
-          >
-        </li>
-        <li class="mt-4">
-          <a href="#" class="text-base text-white hover:underline">
-            Sherwood Park</a
-          >
-        </li>
-
-        <li class="mt-4">
-          <a href="#" class="text-base text-white hover:underline"
-            >St. Albert</a
-          >
-        </li>
-        <li class="mt-4">
-          <a href="#" class="text-base text-white hover:underline"
-            >Spruce Grove</a
-          >
-        </li>
-      </ul>
-    </section>
-  </div>
-
-  <div class="my-10 md:flex justify-between px-4 md:px-0">
-    <p class="text-sm text-slate-800">
-      Copyright © {new Date().getFullYear()} Alberta Vision Care.
-    </p>
-    <p class="text-sm text-white mt-1">
-      Developed by <a
-        href="https://jawebdesign.ca/"
-        target="_blank"
-        rel="noopener"
-        class="hover:underline">
-        J.A Web Design
-      </a>
-    </p>
-  </div>
-</footer> -->

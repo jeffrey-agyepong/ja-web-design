@@ -27,12 +27,6 @@
       "name": "Astrojs",
       "icon": "https://ik.imagekit.io/boxhuwbys/astrojs.svg?updatedAt=1712025376703"
     },
-
-    {
-      "id": 6,
-      "name": "Vite",
-      "icon": "https://ik.imagekit.io/boxhuwbys/vitejs-svgrepo-com.svg?updatedAt=1712022546901"
-    },
     {
       "id": 7,
       "name": "React",
@@ -48,16 +42,7 @@
       "name": "Joomla",
       "icon": "https://ik.imagekit.io/boxhuwbys/joomla-logo.png?updatedAt=1714022985183"
     },
-    {
-      "id": 10,
-      "name": "WinterCMS",
-      "icon": "https://ik.imagekit.io/boxhuwbys/wintercms2.png?updatedAt=1714022367748"
-    },
-    {
-      "id": 11,
-      "name": "CSS3",
-      "icon": "https://ik.imagekit.io/boxhuwbys/css-3-svgrepo-com.svg?updatedAt=1712022545142"
-    },
+   
     {
       "id": 12,
       "name": "Figma",

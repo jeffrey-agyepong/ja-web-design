@@ -96,25 +96,19 @@
   margin-top: 0;
 }
 
-/* header {
-  font-family: 'Marcellus SC', serif;
-} */
-
-/* h1,
+h1,
 h2,
 h3,
-.font-heading,
-.text-default,
-.font-general,
-.font-general-semibold {
-  font-family: 'Marcellus SC', serif !important;
-} */
-
-p {
-  font-family: 'Sintony', sans-serif !important;
+h4,
+h5,
+h6 {
+  font-family: 'Ubuntu', sans-serif !important;
 }
 
-
+p,
+header {
+  font-family: 'Lato', sans-serif;
+}
 
 .logos-slider-container img {
   width: 150px;
@@ -137,7 +131,7 @@ p {
   align-items: center;
   justify-content: start;
   gap: 5rem;
-  overflow:scroll;
+  overflow: scroll;
 }
 
 @media screen and (min-width: 768px) {

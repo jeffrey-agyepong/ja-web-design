@@ -18,6 +18,11 @@ module.exports = {
         serif: ['var(--aw-font-serif)', ...defaultTheme.fontFamily.serif],
         heading: ['var(--aw-font-heading)', ...defaultTheme.fontFamily.sans],
       },
+      maxWidth: {
+        '20ch': '20ch',
+        '22ch': '22ch',
+        '24ch': '24ch',
+      },
     },
   },
   plugins: [

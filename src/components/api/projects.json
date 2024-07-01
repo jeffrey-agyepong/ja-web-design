@@ -5,14 +5,14 @@
       "title": "India Garden",
       "link": "https://indiagarden.ca/",
       "image": "https://ik.imagekit.io/boxhuwbys/indiagarden.webp?updatedAt=1714556895773",
-      "description": "WordPress, WP Rig Theme"
+      "description": "WordPress"
     },
     {
       "id": 2,
       "title": "Nest Eatery - NAIT Capstone",
       "link": "https://jagyepong.com/nest",
       "image": "https://ik.imagekit.io/boxhuwbys/nest.webp?updatedAt=1714555353113",
-      "description": "WordPress, PHP, Divi Theme"
+      "description": "WordPress, PHP"
     },
    
     {
@@ -20,7 +20,7 @@
       "title": "All India Restaurant and Sweets",
       "link": "https://jawebdesign.ca/posts/all-india",
       "image": "https://ik.imagekit.io/boxhuwbys/allindia.webp?updatedAt=1714553068241",
-      "description": "WordPress, Genesis Framework"
+      "description": "WordPress"
     },
  
     {
@@ -36,7 +36,7 @@
       "title": "J.A Web Design",
       "link": "index.html",
       "image": "https://ik.imagekit.io/boxhuwbys/jawebdesign.webp?updatedAt=1714550475083",
-      "description": "Astrojs, Tailwind CSS, Cloudfare Pages"
+      "description": "Astrojs, Tailwind CSS, Cloudflare Pages"
     }
   ]
 }

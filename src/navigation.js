@@ -1,4 +1,4 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink } from './utils/permalinks';
 
 export const headerData = {
   links: [
@@ -9,6 +9,20 @@ export const headerData = {
     {
       text: 'Services',
       href: getPermalink('/services'),
+      // links: [
+      //   {
+      //     text: 'Web Design',
+      //     href: getPermalink('/services/web-design'),
+      //   },
+      //   {
+      //     text: 'E-commerce',
+      //     href: getPermalink('/services/e-commerce'),
+      //   },
+      //   {
+      //     text: 'Maintenance',
+      //     href: getPermalink('/services/maintenance'),
+      //   },
+      // ],
     },
     {
       text: 'About',
@@ -50,7 +64,7 @@ export const footerData = {
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/jeffrey-agyepong' },
   ],
   footNote: `
-    <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm"></span>
+    <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5  rtl:float-right rounded-sm"></span>
     © 2024 J.A Web Design· All rights reserved.
   `,
 };

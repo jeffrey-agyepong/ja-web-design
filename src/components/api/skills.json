@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "PHP",
-      "icon": "src/assets/images/php-svgrepo-com.svg"
+      "icon": "./src/assets/images/php-svgrepo-com.svg"
     },
     {
       "id": 2,

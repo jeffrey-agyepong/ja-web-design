@@ -14,7 +14,7 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import { Picture } from "astro:assets";
 import { getPermalink } from '../utils/permalinks';
-
+import Weba from '~/assets/images/weba.webp';
 import { AstroSeo } from '@astrolib/seo';
 
 const metadata = {
@@ -60,7 +60,7 @@ const metadata = {
     <div class="logos-slider">
       <div class="logos-slider-container">
         <a href="https://weba.org/directory/#!biz/id/665fc9c08c6e56534f0ae3b2we" target="_blank">
-          <img src="https://ik.imagekit.io/boxhuwbys/weba_logo.png?updatedAt=1718650011862" alt="J.A Web Design - West Edmonton Business Association"/>
+          <Picture src={Weba} alt="J.A Web Design - West Edmonton Business Association"/>
         </a>
         <a href="https://edmontonchamber.chambermaster.com/list/member/j-a-web-design-30907" target="_blank">
           <Picture src={ChamberEdm}  alt="J.A Web Design - Edmonton Chamber of Commerce"/>

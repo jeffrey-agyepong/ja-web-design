@@ -9,7 +9,7 @@ title: Page Speed Results
 
 ![MAB Tax & Accounting Services Page Speed Results](/src/assets/images/mabtaxes.webp)
 
-![Alberta Vision Care Page Speed Results](//assets/images/albertavisioncare.webp)
+![Alberta Vision Care Page Speed Results](/src/assets/images/albertavisioncare.webp)
 
 <style>
 .text-black{

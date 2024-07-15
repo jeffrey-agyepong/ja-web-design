@@ -1,0 +1,37 @@
+---
+import AllIndia from '~/assets/images/allIndialogo.png';
+import IndiaGarden from '~/assets/images/indiagarden-logo.png';
+import { Picture } from "astro:assets";
+import OMG from '~/assets/images/omg-logo.png';
+import VPA from '~/assets/images/vpa-hockey.webp';
+---
+
+
+<section class="slider mx-1">
+    <h2 class="font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl md:text-4xl text-center mb-4">
+        Clients & Collaborations
+      </h2>
+    <div class="card">
+      <div class="logos-slider">
+        <div class="logos-slider-container">
+          <div>
+            <Picture src={IndiaGarden} alt="J.A Web Design - West Edmonton Business Association"/>
+          </div>
+          <div>
+            <Picture src={AllIndia}  alt="J.A Web Design - Edmonton Chamber of Commerce"/>
+          </div>
+          <div>
+            <Picture src={VPA} class="rounded" alt="J.A Web Design - Advertising Club of Edmonton"/>
+          </div>
+          <div>
+            <Picture src={OMG} alt="J.A Web Design - Urban Edmonton" class="rounded"/>
+          </div>
+        </div>
+      
+       
+      </div>
+      <p class="text-center text-black sm:hidden">
+        Swipe left to see more
+      </p>
+      </div>  
+  </section>

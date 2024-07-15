@@ -3,7 +3,7 @@ import Badges from '~/components/widgets/Badges.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Layout from '~/layouts/PageLayout.astro';
 import Skills from '~/components/widgets/Skills.astro';
-
+import TrustLogos from '~/components/ui/TrustLogos.astro';
 import { AstroSeo } from '@astrolib/seo';
 
 const metadata = {
@@ -42,7 +42,7 @@ const metadata = {
       {
         title: '',
         description:
-          "As a NAIT graduate based in Edmonton, Alberta, I've transitioned from being a self-taught freelancer with five years of experience to a passionate web developer and designer. My focus is on creating modern, user-friendly websites for small businesses, e-commerce stores, and personal portfolios. I specialize in responsive designs that are optimized for performance and search engine rankings, using HTML, CSS, JavaScript, Vue.js, PHP, and CMS platforms like WordPress. My commitment to timely delivery and exceeding client expectations ensures high-quality work and customer satisfaction.",
+          "As a NAIT graduate based in Edmonton, Alberta, I've transitioned from being a self-taught freelancer with five years of experience to a passionate web developer and designer. <br> <br> My focus is on creating modern, user-friendly websites for small businesses, e-commerce stores, and personal portfolios. I specialize in responsive designs that are optimized for performance and search engine rankings, using HTML, CSS, JavaScript, Vue.js, PHP, and CMS platforms like WordPress. <br> <br> My commitment to timely delivery and exceeding client expectations ensures high-quality work and customer satisfaction.",
       },
     ]}
     image={{
@@ -50,8 +50,7 @@ const metadata = {
       alt: 'Jeffrey Agyepong',
     }}
   />
-
+  <TrustLogos />
   <Badges />
-
   <Skills />
 </Layout>

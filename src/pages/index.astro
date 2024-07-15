@@ -2,19 +2,16 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import About from '~/components/widgets/About.astro';
-import AceEdm from '~/assets/images/ace-logo.webp';
-import ChamberEdm from '~/assets/images/chamberedm.png';
-import Hero from '~/components/widgets/Hero.astro';
-import UrbanEdm from '~/assets/images/urbanedm.png';
-import Features3 from '~/components/widgets/Features3.astro';
-import Projects from '~/components/widgets/Projects.astro';
 import Badges from '~/components/widgets/Badges.astro';
-import Testimonials from '~/components/widgets/Testimonials.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import { Picture } from "astro:assets";
+import FAQs from '~/components/widgets/FAQs.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Projects from '~/components/widgets/Projects.astro';
+import Slider from '~/components/ui/Slider.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+
 import { getPermalink } from '../utils/permalinks';
-import Weba from '~/assets/images/weba.webp';
 import { AstroSeo } from '@astrolib/seo';
 
 const metadata = {
@@ -25,7 +22,8 @@ const metadata = {
 
 <AstroSeo
   title={metadata.title}
-  description='J.A Web Design is an award-winning company in Edmonton, Alberta, specializing in custom web development and design. We create modern, user-friendly websites for small to medium-sized businesses, e-commerce stores, and personal portfolios. '/>
+  description="J.A Web Design is an award-winning company in Edmonton, Alberta, specializing in custom web development and design. We create modern, user-friendly websites for small to medium-sized businesses, e-commerce stores, and personal portfolios. "
+/>
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
@@ -34,8 +32,8 @@ const metadata = {
       <h2
         class="max-w-22ch mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-left capitalize"
       >
-        Crafting <span class="dark:text-blue-300 text-blue-800 font-extrabold">custom websites</span> 
-       that drive business growth
+        Crafting <span class="dark:text-blue-300 text-blue-800 font-extrabold">custom websites</span>
+        that drive business growth
       </h2>
     </Fragment>
 
@@ -44,7 +42,6 @@ const metadata = {
         Empowering Edmonton Businesses with Custom Web Design
       </p>
     </Fragment>
-    
   </Hero>
 
   <!-- Projects Widget ************** -->
@@ -54,38 +51,11 @@ const metadata = {
 
   <About />
 
-<!-- Slider -->
-<section class="slider mx-5">
-  <h2 class="font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl md:text-4xl text-center mb-4">
-   Featured On
-    </h2>
-  <div class="card">
-    <div class="logos-slider">
-      <div class="logos-slider-container">
-        <a href="https://weba.org/directory/#!biz/id/665fc9c08c6e56534f0ae3b2we" target="_blank">
-          <Picture src={Weba} alt="J.A Web Design - West Edmonton Business Association"/>
-        </a>
-        <a href="https://edmontonchamber.chambermaster.com/list/member/j-a-web-design-30907" target="_blank">
-          <Picture src={ChamberEdm}  alt="J.A Web Design - Edmonton Chamber of Commerce"/>
-        </a>
-        <a href="https://adclubedm.com/find-a-freelancer/jeffrey-agyepong/" target="_blank">
-          <Picture src={AceEdm} class="rounded" alt="J.A Web Design - Advertising Club of Edmonton"/>
-        </a>
-        <a href="https://urbanedmonton.ca/listing/j-a-web-design-3/" target="_blank">
-          <Picture src={UrbanEdm} alt="J.A Web Design - Urban Edmonton" class="rounded"/>
-        </a>
-      </div>
-    
-     
-    </div>
-    <p class="text-center text-black sm:hidden">
-      Swipe left to see more
-    </p>
-    </div>  
-</section>
+  <!-- Slider -->
+  <Slider />
 
   <Badges />
-  
+
   <!-- Services Widget ************** -->
 
   <Features3
@@ -95,12 +65,14 @@ const metadata = {
     items={[
       {
         title: 'Web Development ',
-
+        description:
+          'Our web development services bring your ideas to life with expert coding and programming. We build custom websites that are visually engaging, user-friendly, and optimized for performance, ensuring a seamless browsing experience for your visitors.',
         image: 'https://ik.imagekit.io/boxhuwbys/icon-development-white.svg?updatedAt=1711779871947',
       },
       {
         title: 'Web Design',
-
+        description:
+          "Our creative web design solutions combine aesthetics and functionality to create visually stunning websites that capture your brand's essence. We focus on user experience, ensuring intuitive navigation, appealing layouts, and responsive design for a seamless interaction across all devices.",
         image: 'https://ik.imagekit.io/boxhuwbys/icon-graphics-white.svg?updatedAt=1711779872004',
       },
       // {
@@ -110,7 +82,8 @@ const metadata = {
       // },
       {
         title: 'E-commerce Development',
-
+        description:
+          'Our e-commerce development services help you establish a robust online store that drives sales and enhances customer engagement. We create custom e-commerce solutions that are tailored to your business needs, ensuring a seamless shopping experience for your customers.',
         image: 'https://ik.imagekit.io/boxhuwbys/e-commerce.svg?updatedAt=1719119543607',
       },
       // {
@@ -166,14 +139,13 @@ const metadata = {
         },
       },
     ]}
-
-  callToAction={{
-    target: '_blank',
-    text: 'More testimonials',
-    href: 'https://maps.app.goo.gl/hLyxj8vZL1CU9Y5n7',
-    icon: 'tabler:chevron-right',
-  }}
-    />
+    callToAction={{
+      target: '_blank',
+      text: 'More testimonials',
+      href: 'https://maps.app.goo.gl/hLyxj8vZL1CU9Y5n7',
+      icon: 'tabler:chevron-right',
+    }}
+  />
   <!-- FAQs Widget ******************* -->
 
   <FAQs

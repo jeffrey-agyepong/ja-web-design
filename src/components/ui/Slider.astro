@@ -1,0 +1,37 @@
+---
+import AceEdm from '~/assets/images/ace-logo.webp';
+import ChamberEdm from '~/assets/images/chamberedm.png';
+import UrbanEdm from '~/assets/images/urbanedm.png';
+import { Picture } from "astro:assets";
+import Weba from '~/assets/images/weba.webp';
+---
+
+
+<section class="slider mx-1">
+    <h2 class="font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl md:text-4xl text-center mb-4">
+     Featured On
+      </h2>
+    <div class="card">
+      <div class="logos-slider">
+        <div class="logos-slider-container">
+          <a href="https://weba.org/directory/#!biz/id/665fc9c08c6e56534f0ae3b2we" target="_blank">
+            <Picture src={Weba} alt="J.A Web Design - West Edmonton Business Association"/>
+          </a>
+          <a href="https://edmontonchamber.chambermaster.com/list/member/j-a-web-design-30907" target="_blank">
+            <Picture src={ChamberEdm}  alt="J.A Web Design - Edmonton Chamber of Commerce"/>
+          </a>
+          <a href="https://adclubedm.com/find-a-freelancer/jeffrey-agyepong/" target="_blank">
+            <Picture src={AceEdm} class="rounded" alt="J.A Web Design - Advertising Club of Edmonton"/>
+          </a>
+          <a href="https://urbanedmonton.ca/listing/j-a-web-design-3/" target="_blank">
+            <Picture src={UrbanEdm} alt="J.A Web Design - Urban Edmonton" class="rounded"/>
+          </a>
+        </div>
+      
+       
+      </div>
+      <p class="text-center text-black sm:hidden">
+        Swipe left to see more
+      </p>
+      </div>  
+  </section>

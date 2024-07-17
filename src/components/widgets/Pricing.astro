@@ -24,7 +24,7 @@ const {
     <div class="grid grid-cols-3 gap-4 dark:text-white sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
       {
         prices &&
-          prices.map(({ title, subtitle, price, items, callToAction, hasRibbon = false, ribbonTitle }) => (
+          prices.map(({ title, subtitle, price, items, hasRibbon = false, ribbonTitle }) => (
             <div class="col-span-3 mx-auto flex w-full sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1">
               {price && (
                 <div class="rounded-lg backdrop-blur border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow px-6 py-8 flex w-full max-w-sm flex-col justify-between text-center">
@@ -47,7 +47,7 @@ const {
                       </div>
                     </div>
                     {items && (
-                      <ul role="list" class="my-8 md:my-10 space-y-2 text-left">
+                      <ul role="list" class="my-8 space-y-2 text-left">
                         {items.map(
                           ({ description, icon }) =>
                             description && (
@@ -62,16 +62,6 @@ const {
                       </ul>
                     )}
                   </div>
-                  {callToAction && (
-                    <div class={`flex justify-center`}>
-                      {typeof callToAction === 'string' ? (
-                        <Fragment set:html={callToAction} />
-                      ) : (
-                        callToAction &&
-                        callToAction.href && <Button {...(hasRibbon ? { variant: 'primary' } : {})} {...callToAction} />
-                      )}
-                    </div>
-                  )}
                 </div>
               )}
             </div>

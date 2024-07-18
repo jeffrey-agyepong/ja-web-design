@@ -10,6 +10,7 @@ import Hero from '~/components/widgets/Hero.astro';
 import Projects from '~/components/widgets/Projects.astro';
 import Slider from '~/components/ui/Slider.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
+import TrustLogos from '~/components/ui/TrustLogos.astro';
 
 import { getPermalink } from '../utils/permalinks';
 import { AstroSeo } from '@astrolib/seo';
@@ -27,7 +28,7 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero actions={[{ text: 'Get Started', href: '/contact' }]}>
+  <Hero actions={[{ text: 'Request A Quote', href: '/contact' }]}>
     <Fragment slot="title">
       <h2
         class="max-w-22ch mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-left capitalize"
@@ -51,6 +52,8 @@ const metadata = {
 
   <!-- Projects Widget ************** -->
   <Projects />
+
+  <TrustLogos />
 
   <!-- About Us Widget ****************** -->
 

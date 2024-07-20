@@ -10,6 +10,14 @@ import compress from 'astro-compress';
 import tasks from './src/utils/tasks';
 import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin } from './src/utils/frontmatter.mjs';
 import { ANALYTICS, SITE } from './src/utils/config.ts';
+import sanityIntegration from "@sanity/astro";
+import react from "@astrojs/react";
+import { loadEnv } from "vite";
+import netlify from "@astrojs/netlify";
+const { PUBLIC_SANITY_STUDIO_PROJECT_ID, PUBLIC_SANITY_STUDIO_DATASET } = loadEnv(process.env.NODE_ENV, process.cwd(), '');
+
+
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const whenExternalScripts = (items = []) => ANALYTICS.vendors.googleAnalytics.id && ANALYTICS.vendors.googleAnalytics.partytown ? Array.isArray(items) ? items.map(item => item()) : [items()] : [];
 
@@ -18,30 +26,39 @@ export default defineConfig({
   site: 'https://jawebdesign.ca/',
   base: SITE.base,
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
-  output: 'static',
-  integrations: [tailwind({
-    applyBaseStyles: false
-  }), sitemap(), mdx(), icon({
-    include: {
-      tabler: ['*'],
-      'flat-color-icons': ['template', 'gallery', 'approval', 'document', 'advertising', 'currency-exchange', 'voice-presentation', 'business-contact', 'database']
-    }
-  }), ...whenExternalScripts(() => partytown({
-    config: {
-      forward: ['dataLayer.push']
-    }
-  })), compress({
-    CSS: true,
-    HTML: {
-      'html-minifier-terser': {
-        removeAttributeQuotes: false
+  output: 'hybrid',
+  integrations: [
+    tailwind({
+      applyBaseStyles: false
+    }), sitemap(), mdx(), icon({
+      include: {
+        tabler: ['*'],
+        'flat-color-icons': ['template', 'gallery', 'approval', 'document', 'advertising', 'currency-exchange', 'voice-presentation', 'business-contact', 'database']
       }
-    },
-    Image: false,
-    JavaScript: true,
-    SVG: false,
-    Logger: 1
-  }), tasks()],
+    }), ...whenExternalScripts(() => partytown({
+      config: {
+        forward: ['dataLayer.push']
+      }
+    })), compress({
+      CSS: true,
+      HTML: {
+        'html-minifier-terser': {
+          removeAttributeQuotes: false
+        }
+      },
+      Image: false,
+      JavaScript: true,
+      SVG: false,
+      Logger: 1
+    }), tasks(),
+    sanityIntegration({
+      projectId: PUBLIC_SANITY_STUDIO_PROJECT_ID,
+      dataset: PUBLIC_SANITY_STUDIO_DATASET,
+      useCdn: true,
+      studioBasePath: '/admin',
+    }), react(),
+  ],
+  adapter: netlify(),
   image: {
     service: squooshImageService()
   },

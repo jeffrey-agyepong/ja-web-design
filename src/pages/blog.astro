@@ -1,0 +1,46 @@
+---
+import { AstroSeo } from '@astrolib/seo';
+import Layout from '~/layouts/PageLayout.astro';
+
+export const prerender = false;
+import { sanityClient } from 'sanity:client';
+const posts = await sanityClient.fetch(`*[_type == "post" && defined(slug)]`);
+const metadata = {
+  title: 'Blog | J.A Web Design',
+};
+---
+
+<AstroSeo
+  title={metadata.title}
+  description="Get to know the face behind J.A Web Design - a self-taught freelancer turned NAIT student with a passion for crafting modern, user-friendly websites. With five years of experience in web development and design, I specialize in creating fully responsive websites using the latest technologies. From small businesses to personal portfolios, I am committed to delivering high-quality work that exceeds client expectations."
+/>
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <section
+    class="mt-16 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] min-h-fit dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]"
+  >
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
+      <h2
+        class="max-w-24ch mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-left capitalize"
+      >
+        Blog
+      </h2>
+    </div>
+  </section>
+
+  <!-- Blog Content ******************* -->
+  <div class="max-w-7xl z-50 mt-24">
+    <ul>
+      {
+        posts.map((post, index) => (
+          <li key={index} class="bg-white shadow-md rounded-lg p-4 mb-4 flex">
+            <a href={'/posts/' + post.slug.current} class="text-blue-500 hover:underline">
+              {post.title}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</Layout>

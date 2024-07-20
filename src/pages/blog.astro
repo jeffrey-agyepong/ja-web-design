@@ -1,5 +1,6 @@
 ---
 import { AstroSeo } from '@astrolib/seo';
+import Image from 'astro/components/Image.astro';
 import Layout from '~/layouts/PageLayout.astro';
 // import Picture from 'astro/components/Picture.astro';
 
@@ -32,10 +33,12 @@ const metadata = {
     <div class="grid md:grid-cols-3 gap-4">
       {
         posts.map((post, index) => (
-          <div key={index} class="bg-white shadow-md rounded-lg p-4 mb-4 block max-w-sm">
-            <a href={'/posts/' + post.slug.current} class="text-slate-900 hover:underline">
+          <div key={index} class="bg-slate-700 shadow-md rounded-lg p-4 mb-4 block max-w-sm">
+            <h3 class="font-bold text-xl dark:text-slate-300 font-heading leading-tight mb-2 sm:text-2xl">
+              <a href={'/posts/' + post.slug.current} class="transition duration-200 dark:hover:text-blue-400 ease-in hover:text-primary inline-block">
               {post.title}
             </a>
+            </h3>
           </div>
         ))
       }

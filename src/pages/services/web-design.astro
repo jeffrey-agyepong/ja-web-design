@@ -1,0 +1,166 @@
+---
+import { AstroSeo } from '@astrolib/seo';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Web Development | J.A Web Design',
+};
+---
+
+<AstroSeo
+  title={metadata.title}
+  description=""
+/>
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <section
+    class="mt-16 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] min-h-fit dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]"
+  >
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
+      <h2
+        class="max-w-24ch mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-4xl dark:text-white text-left capitalize"
+      >
+        Explore Our Web Design & Development Services
+      </h2>
+    </div>
+  </section>
+
+ <!-- Content Widget **************** -->
+
+ <Content
+   isReversed
+   items={[
+     {
+       title: 'Custom Design',
+       description:
+         'We partner with you to craft a website that is not only tailored to fit your brand and but also seamlessly fits within your brand guidelines. Whether you need a brand new website or looking to revamp your existing our custom design solution ensure a unique and professional online presence.',
+       icon: 'tabler:wand',
+     },
+     {
+       title: 'Mobile Responsive',
+       description:
+         'Over 60% of website traffic comes from mobile devices. That’s why we design our websites with a “mobile first” approach ensuring that your website not only looks stunning on desktops but also functions superbly on smartphones and tablets.',
+       icon: 'tabler:settings',
+     },
+     {
+       title: 'Ongoing Maintenance & Support',
+       description:
+         'We provide comprehensive ongoing maintenance services to ensure that websites remain up-to-date, secure, and optimized. After the website is launched, we offer support and assistance with regular updates, such as content updates, software updates, security patches, and bug fixes.',
+       icon: 'tabler:presentation',
+     },
+     
+   ]}
+   image={{
+     src: 'https://ik.imagekit.io/boxhuwbys/web-development-ja-web-design.webp',
+     alt: 'Features Image',
+   }}
+ >
+   <Fragment slot="content">
+     <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Main Features</h3>
+   </Fragment>
+ </Content>
+
+ <!-- Content Widget **************** -->
+
+ <Content
+   isAfterContent
+   items={[
+     {
+       title: 'Web Hosting',
+       description:
+         '',
+       icon: 'tabler:clock',
+     },
+     {
+       title: 'Domain Registration',
+       description:
+         '',
+       icon: 'tabler:school',
+     },
+     {
+       title: 'Website Speed Optimization',
+       description:
+         '',
+       icon: 'tabler:coin',
+     },
+    //  {
+    //    title: 'Instant Download',
+    //    description:
+    //      '',
+    //    icon: 'tabler:file-download',
+    //  },
+   ]}
+   image={{
+     src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+     alt: 'Benefits Image',
+   }}
+ >
+   <Fragment slot="content">
+     <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">More Features</h3>
+   </Fragment>
+ </Content>
+
+ <!-- Testimonials Widget *********** -->
+
+
+ <Testimonials
+ id="testimonials"
+ title="Testimonials"
+ testimonials={[
+   {
+     testimonial: `Easily one of the best young web designers that I have worked with.`,
+     name: 'Jessal Parmar',
+     job: 'Bussiness Owner',
+     image: {
+       src: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png',
+       alt: 'Jessal Parmar',
+     },
+   },
+
+   {
+     testimonial: `J.A Web Design delivered the project on time and provided reliable, timely technical support after. The responsive team strictly adhered to the established timeline and budget and was quick to implement feedback throughout.`,
+     name: 'Darcy Hodge',
+     job: 'General Manager',
+     image: {
+       src: 'https://ik.imagekit.io/boxhuwbys/darcy.webp?updatedAt=1711693732156',
+       alt: 'Darcy Hodge',
+     },
+   },
+   {
+     testimonial:
+       'Jeffrey is such a wonderful person and a very knowledgeable web designer! He taught me how to use the different web design platforms and what to watch out for. I highly recommend him thanks Jeffrey!',
+     name: 'Kareena Virdi',
+     job: 'Social Media Consultant',
+     image: {
+       src: 'https://ik.imagekit.io/boxhuwbys/kreen.webp?updatedAt=1711693732194',
+       alt: 'Kareena Virdi',
+     },
+   },
+ ]}
+ callToAction={{
+   target: '_blank',
+   text: 'More testimonials',
+   href: 'https://maps.app.goo.gl/hLyxj8vZL1CU9Y5n7',
+   icon: 'tabler:chevron-right',
+ }}
+/>
+
+ <!-- CallToAction Widget *********** -->
+
+ <CallToAction
+   actions={[
+     {
+       variant: 'primary',
+       text: 'Give Us A Call',
+       href: '/',
+     },
+   ]}
+   title="Want to kickstart your website?"
+   subtitle=""
+ />
+</Layout>

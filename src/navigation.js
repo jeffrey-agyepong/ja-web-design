@@ -9,20 +9,16 @@ export const headerData = {
     {
       text: 'Services',
       href: getPermalink('/services'),
-      // links: [
-      //   {
-      //     text: 'Web Design',
-      //     href: getPermalink('/services/web-design'),
-      //   },
-      //   {
-      //     text: 'E-commerce',
-      //     href: getPermalink('/services/e-commerce'),
-      //   },
-      //   {
-      //     text: 'Maintenance',
-      //     href: getPermalink('/services/maintenance'),
-      //   },
-      // ],
+      links: [
+        {
+          text: 'Web Design',
+          href: getPermalink('/services/web-design'),
+        },
+        // {
+        //   text: 'E-commerce',
+        //   href: getPermalink('/services/e-commerce'),
+        // },
+      ],
     },
     {
       text: 'About',

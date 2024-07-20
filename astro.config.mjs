@@ -26,7 +26,7 @@ export default defineConfig({
   site: 'https://jawebdesign.ca/',
   base: SITE.base,
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
-  output: 'hybrid',
+  output: 'static',
   integrations: [
     tailwind({
       applyBaseStyles: false

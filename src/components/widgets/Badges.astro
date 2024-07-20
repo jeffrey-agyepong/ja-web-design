@@ -1,3 +1,7 @@
+---
+import Image from "astro/components/Image.astro";
+import Clutch from '~/assets/images/top_clutch.co_web_design_company_freelance_edmonton_jawebdesign.png';
+---
 <section class="p-8 dark:bg-blue-900">
   <h2
     class="font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl md:text-4xl text-center mb-4"
@@ -16,11 +20,8 @@
       </a>
     </div>
     <div class="flex justify-center items-center pb-4">
-      <iframe
-        width="240"
-        height="240"
-        src="https://shareables.clutch.co/share/badges/2147063/953?utm_source=clutch_top_company_badge&utm_medium=image_embed"
-        title="Top Clutch Web Developers Freelance Edmonton"></iframe>
+      <Image src={Clutch} alt='J.A Web Design - Top Web Design Company - Freelance Edmonton' width={250} height={280} />
+
     </div>
     <div class="flex justify-center items-center pb-4">
       <a href="https://upcity.com/profiles/j-a-web-design/edmonton" target="_blank">

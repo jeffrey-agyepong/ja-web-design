@@ -5,7 +5,7 @@
       "title": "India Garden",
       "link": "https://indiagarden.ca/",
       "image": "https://ik.imagekit.io/boxhuwbys/indiagarden.webp?updatedAt=1714556895773",
-      "description": "WordPress, PHP"
+      "description": "WordPress, PHP, Cloudflare"
     },
     {
       "id": 2,
@@ -36,7 +36,7 @@
       "title": "J.A Web Design",
       "link": "index.html",
       "image": "https://ik.imagekit.io/boxhuwbys/jawebdesign.webp?updatedAt=1714550475083",
-      "description": "Astrojs, Tailwind CSS, Cloudflare, Netlify"
+      "description": "Astrojs, Tailwind CSS, Sanity.io, Cloudflare, Netlify"
     },
     {
       "id": 7,

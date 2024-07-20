@@ -1,0 +1,18 @@
+---
+const {
+  node: { listItem },
+  ...attrs
+} = Astro.props;
+---
+
+{
+  listItem === 'number' ? (
+    <ol {...attrs}>
+      <slot />
+    </ol>
+  ) : (
+    <ul {...attrs}>
+      <slot />
+    </ul>
+  )
+}

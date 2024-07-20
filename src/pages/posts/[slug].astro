@@ -1,8 +1,16 @@
 ---
+export const prerender = true;
+
+
 import { AstroSeo } from '@astrolib/seo';
 import Layout from '~/layouts/PageLayout.astro';
-export const prerender = true;
+
+import Image from '~/components/Image.astro';
+import CTA from '~/components/CTA.astro';
+
 import { sanityClient } from 'sanity:client';
+import { PortableText } from 'astro-portabletext';
+import { List } from 'astro-portabletext/components';
 
 const metadata = {
   title: 'Blog | J.A Web Design',
@@ -20,12 +28,19 @@ export async function getStaticPaths() {
 }
 
 const { slug } = Astro.params;
-const { title } = await sanityClient.fetch(`*[_type == "post" && slug.current == $slug][0]`, { slug });
+const { title, blockContent } = await sanityClient.fetch(`*[_type == "post" && slug.current == $slug][0]`, { slug });
 
+const components = {
+  type:{
+    image: Image,
+    cta: CTA,
+  },
+  list: List,
+};
 ---
 <AstroSeo
   title={metadata.title}
-  description="Get to know the face behind J.A Web Design - a self-taught freelancer turned NAIT student with a passion for crafting modern, user-friendly websites. With five years of experience in web development and design, I specialize in creating fully responsive websites using the latest technologies. From small businesses to personal portfolios, I am committed to delivering high-quality work that exceeds client expectations."
+  description=""
 />
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
@@ -35,10 +50,11 @@ const { title } = await sanityClient.fetch(`*[_type == "post" && slug.current ==
   >
     <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
       <h2
-        class="max-w-24ch mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-left capitalize"
+        class="max-w-24ch mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-4xl dark:text-white text-left capitalize"
       >
       {title}
       </h2>
+      <PortableText value={blockContent} components={components} />
     </div>
   </section>
 

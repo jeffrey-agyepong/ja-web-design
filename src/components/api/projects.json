@@ -36,14 +36,14 @@
       "title": "J.A Web Design",
       "link": "index.html",
       "image": "https://ik.imagekit.io/boxhuwbys/jawebdesign.webp?updatedAt=1714550475083",
-      "description": "Astrojs, Tailwind CSS, Sanity.io, Cloudflare, Netlify"
+      "description": "Astro, Tailwind CSS, Sanity.io, Cloudflare, Netlify"
     },
     {
       "id": 7,
       "title": "MAB Accounting & Tax Services",
       "link": "https://mabtaxservices.com/",
       "image": "https://ik.imagekit.io/boxhuwbys/mab.webp?updatedAt=1714553877481",
-      "description": "Astrojs, Tailwind CSS, Cloudflare, Netlify"
+      "description": "Astro, Tailwind CSS, Cloudflare, Netlify"
     }
   ]
 }

@@ -27,7 +27,7 @@ export async function getStaticPaths() {
 }
 
 const { slug } = Astro.params;
-const { title, blockContent } = await sanityClient.fetch(`*[_type == "post" && slug.current == $slug][0]`, { slug });
+const { title, blockContent,articleBody } = await sanityClient.fetch(`*[_type == "post" && slug.current == $slug][0]`, { slug });
 
 const components = {
   type: {
@@ -59,3 +59,9 @@ const components = {
     <PortableText value={blockContent} components={components} />
   </section>
 </Layout>
+
+<style>
+  h3{
+    font-size: 2.5rem !important;
+  }
+</style>

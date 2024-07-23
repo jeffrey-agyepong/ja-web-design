@@ -10,14 +10,12 @@ import compress from 'astro-compress';
 import tasks from './src/utils/tasks';
 import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin } from './src/utils/frontmatter.mjs';
 import { ANALYTICS, SITE } from './src/utils/config.ts';
-import sanityIntegration from "@sanity/astro";
 import react from "@astrojs/react";
+import storyblok from '@storyblok/astro';
 import { loadEnv } from "vite";
 import netlify from "@astrojs/netlify";
-const { PUBLIC_SANITY_STUDIO_PROJECT_ID, PUBLIC_SANITY_STUDIO_DATASET } = loadEnv(process.env.NODE_ENV, process.cwd(), '');
 
-
-
+const env = loadEnv("", process.cwd(), 'STORYBLOK')
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const whenExternalScripts = (items = []) => ANALYTICS.vendors.googleAnalytics.id && ANALYTICS.vendors.googleAnalytics.partytown ? Array.isArray(items) ? items.map(item => item()) : [items()] : [];
 
@@ -26,7 +24,6 @@ export default defineConfig({
   site: 'https://jawebdesign.ca/',
   base: SITE.base,
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
-  output: 'static',
   integrations: [
     tailwind({
       applyBaseStyles: false
@@ -51,12 +48,17 @@ export default defineConfig({
       SVG: false,
       Logger: 1
     }), tasks(),
-    sanityIntegration({
-      projectId: PUBLIC_SANITY_STUDIO_PROJECT_ID,
-      dataset: PUBLIC_SANITY_STUDIO_DATASET,
-      useCdn: true,
-      studioBasePath: '/admin',
-    }), react(),
+    storyblok({
+      accessToken: env.STORYBLOK_TOKEN,
+      components: {
+        // Add your components here
+      },
+      apiOptions: {
+        // Choose your Storyblok space region
+        region: 'ca', // optional,  or 'eu' (default)
+      },
+    }), 
+    react(),
   ],
   adapter: netlify(),
   image: {

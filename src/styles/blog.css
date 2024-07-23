@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css2?family=Orbitron:wght@700);
+@import url(https://fonts.googleapis.com/css2?family=Poppins);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.content blockquote {
+  padding: 1.5rem; 
+  margin-top: 1rem;
+  margin-bottom: 1rem; 
+  border-left-width: 4px; 
+  border-color: #D1D5DB; 
+  background-color: #102030;
+}
+
+.content blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color: #fff;
+  font-size: 6em;
+}
+
+.content img {
+  margin: 0 auto;
+}
+
+.content blockquote p {
+  display: inline;
+  margin-bottom: 1rem;
+  font-style: italic;
+  line-height: 1.625; 
+}
+
+/*blockquote > p > i > span {
+  font-size: 1.4rem;
+  font-style: italic; 
+  font-weight: 500; 
+  line-height: 1.625; 
+  color: white;
+}*/
+
+/*article > ul {
+  list-style-type: disc;
+  color: white;
+  margin: 1em;
+}*/
+
+.content a {
+  color: #0FFF50;
+  text-decoration: underline;
+}
+
+.content ul > li {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5rem;
+  color: white;
+  font-size: 1rem;
+  list-style-type:none;
+  background-image: url(/icons8-arrow-24.png);
+  background-repeat: no-repeat;
+  padding-left: 2em;
+  margin: 1em 0;
+}
+
+.sidebar ul > li {
+  list-style-type: ">";
+  padding: 0 0.6rem;
+  line-height: 2rem;
+  font-size: 1.3rem;
+}
+
+.inline-code {
+  background-color: #4d4d4d;
+  font-size: 0.9rem;
+  padding: 0.3rem;
+  color: #ff6666;
+  border-radius: 0.35em;
+  white-space: nowrap;
+}
+
+.content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  margin: 1.5rem 0;
+  color: white !important;
+  line-height: 1.8rem;
+}
+
+.content h1 {
+  font-family: "Orbitron", sans-serif;
+  margin: 2.5rem 0 1.5rem 0;
+}
+
+.content h3, .content h4, .content h5, .content h6 {
+  font-family: "Orbitron", sans-serif;
+  margin: 1.5rem 0;
+}
+
+.content h2 {
+  font-size: 1.5rem;
+  margin: 2.5rem 0 1.5rem 0;
+}
+
+.content h3 {
+  font-size: 1.2rem;
+}
+
+.caption {
+  font-style: italic;
+}
+
+.content b {
+  color: #0FFF50;
+}
+
+.astro-code {
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .content p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.15rem;
+    margin: 1.5rem 0;
+    color: white !important;
+    line-height: 1.8rem;
+  }
+
+  .content ul > li {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.7rem;
+    color: white;
+    font-size: 1.15rem;
+    list-style-type:none;
+    background-image: url(/icons8-arrow-24.png);
+    background-repeat: no-repeat;
+    padding-left: 2em;
+    margin: 1em 0;
+  }
+}

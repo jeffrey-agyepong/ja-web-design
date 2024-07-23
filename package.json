@@ -23,7 +23,6 @@
     "@fontsource-variable/raleway": "^5.0.20",
     "@fontsource/lato": "^5.0.21",
     "@fontsource/ubuntu": "^5.0.13",
-    "@storyblok/astro": "^5.0.0",
     "@types/react-dom": "^18.2.23",
     "astro": "^4.4.9",
     "astro-icon": "^1.1.0",

@@ -28,3 +28,19 @@ As businesses expand, their websites need the capacity to deal with larger amoun
 
 #### Plugin Ecosystem
 Although plugins add extra functionality to WordPress sites, they often present a host of issues. They often slow down sites, conflict with each other and cause security vulnerabilities. 
+
+### Why Astro is a better choice
+Astro is a lightweight JavaScript framework for building fast, content-driven websites. It addresses the drawbacks of WordPress by delivering a streamlined, performance-optimized solution for small business websites. Here's some ways that Astro outshines WordPress:
+
+- Low Maintenance
+
+- Simplicity
+
+- Enhanced Security
+
+- Scalability
+
+- Performance
+
+
+Astro is the ideal solution for small businesses aiming for performance, security, and simplicity, if you are looking to create a new website or redesign your existing one. At J.A Web Design, we specialize in utilizing Astro to deliver fast, secure and scalable websites that meet your business needs.

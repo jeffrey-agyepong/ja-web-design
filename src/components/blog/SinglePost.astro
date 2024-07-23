@@ -36,7 +36,7 @@ const { post, url } = Astro.props;
             post.category && (
               <>
                 {' '}
-                ·{' '}
+                {' '}
                 <a class="hover:underline inline-block" href={getPermalink(post.category.slug, 'category')}>
                   {post.category.title}
                 </a>

@@ -15,7 +15,7 @@ import storyblok from '@storyblok/astro';
 import { loadEnv } from "vite";
 import netlify from "@astrojs/netlify";
 
-const env = loadEnv("", process.cwd(), 'STORYBLOK')
+const env = loadEnv("", process.cwd(), 'STORYBLOK');
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const whenExternalScripts = (items = []) => ANALYTICS.vendors.googleAnalytics.id && ANALYTICS.vendors.googleAnalytics.partytown ? Array.isArray(items) ? items.map(item => item()) : [items()] : [];
 

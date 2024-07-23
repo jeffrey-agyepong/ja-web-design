@@ -1,7 +1,6 @@
 ---
 export const prerender = true;
 
-
 import { AstroSeo } from '@astrolib/seo';
 import Layout from '~/layouts/PageLayout.astro';
 
@@ -19,10 +18,10 @@ const metadata = {
 export async function getStaticPaths() {
   const posts = await sanityClient.fetch(`*[_type == "post" && defined(slug.current)]`);
   return posts.map((post) => {
-      return {
-        params: {
-          slug: post.slug.current,
-        },
+    return {
+      params: {
+        slug: post.slug.current,
+      },
     };
   });
 }
@@ -31,33 +30,32 @@ const { slug } = Astro.params;
 const { title, blockContent } = await sanityClient.fetch(`*[_type == "post" && slug.current == $slug][0]`, { slug });
 
 const components = {
-  type:{
+  type: {
     image: Image,
     cta: CTA,
   },
   list: List,
 };
 ---
-<AstroSeo
-  title={metadata.title}
-  description=""
-/>
+
+<AstroSeo title={metadata.title} description="" />
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
   <section
     class="mt-16 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] min-h-fit dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]"
   >
-    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 z-10 relative">
       <h2
-        class="max-w-24ch mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-4xl dark:text-white text-left capitalize"
+        class="mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-4xl dark:text-white text-left capitalize"
       >
-      {title}
+        {title}
       </h2>
-      <PortableText value={blockContent} components={components} />
     </div>
   </section>
 
   <!-- Blog Content ******************* -->
-  
+  <section class="max-w-screen-xl mx-auto">
+    <PortableText value={blockContent} components={components} />
+  </section>
 </Layout>

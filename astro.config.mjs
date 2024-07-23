@@ -57,7 +57,7 @@ export default defineConfig({
         // Choose your Storyblok space region
         region: 'ca', // optional,  or 'eu' (default)
       },
-    }), 
+    }),
     react(),
   ],
   adapter: netlify(),

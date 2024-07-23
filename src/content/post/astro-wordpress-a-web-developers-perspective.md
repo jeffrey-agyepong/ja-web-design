@@ -40,4 +40,4 @@ Enhanced Security: By minimizing the use of plugins and focusing on core functio
 Ready to Transform Your Website?
 If you’re looking to create a new website or redesign your existing one, Astro is the ideal solution for small businesses aiming for performance, security, and simplicity. At J.A Web Design, we specialize in leveraging Astro to deliver fast, secure, and scalable websites that meet your business needs.
 
-Contact J.A Web Design today to start your new website or redesign project and experience the Astro difference!
+Contact J.A Web Design today to start your new website or redesign project!

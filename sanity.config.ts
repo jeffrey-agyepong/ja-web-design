@@ -1,6 +1,11 @@
 import { defineConfig, defineArrayMember } from "sanity";
 import { structureTool } from "sanity/structure";
 
+const FontStyle = props => (
+  <span style={{fontFamily: 'Garamond', fontSize: '5rem'}}>{props.children} </span>
+);
+
+
 export default defineConfig({
   title: "J.A Web Design Sanity",
 
@@ -42,7 +47,7 @@ export default defineConfig({
                   { title: "H2", value: "h2" },
                   { title: "H3", value: "h3" },
                   { title: "H4", value: "h4" },
-                  { title: "Normal", value: "p" },
+                  { title: "P", value: "p", component: FontStyle },
                   { title: "Quote", value: "blockquote" },
                 ],
                 lists: [

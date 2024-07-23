@@ -25,8 +25,8 @@ export const headerData = {
       href: getPermalink('/about'),
     },
     {
-      text: 'Testimonials',
-      href: getPermalink('/index.html#testimonials'),
+      text: 'Blog',
+      href: getPermalink('/blog'),
     },
     {
       text: 'Contact',

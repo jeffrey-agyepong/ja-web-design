@@ -241,7 +241,10 @@ export const getStaticPathsBlogTag = async ({ paginate }: { paginate: PaginateFu
 
 /** */
 export function getRelatedPosts(allPosts: Post[], currentSlug: string, currentTags: string[]) {
-  if (!isBlogEnabled || !isRelatedPostsEnabled) return [];
+  if (!Array.isArray(allPosts)) {
+    console.error('Expected an array for allPosts');
+    return [];
+  }
 
   const relatedPosts = getRandomizedPosts(
     allPosts.filter((post) => post.slug !== currentSlug && post.tags?.some((tag) => currentTags.includes(tag))),

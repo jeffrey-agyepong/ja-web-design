@@ -1,3 +1,5 @@
+
+import astrowind from './vendor/integration';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { defineConfig, squooshImageService } from 'astro/config';
@@ -11,11 +13,9 @@ import tasks from './src/utils/tasks';
 import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin } from './src/utils/frontmatter.mjs';
 import { ANALYTICS, SITE } from './src/utils/config.ts';
 import react from "@astrojs/react";
-import storyblok from '@storyblok/astro';
-import { loadEnv } from "vite";
 import netlify from "@astrojs/netlify";
 
-const env = loadEnv("", process.cwd(), 'STORYBLOK');
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const whenExternalScripts = (items = []) => ANALYTICS.vendors.googleAnalytics.id && ANALYTICS.vendors.googleAnalytics.partytown ? Array.isArray(items) ? items.map(item => item()) : [items()] : [];
 
@@ -48,17 +48,10 @@ export default defineConfig({
       SVG: false,
       Logger: 1
     }), tasks(),
-    storyblok({
-      accessToken: env.STORYBLOK_TOKEN,
-      components: {
-        // Add your components here
-      },
-      apiOptions: {
-        // Choose your Storyblok space region
-        region: 'ca', // optional,  or 'eu' (default)
-      },
-    }),
     react(),
+    astrowind({
+      config: './src/config.yaml',
+    }),
   ],
   adapter: netlify(),
   image: {

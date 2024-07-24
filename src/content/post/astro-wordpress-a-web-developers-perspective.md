@@ -9,7 +9,7 @@ tags:
   - astro
   - wordpress
 metadata:
-  canonical: https://astrowind.vercel.app/get-started-website-with-astro-tailwind-css
+  canonical: https://jawebdesign.ca/astro-wordpress-a-web-developers-perspective
 ---
 
 Originally starting as a blogging platform, <a href="https://wordpress.org/" target="_blank">WordPress</a> now powers <a href="https://www.wpzoom.com/blog/wordpress-statistics/" target="_blank">43.4%</a> of all websites worldwide. For several small businesses seeking a new website or a redesign, their default choice is usually WordPress due to it’s notoriety and large ecosystem. However, after six years of working extensively in the WordPress landscape, I’ve faced several challenges that make it less ideal for small business websites. Instead, I now recommend <a href="https://astro.build/" target="_blank">Astro</a> for developing small business websites. Here’s five reasons why:
@@ -32,15 +32,18 @@ Although plugins add extra functionality to WordPress sites, they often present 
 ### Why Astro is a better choice
 Astro is a lightweight JavaScript framework for building fast, content-driven websites. It addresses the drawbacks of WordPress by delivering a streamlined, performance-optimized solution for small business websites. Here's some ways that Astro outshines WordPress:
 
-- Low Maintenance
-
-- Simplicity
-
-- Enhanced Security
-
-- Scalability
-
-- Performance
+#### Low Maintenance 
+Astro’s simpler architecture reduces the necessity of ongoing maintenance and frequent updates.
 
 
-Astro is the ideal solution for small businesses aiming for performance, security, and simplicity, if you are looking to create a new website or redesign your existing one. At J.A Web Design, we specialize in utilizing Astro to deliver fast, secure and scalable websites that meet your business needs.
+#### Enhanced Security  
+Astro generates static files, significantly minimizing the risk of cyber attack because it removes the dynamic layer often targeted by hackers.
+
+#### Scalability
+Designed with expansion in mind, Astro websites can handle significant growth without performance being compromised.
+
+#### Performance
+Astro uses a technique called partial hydration that guarantees that only necessary JavaScript is loaded on the site resulting in insanely-quick load times.
+
+
+Astro is the ideal solution for small businesses aiming for performance, security, and simplicity, if you are looking to create a new website or redesign your existing one. At <a href="https://jawebdesign.ca/services/web-design" target="_blank">J.A Web Design</a>, we specialize in utilizing Astro to deliver fast, secure and scalable websites suited to meet your business needs.

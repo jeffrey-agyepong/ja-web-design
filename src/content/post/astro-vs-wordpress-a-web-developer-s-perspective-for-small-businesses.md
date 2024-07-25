@@ -1,5 +1,5 @@
 ---
-publishDate: '2024-07-23T00:00:00.000Z'
+publishDate: 2024-07-23T00:00:00Z
 author: Jeffrey Agyepong
 title: 'Astro vs. WordPress: A Web Developer''s Perspective for Small Businesses'
 excerpt: >-

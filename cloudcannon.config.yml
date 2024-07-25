@@ -1,0 +1,20 @@
+collections_config: {}
+
+collection_groups:
+
+data_config:
+
+source:
+
+
+paths:
+  collections: ''
+  data: ''
+  layouts: null
+  uploads: uploads
+  static: ''
+
+
+source_editor:
+
+timezone: Etc/UTC

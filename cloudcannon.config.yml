@@ -1,4 +1,6 @@
-collections_config: {}
+collections_config:
+  posts:
+    path: src/content/post
 
 collection_groups:
 
@@ -8,11 +10,9 @@ source:
 
 
 paths:
-  collections: ''
-  data: ''
-  layouts: null
-  uploads: uploads
-  static: ''
+  static: public
+  uploads: src/assets/images
+
 
 
 source_editor:

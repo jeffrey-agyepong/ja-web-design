@@ -56,7 +56,10 @@
 /* #header.scroll > div:last-child {
   @apply py-3;
 } */
-
+.container-lg{
+  max-width: 1440px;
+  margin: 0 auto;
+}
 #header.expanded nav {
   position: fixed;
   top: 70px;

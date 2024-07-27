@@ -43,9 +43,9 @@ export const footerData = {
       links: [
         { text: 'About', href: getPermalink('/about') },
         { text: 'Projects', href: getPermalink('/index.html#projects') },
-        {
-          text: 'Performance', href: getPermalink('/posts/performance')
-        },
+        // {
+        //   text: 'Performance', href: getPermalink('/posts/performance')
+        // },
         { text: 'Services', href: getPermalink('/services') },
         { text: 'Contact', href: getPermalink('/contact') },
         { text: 'Pricing', href: getPermalink('/pricing') },
@@ -56,6 +56,18 @@ export const footerData = {
   secondaryLinks: [
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
     { text: 'Sitemap', href: 'https://jawebdesign.ca/sitemap-0.xml' },
+    {
+      text: 'Responsive design icons created by Flat Icons - Flaticon',
+      href: 'https://www.flaticon.com/free-icons/responsive-design',
+    },
+    {
+      text: 'Backend icons created by Flat Icons - Flaticon',
+      href: 'https://www.flaticon.com/free-icons/backend',
+    },
+    {
+      text: 'Web development icons created by Roundicons Premium - Flaticon',
+      href: 'https://www.flaticon.com/free-icons/web-development',
+    }
   ],
   socialLinks: [
     { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/company/j-a-web-design/' },

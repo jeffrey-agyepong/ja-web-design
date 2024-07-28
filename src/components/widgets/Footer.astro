@@ -26,17 +26,24 @@ export interface Props {
 const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme = 'light' } = Astro.props;
 ---
 
-<footer class:list={[{ dark: theme === 'dark' }, 'relative border-t border-gray-200 dark:border-slate-900 not-prose dark:bg-blue-700']}>
+<footer
+  class:list={[
+    { dark: theme === 'dark' },
+    'relative border-t border-gray-200 dark:border-slate-900 not-prose dark:bg-blue-700',
+  ]}
+>
   <div class="dark:bg-slate-900 absolute inset-0 pointer-events-none" aria-hidden="true"></div>
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 dark:text-slate-300">
-    <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 py-8 md:py-8">
-      <div class="col-span-12 lg:col-span-4">
+    <div class="grid grid-cols-12 gap-2 gap-y-8 sm:gap-8 py-8 md:py-8">
+      <div class="col-span-12 lg:col-span-5">
         <div class="mb-2">
           <a class="inline-block font-bold text-xl" href={getHomePermalink()}>{SITE?.name}</a>
         </div>
         <div class="text-sm text-muted">
           <p class="py-2">
-            J.A. Web Design is an award-winning company located in Edmonton, Alberta, specializing in custom web development and design. We create tailored websites for small to medium-sized businesses, non-profits, entrepreneurs, and outsourcing agencies across Canada.
+            J.A. Web Design is an award-winning company located in Edmonton, Alberta, specializing in custom web
+            development and design. We create tailored websites for small to medium-sized businesses, non-profits,
+            entrepreneurs, and outsourcing agencies across Canada.
           </p>
         </div>
         <div class="text-xs text-muted">
@@ -73,25 +80,55 @@ const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme 
           </div>
         ))
       }
-      <div class="col-span-12 lg:col-span-4">
+      <div class="col-span-12 lg:col-span-3">
         <div class="dark:text-gray-300 font-medium mb-2">Contact Us</div>
         <div class="text-sm dark:text-gray-400">
           <p class="mb-2">
-            <span class="font-medium">Email:</span> <a href="mailto:hello@jawebdesign.ca" class="hover:underline">hello@jawebdesign.ca</a>
+            <span class="font-medium">Email:</span>
+            <a href="mailto:hello@jawebdesign.ca" class="hover:underline">hello@jawebdesign.ca</a>
           </p>
           <p>
-            <span class="font-medium">Phone:</span> <a href="tel:7809837309" class="hover:underline">780 983 7309</a>
+            <span class="font-medium">Phone:</span>
+            <a href="tel:7809837309" class="hover:underline">780 983 7309</a>
           </p>
           <div class="mt-4">
-            <a href="https://www.sortlist.com/agency/j-a-web-design" target="_blank" style="display:inline-block; width:210px; height:60px;"><img src="https://core.sortlist.com//_/apps/core/images/badges-en/badge-flag-white-dark-xl.svg" alt="flag"/></a>
+            <a
+              href="https://www.sortlist.com/agency/j-a-web-design"
+              target="_blank"
+              style="display:inline-block; width:210px; height:60px;"
+              ><img
+                src="https://core.sortlist.com//_/apps/core/images/badges-en/badge-flag-white-dark-xl.svg"
+                alt="flag"
+              /></a
+            >
           </div>
-        <div class="mt-4">
-          <a href="https://upcity.com/profiles/j-a-web-design" target="_blank"><img src="https://app.upcity.com/images/badges/featured.png" width="200px" height="60px" alt="Featured on UpCity" /></a>
+          <div class="mt-4">
+            <a href="https://upcity.com/profiles/j-a-web-design" target="_blank"
+              ><img
+                src="https://app.upcity.com/images/badges/featured.png"
+                width="200px"
+                height="60px"
+                alt="Featured on UpCity"
+              /></a
+            >
+          </div>
+
         </div>
+      </div>
+      <div class="col-span-12 lg:col-span-2">
+        
+        <div class="mt-4">
+          <a target="_blank" href="https://itrate.co/web-developers/all"
+            ><img
+              width="130"
+              src="https://itrate.co/storage/mediakit/8-original.png?t=1651643861"
+              alt="Web Development"
+            /></a
+          >
         </div>
       </div>
     </div>
-   
+
     <div class="md:flex md:items-center md:justify-between py-6 md:py-4">
       {
         socialLinks?.length ? (

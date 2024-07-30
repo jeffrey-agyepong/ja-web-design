@@ -49,7 +49,7 @@ export const footerData = {
         { text: 'Services', href: getPermalink('/services') },
         { text: 'Contact', href: getPermalink('/contact') },
         { text: 'Pricing', href: getPermalink('/pricing') },
-        { text: 'Referral Program', href: getPermalink('/referral-program') }
+        // { text: 'Referral Program', href: getPermalink('/referral-program') }
       ],
     },
 

@@ -1,0 +1,195 @@
+---
+import Header from '~/components/ui/Header.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Referral Program | J.A Web Design',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+   <Header title="Referral Program" />
+
+  <!-- About Us -->
+  <section class="max-w-screen-xl mx-auto pt-20 lg:pt-[120px] pb-20 lg:pb-[120px]  dark:text-white">
+    <div class="container mx-auto">
+      <!-- <div class="wow fadeInUp  " data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s;"> -->
+
+      <div
+        class="flex overflow-x-auto sm:grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3"
+      >
+        <!-- dark:hover:bg-dark-blue -->
+        <div class="group rounded px-8 py-12 shadow bg-blue-700 dark:bg-header-dark-blue">
+          <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+            <div class="hidden group-hover:block">
+              <img src="src/assets/images/people.svg" alt="two people icon" />
+            </div>
+            <div class="block group-hover:hidden">
+              <img src="src/assets/images/people.svg" alt="two people icon" />
+            </div>
+          </div>
+          <div class="text-center">
+            <h3 class="pt-8 text-lg font-semibold capitalize text-white group-hover:text-yellow lg:text-xl">
+              You refer client to us
+            </h3>
+          </div>
+        </div>
+        <div class="group rounded px-8 py-12 shadow hover:bg-primary bg-blue-700 dark:bg-header-dark-blue">
+          <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+            <div class="hidden group-hover:block">
+              <img src="src/assets/images/icon-graphics-black.svg" alt="Web Design icon" />
+            </div>
+            <div class="block group-hover:hidden">
+              <img src="src/assets/images/icon-graphics-black.svg" alt="Web Design icon" />
+            </div>
+          </div>
+          <div class="text-center">
+            <h3 class="pt-8 text-lg font-semibold capitalize text-white group-hover:text-yellow lg:text-xl">
+              I develop the website
+            </h3>
+          </div>
+        </div>
+        <div class="group rounded px-8 py-12 shadow hover:bg-primary bg-blue-700 dark:bg-header-dark-blue">
+          <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+            <div class="hidden group-hover:block">
+              <img src="src/assets/images/commission.svg" alt="commission" />
+            </div>
+            <div class="block group-hover:hidden">
+              <img src="src/assets/images/commission.svg" alt="commission" />
+            </div>
+          </div>
+
+          <div class="text-center">
+            <h3 class="pt-8 text-lg font-semibold capitalize text-white group-hover:text-yellow lg:text-xl">
+              You get paid 10% of the project cost
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto flex flex-col-reverse md:flex-row py-5 md:py-10 md:mt-10">
+        <div class="w-full md:w-1/2 mx-auto">
+          <div class="leading-loose max-w-xl m-4 p-7 bg-blue-300 dark:bg-blue-900 rounded-xl shadow-xl text-left">
+            <p class="font-general-medium text-primary-dark dark:text-primary-light text-2xl mb-8">
+              Join Referral Program
+            </p>
+            <form action="#" class="font-general-regular space-y-7" data-netlify-recaptcha="true" method="POST">
+              <input type="hidden" name="form-name" value="form 1" />
+              <div>
+                <label class="block mb-2 text-lg text-primary-dark dark:text-primary-light" for="name">Full Name</label>
+                <input
+                  class="w-full px-5 py-3 border border-gray-300 dark:border-primary-dark border-opacity-50 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md"
+                  id="name"
+                  name="name"
+                  placeholder="Full Name"
+                  aria-label="name"
+                  type="text"
+                  required=""
+                />
+              </div>
+              <div>
+                <label class="block mb-2 text-lg text-primary-dark dark:text-primary-light" for="email">Email</label
+                ><input
+                  class="w-full px-5 py-3 border border-gray-300 dark:border-primary-dark border-opacity-50 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  aria-label="email"
+                  type="email"
+                  required=""
+                />
+              </div>
+              <div>
+                <label class="block mb-2 text-lg text-primary-dark dark:text-primary-light" for="phone"
+                  >Phone Number</label
+                >
+                <input
+                  class="w-full px-5 py-3 border border-gray-300 dark:border-primary-dark border-opacity-50 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md"
+                  id=""
+                  name="phone"
+                  placeholder="Phone Number"
+                  aria-label="phone"
+                  type="tel"
+                  required=""
+                />
+              </div>
+              <div>
+                <script src="https://www.google.com/recaptcha/api.js"></script>
+                <div class="g-recaptcha" data-sitekey="6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9">
+                  <div style="width: 304px; height: 78px;">
+                    <div>
+                      <iframe
+                        title="reCAPTCHA"
+                        width="304"
+                        height="78"
+                        role="presentation"
+                        name="a-a4d6s0g0gywg"
+                        frameborder="0"
+                        scrolling="no"
+                        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                        src="https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9&co=aHR0cHM6Ly9qYXdlYmRlc2lnbi5uZXRsaWZ5LmFwcDo0NDM.&hl=en&v=hfUfsXWZFeg83qqxrK27GB8P&size=normal&cb=qpzvmwix12i5"
+                      ></iframe>
+                    </div><textarea
+                      id="g-recaptcha-response"
+                      name="g-recaptcha-response"
+                      class="g-recaptcha-response"
+                      style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"
+                    ></textarea>
+                  </div><iframe style="display: none;"></iframe>
+                </div>
+                <noscript>
+                  <div>
+                    <div style="width: 302px; height: 422px; position: relative;">
+                      <div style="width: 302px; height: 422px; position: absolute;">
+                        <iframe
+                          src="https://www.google.com/recaptcha/api/fallback?k=6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9"
+                          frameborder="0"
+                          scrolling="no"
+                          style="width: 302px; height:422px; border-style: none;"
+                        >
+                        </iframe>
+                      </div>
+                    </div>
+                    <div
+                      style="width: 300px; height: 60px; border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;"
+                    >
+                      <textarea
+                        id="g-recaptcha-response"
+                        name="g-recaptcha-response"
+                        class="g-recaptcha-response"
+                        style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;"
+                      >
+                      </textarea>
+                    </div>
+                  </div>
+                </noscript>
+              </div>
+              <div>
+                <button
+                  class="px-4 py-2.5 text-white tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-lg duration-500"
+                  type="submit"
+                  aria-label="Send Message">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    title="Ready to launch your project?"
+    subtitle=""
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Get started now',
+        href: '/contact',
+      },
+    ]}
+  />
+</Layout>

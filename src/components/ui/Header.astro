@@ -1,0 +1,15 @@
+---
+const {title} = Astro.props;
+---
+
+<section
+  class="mt-16 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] min-h-fit dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]"
+>
+  <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
+    <h2
+      class="max-w-24ch mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-left capitalize"
+    >
+      {title}
+    </h2>
+  </div>
+</section>

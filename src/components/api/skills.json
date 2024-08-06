@@ -28,25 +28,9 @@
       "icon": "https://ik.imagekit.io/boxhuwbys/astrojs.svg?updatedAt=1712025376703"
     },
     {
-      "id": 7,
-      "name": "React",
-      "icon": "https://ik.imagekit.io/boxhuwbys/react-1-logo-svg-vector.svg?updatedAt=1714022220725"
-    },
-    {
       "id": 8,
       "name": "Tailwind CSS",
       "icon": "https://ik.imagekit.io/boxhuwbys/tailwind-svgrepo-com.svg?updatedAt=1712022546423"
-    },
-    {
-      "id": 9,
-      "name": "Joomla",
-      "icon": "https://ik.imagekit.io/boxhuwbys/joomla-logo.png?updatedAt=1714022985183"
-    },
-   
-    {
-      "id": 12,
-      "name": "Figma",
-      "icon": "https://ik.imagekit.io/boxhuwbys/figma-svgrepo-com.svg?updatedAt=1712022545465"
     }
   ]
 }

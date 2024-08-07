@@ -1,7 +1,7 @@
 ---
 publishDate: 2024-07-23T00:00:00Z
 author: Jeffrey Agyepong
-title: Why we no longer recommed WordPress for simple websites
+title: Why we no longer recommend WordPress for simple websites
 excerpt: >-
   Astro is a lightweight JavaScript framework for building fast, content-driven
   websites. It addresses the challenges of WordPress by offering a streamlined,

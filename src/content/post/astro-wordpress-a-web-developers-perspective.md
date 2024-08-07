@@ -14,11 +14,11 @@ tags:
 metadata:
   canonical: https://jawebdesign.ca/astro-wordpress-a-web-developers-perspective
 ---
-Originally starting as a blogging platform, <a href="https://wordpress.org/" target="_blank">WordPress</a> now powers <a href="https://www.wpzoom.com/blog/wordpress-statistics/" target="_blank">43.4%</a> of all websites worldwide. For several small businesses seeking a new website or a redesign, their default choice is usually WordPress due to it’s notoriety and large ecosystem. However, after six years of working extensively in the WordPress landscape, I’ve faced several challenges that make it less ideal for small business websites. Instead, I now recommend <a href="https://astro.build/" target="_blank">Astro</a> for developing small business websites. Here’s five reasons why:
+Originally starting as a blogging platform, <a href="https://wordpress.org/" target="_blank" rel="noopener">WordPress</a> now powers <a href="https://www.wpzoom.com/blog/wordpress-statistics/" target="_blank" rel="noopener">43.4%</a> of all websites worldwide. For several small businesses seeking a new website or a redesign, their default choice is usually WordPress due to it’s notoriety and large ecosystem. However, after six years of working extensively in the WordPress landscape, I’ve faced several challenges that make it less ideal for small business websites. Instead, I now recommend <a href="https://astro.build/" target="_blank" rel="noopener">Astro</a> for developing small business websites. Here are five reasons why:
 
 #### Security
 
-Due to WordPress’ popularity in the market, it’s often targeted by hackers through vulnerable or malicious plugins, weak passwords, lack of two-factor authentication. Security is a constant concern for WordPress sites.
+Due to WordPress’ popularity in the market, it’s often targeted by hackers through vulnerable or malicious plugins, weak passwords, and lack of two-factor authentication. Security is a constant concern for WordPress sites.
 
 #### Maintenance
 
@@ -56,4 +56,4 @@ Designed with expansion in mind, Astro websites can handle significant growth wi
 
 Astro uses a technique called partial hydration that guarantees that only necessary JavaScript is loaded on the site resulting in insanely-quick load times.
 
-Astro is the ideal solution for small businesses aiming for performance, security, and simplicity, if you are looking to create a new website or redesign your existing one. At <a href="https://jawebdesign.ca/services/web-design" target="_blank">J.A Web Design</a>, we specialize in utilizing Astro to deliver fast, secure and scalable websites suited to meet your business needs.
+Astro is the ideal solution for small businesses aiming for performance, security, and simplicity, if you are looking to create a new website or redesign your existing one. At <a href="https://jawebdesign.ca/services/web-design" target="_blank" rel="noopener">J.A Web Design</a>, we specialize in utilizing Astro to deliver fast, secure and scalable websites suited to meet your business needs.

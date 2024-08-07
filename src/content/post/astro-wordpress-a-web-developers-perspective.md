@@ -18,7 +18,7 @@ Originally starting as a blogging platform, <a href="https://wordpress.org/" tar
 
 #### Security
 
-Due to WordPress’ popularity in the market, it’s often targeted by hackers through vulnerable or malicious plugins, weak passwords, and lack of two-factor authentication. Security is a constant concern for WordPress sites.
+Due to WordPress’ popularity in the market, it’s often targeted by hackers through vulnerable or malicious plugins, weak passwords, and lack of two-factor authentication. Security is a constant concern for WordPress sites. I've personally had several of my clients' WordPress sites hacked, and the struggle to maintain security is not worth it.
 
 #### Maintenance
 

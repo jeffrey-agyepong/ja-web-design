@@ -6,10 +6,9 @@ excerpt: Test
 image: https://ik.imagekit.io/boxhuwbys/wordpress-dev-ja-web-design.webp
 category: Web Development
 tags:
-  -
-  -
+  - test
 metadata:
-  canonical:
+  canonical: https://jawebdesign.ca/posts/test
 ---
 # H1
 

@@ -53,4 +53,3 @@ markdown:
   engine:
   options:
 encoding: utf-8
-timezone: Etc/UTC

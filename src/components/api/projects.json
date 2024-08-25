@@ -1,6 +1,13 @@
 {
   "projects": [
     {
+      "title": "Mako Construction & Renovation",
+      "link": "https://indiagarden.ca/",
+      "image": "https://ik.imagekit.io/azupnt3mqx/ja-web-design-mako-construction-renovation.webp",
+      "description": "Astro, CloudCannon, Cloudflare, Netlify"
+      
+    },
+    {
       "id": 1,
       "title": "India Garden",
       "link": "https://indiagarden.ca/",
@@ -37,13 +44,6 @@
       "link": "index.html",
       "image": "https://ik.imagekit.io/boxhuwbys/jawebdesign.webp?updatedAt=1714550475083",
       "description": "Astro, Tailwind CSS, Sanity.io, Cloudflare, Netlify"
-    },
-    {
-      "id": 7,
-      "title": "MAB Accounting & Tax Services",
-      "link": "https://mabtaxservices.com/",
-      "image": "https://ik.imagekit.io/boxhuwbys/mab.webp?updatedAt=1714553877481",
-      "description": "Astro, Tailwind CSS, Cloudflare, Netlify"
     }
   ]
 }

@@ -13,7 +13,6 @@ import tasks from './src/utils/tasks';
 import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin } from './src/utils/frontmatter.mjs';
 import { ANALYTICS, SITE } from './src/utils/config.ts';
 import react from "@astrojs/react";
-import netlify from "@astrojs/netlify";
 
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -53,7 +52,6 @@ export default defineConfig({
       config: './src/config.yaml',
     }),
   ],
-  adapter: netlify(),
   image: {
     service: squooshImageService()
   },

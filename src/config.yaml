@@ -11,14 +11,14 @@ metadata:
   title:
     default: J.A Web Design
     template: '%s — J.A Web Design'
-  description: ""
+  description: "J.A. Web Design is an award-winning company located in Edmonton, Alberta, specializing in custom web development and design. We create tailored websites for small to medium-sized businesses, non-profits, entrepreneurs, and outsourcing agencies across Canada."
   robots:
     index: true
     follow: true
   openGraph:
     site_name: J.A Web Design
     images:
-      - url: '~/assets/images/default.png'
+      - url: '/ja-web-design-logo.webp'
         width: 1200
         height: 628
     type: website

@@ -77,7 +77,7 @@ export const footerData = {
   ],
   footNote: `
     <div class="sm:flex gap-80 justify-center items-center">
-    <p>Developed by <a href="https://jawebdesign.ca/" class="text-green-400">J.A Web Design</a>
+    <p>Developed by <a href="https://jawebdesign.ca/" class="text-green-700 dark:text-green-400">J.A Web Design</a>
     </p>
      <p>
     © 2024 J.A Web Design 

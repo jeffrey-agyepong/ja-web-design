@@ -1,5 +1,5 @@
 ---
-title: 'Privacy Policy'
+title: 'Privacy Policy | J.A Web Design | Edmonton, Alberta'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 

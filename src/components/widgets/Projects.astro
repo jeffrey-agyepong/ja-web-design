@@ -15,12 +15,12 @@ import projectsData from '../api/projects.json';
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              key="{project.id}"
+              key={project.id}
               class="mx-auto transform transition-all hover:scale-105 md:mx-0 bg-slate-900 shadow-lg dark:bg-ternary-dark rounded-xl project-card hover:drop-shadow-3xl"
             >
               <img
                 src={project.image}
-                alt="{project.title}"
+                alt={`${project.title} - J.A Web Design`}
                 class="w-full shadow rounded-t-xl object-fit"
                width="800" height="533"
               />

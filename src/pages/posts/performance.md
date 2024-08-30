@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownLayout.astro
-title: Page Speed Results
+title: Page Speed Results | J.A Web Design | Edmonton, Alberta
 ---
 
 

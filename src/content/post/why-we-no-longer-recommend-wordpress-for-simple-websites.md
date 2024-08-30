@@ -1,18 +1,8 @@
 ---
-publishDate: 2024-07-23T00:00:00Z
+_schema: default
+title: Why we no longer recommend traditional WordPress for simple websites
 author: Jeffrey Agyepong
-title: Why we no longer recommend WordPress for simple websites
-excerpt: >-
-  Astro is a lightweight JavaScript framework for building fast, content-driven
-  websites. It addresses the challenges of WordPress by offering a streamlined,
-  performance-optimized solution for small business websites.
 image: https://ik.imagekit.io/boxhuwbys/wordpress-dev-ja-web-design.webp
-category: Web Development
-tags:
-  - astro
-  - wordpress
-metadata:
-  canonical: https://jawebdesign.ca/astro-wordpress-a-web-developers-perspective
 ---
 Originally starting as a blogging platform, <a href="https://wordpress.org/" target="_blank" rel="noopener">WordPress</a> now powers <a href="https://www.wpzoom.com/blog/wordpress-statistics/" target="_blank" rel="noopener">43.4%</a> of all websites worldwide. For several small businesses seeking a new website or a redesign, their default choice is usually WordPress due to it’s notoriety and large ecosystem. However, after six years of working extensively in the WordPress landscape, I’ve faced several challenges that make it less ideal for small business websites. Instead, I now recommend <a href="https://astro.build/" target="_blank" rel="noopener">Astro</a> for developing small business websites. Here are five reasons why:
 

@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownLayout.astro
-title: All India Restaurant and Sweets | J.A Web Design | Edmonton, Alberta
+title: All India Restaurant and Sweets
 ---
 
 ![All India Restaurant Old Website](https://ik.imagekit.io/boxhuwbys/all-india-old.webp?updatedAt=1712904143365)

@@ -1,6 +1,8 @@
 ---
 _schema: default
-title: Why we no longer recommend traditional WordPress for simple websites
+title: >-
+  Is traditional WordPress still the right choice for simple websites in
+  Edmonton?
 author: Jeffrey Agyepong
 image: https://ik.imagekit.io/boxhuwbys/wordpress-dev-ja-web-design.webp
 ---

@@ -1,4 +1,3 @@
-<<<<<<< HEAD:src/content/post/is-traditional-wordpress-still-the-right-choice-for-simple-websites-in-edmonton.md
 ---
 _schema: default
 title: >-

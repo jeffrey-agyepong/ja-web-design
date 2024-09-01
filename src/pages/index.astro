@@ -4,7 +4,9 @@ import Layout from '~/layouts/PageLayout.astro';
 import About from '~/components/widgets/About.astro';
 import Badges from '~/components/widgets/Badges.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content from '~/components/widgets/Content.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
+import Features from '~/components/widgets/Features.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Projects from '~/components/widgets/Projects.astro';
@@ -28,8 +30,7 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  
-  <Hero actions={[{ text: 'Request A Quote', href: '/contact' }]}>
+  <Hero actions={[{ text: 'Our Services', href: '/services' },{text: 'Get In Touch', href: '/services', class:'bg-red-900' }]}>
     <Fragment slot="title">
       <h2
         class="max-w-22ch mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-left capitalize"
@@ -46,6 +47,65 @@ const metadata = {
     </Fragment>
   </Hero>
 
+
+
+  <Features
+  id="features"
+  tagline="Features"
+  title="What Does Your Business Need in a Website?"
+  subtitle="Every business is different. But whether in Edmonton, Canada, or the United States, all businesses share a variety of goals in differing order of priority. "
+  items={[
+    {
+      title: 'Custom Web Development',
+      description:
+        "Performance, dependability and a website that's uniquely yours",
+      icon: 'tabler:code-circle-2',
+    },
+    {
+      title: 'Performance and Speed',
+      description:
+        "Maintain viewer interest by catering to short attention spans ",
+      icon: 'tabler:rocket',
+    },
+    {
+      title: 'Scalable',
+      description:
+        'Act now, grow later',
+      icon: 'tabler:text-resize',
+    },
+    {
+      title: 'Search Engine Optimization (SEO)',
+      description:
+        'A website cannot have power if no one can find it. Draw more attention by ranking in organic searches. ',
+      icon: 'tabler:seo',
+    },
+    {
+      title: 'Security',
+      description:
+        'Worry free for your visitors, while you can work without fraud, scams, and annoying marketing ploys. ',
+      icon: 'tabler:lock',
+    },
+    {
+      title: 'Responsiveness',
+      description:
+        "Effectively reach all your prospective clients, including the vast majority on those small mobile devices. ",
+      icon: 'tabler:device-mobile',
+    },
+    {
+      title: 'Copywriting and Web Design',
+      description:
+        'Through accurate strategy, communicate effectively, capture interest, and convert viewers to clients',
+      icon: 'tabler:pencil-code',
+    },
+    {
+      title: 'Maintenance and Support',
+      description:
+        'A worry free website so you can focus on your job',
+      icon: 'tabler:message-chatbot',
+    }
+  ]}
+/>
+  
   <Badges/>
 
   <!-- Slider -->

@@ -1,7 +1,7 @@
 ---
 _schema: default
 title: >-
-Is traditional WordPress still the right choice for small business websites in Edmonton?
+  Is traditional WordPress still the right choice for small business websites in Edmonton?
 author: Jeffrey Agyepong
 image: https://ik.imagekit.io/boxhuwbys/wordpress-dev-ja-web-design.webp
 ---

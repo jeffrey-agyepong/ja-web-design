@@ -1,6 +1,7 @@
 ---
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import Features3 from '~/components/widgets/Features3.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features3 from '../components/widgets/Features3.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 import { getPermalink } from '../utils/permalinks';
@@ -28,9 +29,7 @@ const metadata = {
       >
         Services
       </h2>
-      <p class="text-left">
-        Quality Web Design and Development Based in the Edmonton Area
-      </p>
+      <p class="text-left">Quality Web Design and Development Based in the Edmonton Area</p>
     </div>
     <div
       class="bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900 w-full h-full absolute top-0 left-0 z-0"
@@ -38,36 +37,124 @@ const metadata = {
     </div>
   </section>
 
-  <!-- Features3 Widget ************** -->
 
+  <!-- Content Widget **************** -->
+
+  <Content
+    tagline="Website Development"
+    title="Unmatched Quality Achieved with Custom Development"
+    items={[
+      {
+        title: 'Coding and Programming',
+        description: 'Watch your website come to life and your business technical needs met.',
+      },
+      {
+        title: 'Web Hosting',
+        description:'We’ll find the best web hosting for you, ensuring reliable performance.',
+      },
+      {
+        title: 'Domain Registration',
+        description:'We’ll help you acquire an effective and affordable domain name.',
+      },
+      {
+        title:'Website Speed Optimization',
+        description:'We’ll make sure your site performs at optimal speed 100% of the time. This reduces bounce rates caused by slow loading times.'
+      },
+      {
+        title:'Responsiveness',
+        description:'Effectively reach the huge mobile audience. '
+      }
+    ]}
+    image={{
+      src: 'https://ik.imagekit.io/boxhuwbys/ja-web-services-web-development-bg.webp',
+      alt: 'J.A Web Design - Web Development, Edmonton, Alberta',
+    }}
+  >
+    <Fragment slot="content">
+      <p class="mb-8 text-lg font-normal text-gray-900 lg:text-base dark:text-gray-200 text-left">
+        At J.A Web Design we choose to focus on the performance and security of the website we provide to our clients.
+        Many websites on the website could improve with a little attention to detail. There are many strategies and
+        elements that go into the development of a website. We use only the best of these to ensure quality and
+        reliability.
+      </p>
+      <p class="mb-8 text-lg font-normal text-gray-900 lg:text-base dark:text-gray-200 text-left">
+        In modern times, security is an increasing concern. Many developers leave the security of the website a problem
+        for their client. We do not. It can be an overwhelming topic. we want to use the knowledge we've already
+        acquired to take a weight off your shoulders.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+   <!-- Content Widget **************** -->
+
+   <Content
+   isReversed
+   tagline="Web Design and Copywriting"
+   title="Reach New Heights with Detailed Website Strategy and Design"
+   items={[
+     {
+       title: 'Strategy',
+       description: 'What does your website need to communicate? Who is your target audience? How can you best reach them? Questions like these and many more ensure a website is achieving its goals in the best way possible.',
+     },
+     {
+       title: 'Copywriting',
+       description:'Content can make or break a website. Quality content will accommodate the psychology of your desired clientele, turning viewers into customers.',
+     },
+     {
+       title: 'Wireframes',
+       description:"Carefully considered structure will make sure your visitors' questions are answered promptly and pertinent information easily found.",
+     },
+     {
+       title:'Design',
+       description:"The content and structure come together with the company's branding to create a cohesive experience that speaks."
+     },
+   ]}
+   image={{
+     src: 'https://ik.imagekit.io/boxhuwbys/ja-web-design-services-website-design.webp',
+     alt: 'J.A Web Design - Website Design, Edmonton, Alberta',
+   }}
+ >
+   <Fragment slot="content">
+     <p class="mb-8 text-lg font-normal text-gray-900 lg:text-base dark:text-gray-200 text-left">
+      Our focus is in development, but we know good websites require detailed creation. We work with talented designers such as <a href="https://www.silken-design.com/" target="_blank" rel="noopener noreferrer" class="text-red-400">SILKEN</a> and <a href="https://rinalynne.com/services" target="_blank" rel="noopener noreferrer" class="text-red-400">Rina Lynne Design</a> to achieve the best results.
+     </p>
+     <p class="mb-8 text-lg font-normal text-gray-900 lg:text-base dark:text-gray-200 text-left">
+      The design aspect of a website addresses how it communicates with and maintains the interest of viewers. It guarantees a unique look that stands out among your competition.  Embody your company's reputation through a website that is easy to use and visually appealing.
+     </p>
+   </Fragment>
+
+   <Fragment slot="bg">
+     <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+   </Fragment>
+ </Content>
+
+  <!-- Features3 Widget ************** -->
+<div class="container-lg">
   <Features3
-    title=""
+    title="Our Other Services"
     subtitle="These are the services we offer "
     tagline=""
     items={[
       {
-        title: 'Web Development ',
-        description:
-          'Our web development services bring your ideas to life with expert coding and programming. We build custom websites that are visually engaging, user-friendly, and optimized for performance, ensuring a seamless browsing experience for your visitors.',
-        image: 'https://ik.imagekit.io/boxhuwbys/icon-development-white.svg?updatedAt=1711779871947',
+        title: 'Website Maintenance and Support',
+        description:'It is important to us that your website not only functions and meets your needs now, but that it continues to do so in the future. We provide upkeep services so that you can work worry free. We’ll ensure that your website is running effectively, that any bugs are found and fixed, and that it remains secure. Each website has different needs in this department. Some require frequent updates to content, while others it is occasionally. For this reason we focus on tailoring our services to meet your needs.',
+        image: 'https://ik.imagekit.io/boxhuwbys/web-maintenance-white.svg',
       },
       {
-        title: 'Web Design',
+        title: 'SEO Optimization',
         description:
-          "Our creative web design solutions combine aesthetics and functionality to create visually stunning websites that capture your brand's essence. We focus on user experience, ensuring intuitive navigation, appealing layouts, and responsive design for a seamless interaction across all devices.",
-        image: 'https://ik.imagekit.io/boxhuwbys/icon-graphics-white.svg?updatedAt=1711779872004',
+          "What good is a website if it cannot be found by potential clientele? For this reason we prioritize good SEO so that your company can get found. Detailed research and implementation will help you website rank on google and come up, not only when someone searches your brand name but also when they search topics relevant to your services.",
+        image: 'https://ik.imagekit.io/boxhuwbys/seo-white.svg',
       },
-      // {
-      //   title: 'Website Maintenance ',
-      //   description:
-      //     "Our website maintenance services ensure that your website remains up-to-date, secure, and optimized. We handle regular updates, security patches, backups, and performance monitoring, allowing you to focus on your core business while we take care of your website's maintenance needs.",
-      //   image: 'https://ik.imagekit.io/boxhuwbys/web-maintenance-white.svg?updatedAt=1711779871951',
-      // },
       {
-        title: 'E-commerce Development',
+        title: 'Graphic Design',
         description:
-          "Our e-commerce development services help you establish a robust online store that drives sales and enhances customer engagement. We create custom e-commerce solutions that are tailored to your business needs, ensuring a seamless shopping experience for your customers.",
-        image: 'https://ik.imagekit.io/boxhuwbys/e-commerce.svg?updatedAt=1719119543607',
+          " No one likes using ready made graphics. They're easy to identify and take away from the overall online presentation of your company. Customizing small details such as graphics can elevate your brand and distinguish you as different among your competitors.",
+        image: 'https://ik.imagekit.io/boxhuwbys/graphic-design-white.svg',
       },
      
     ]}
@@ -76,6 +163,7 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Features3>
+</div>
 
   <!-- CallToAction Widget *********** -->
 

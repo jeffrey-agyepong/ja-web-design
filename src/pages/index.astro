@@ -4,7 +4,6 @@ import Layout from '~/layouts/PageLayout.astro';
 import About from '~/components/widgets/About.astro';
 import Badges from '~/components/widgets/Badges.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import Content from '~/components/widgets/Content.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features3 from '~/components/widgets/Features3.astro';
@@ -142,29 +141,30 @@ const metadata = {
           "Through proper strategy and research your website can communicate effectively with potential clients. A branded experience will help your business stand out among its competitors.",
         image: 'https://ik.imagekit.io/boxhuwbys/responsive-design.png?updatedAt=1722064019152',
       },
+      
+      {
+        title: 'Copywriting',
+        description:
+          'Through proper strategy and research your website can communicate effectively with potential clients. Content can make all the difference in converting visitors to clients and getting found on Google.',
+        image: 'https://ik.imagekit.io/boxhuwbys/ja-web-design-services-copywriting.png',
+      },
       {
         title: 'Website Maintenance & Support',
         description:
-          'You will never be alone. Let the experts look after the website so you can focus on what matters. Without stress your website will remain optimized, up-to-date, and secure.s',
-        image: 'https://ik.imagekit.io/boxhuwbys/web-maintenance-white.svg?updatedAt=1711779871951',
-      },
-      {
-        title: 'E-commerce Development',
-        description:
-          'Our e-commerce development services help you establish a robust online store that drives sales and enhances customer engagement.',
-        image: 'https://ik.imagekit.io/boxhuwbys/shopping-ja-web-design.png?updatedAt=1722065621055',
+          'You will never be alone. Let the experts look after the website so you can focus on what matters. Without stress your website will remain optimized, up-to-date, and secure.',
+        image: 'https://ik.imagekit.io/boxhuwbys/ja-web-design-services-website-maintainance.png',
       },
       {
         title: 'Graphic Design ',
         description:
           ' Custom graphics will create a coherent brand identity and resonate with your desired clientele.',
-        image: 'https://ik.imagekit.io/boxhuwbys/graphic-design-white.svg?updatedAt=1711779871901',
+        image: 'https://ik.imagekit.io/boxhuwbys/ja-web-design-services-graphic-design.png',
       },
       {
         title: 'SEO',
         description:
-          'Your website will be optimized to rank well on google and drive organic traffic.',
-        image: 'https://ik.imagekit.io/boxhuwbys/seo-white.svg?updatedAt=1711779871975',
+          'Your website will be optimized to rank well on Google and drive organic traffic.',
+        image: 'https://ik.imagekit.io/boxhuwbys/ja-web-design-search-engine-optimization.png',
       },
     ]}
   >
@@ -263,11 +263,11 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Contact Us',
+        text: 'Get In Touch',
         href: getPermalink('/contact'),
       },
     ]}
   >
-    <Fragment slot="title"> Have any questions? </Fragment>
+    <Fragment slot="title"> Ready to get started? <br> Have any questions? </Fragment>
   </CallToAction>
 </Layout>

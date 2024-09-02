@@ -10,7 +10,7 @@ const {
 } = Astro.props as Headline;
 
 const {
-  container: containerClass = 'max-w-3xl',
+  container: containerClass = 'max-w-7xl',
   title: titleClass = 'text-3xl md:text-4xl ',
   subtitle: subtitleClass = 'text-xl',
 } = classes;
@@ -29,7 +29,7 @@ const {
         />
       )}
 
-      {subtitle && <p class={twMerge('mt-4 text-muted', subtitleClass)} set:html={subtitle} />}
+      {subtitle && <p class={twMerge('mt-4 text-muted text-left', subtitleClass)} set:html={subtitle} />}
     </div>
   )
 }

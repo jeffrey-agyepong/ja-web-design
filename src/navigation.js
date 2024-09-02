@@ -11,13 +11,13 @@ export const headerData = {
       href: getPermalink('/services'),
       links: [
         {
+          text: 'All Services',
+          href: getPermalink('/services'),
+        },
+        {
           text: 'Web Design',
           href: getPermalink('/services/web-design'),
         },
-        // {
-        //   text: 'E-commerce',
-        //   href: getPermalink('/services/e-commerce'),
-        // },
       ],
     },
     {

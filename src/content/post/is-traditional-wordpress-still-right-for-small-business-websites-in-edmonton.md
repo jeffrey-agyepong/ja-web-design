@@ -1,7 +1,7 @@
 ---
 _schema: default
 title: >-
-  Is traditional WordPress still the right choice for simple websites in
+  Is traditional WordPress still the right choice for small business websites in
   Edmonton?
 author: Jeffrey Agyepong
 image: https://ik.imagekit.io/boxhuwbys/wordpress-dev-ja-web-design.webp
@@ -48,15 +48,16 @@ Designed with expansion in mind, Astro websites can handle significant growth wi
 
 Astro uses a technique called partial hydration that guarantees that only necessary JavaScript is loaded on the site resulting in insanely-quick load times.
 
-Astro is the ideal solution for small businesses aiming for performance, security, and simplicity, if you want to create a new website or redesign your existing one. At <a href="https://jawebdesign.ca/services/web-design" target="_blank" rel="noopener">J.A Web Design</a>, we specialize in utilizing Astro to deliver fast, secure, and scalable websites that meet your business needs.
-=======
+# Astro is the ideal solution for small businesses aiming for performance, security, and simplicity, if you want to create a new website or redesign your existing one. At <a href="https://jawebdesign.ca/services/web-design" target="_blank" rel="noopener">J.A Web Design</a>, we specialize in utilizing Astro to deliver fast, secure, and scalable websites that meet your business needs.
+
 ---
-_schema: default
-title: >-
-  Is traditional WordPress still the right choice for small business websites in Edmonton?
+
+## \_schema: default
+title: &gt;-
+Is traditional WordPress still the right choice for small business websites in Edmonton?
 author: Jeffrey Agyepong
 image: https://ik.imagekit.io/boxhuwbys/wordpress-dev-ja-web-design.webp
----
+
 Originally starting as a blogging platform, <a href="https://wordpress.org/" target="_blank" rel="noopener">WordPress</a> now powers <a href="https://www.wpzoom.com/blog/wordpress-statistics/" target="_blank" rel="noopener">43.4%</a> of all websites worldwide. For several small businesses seeking a new website or a redesign, their default choice is usually WordPress due to it’s notoriety and large ecosystem. However, after six years of working extensively in the WordPress landscape, I’ve faced several challenges that make it less ideal for small business websites. Instead, I now recommend <a href="https://astro.build/" target="_blank" rel="noopener">Astro</a> for developing small business websites. Here are five reasons why:
 
 #### Security
@@ -100,4 +101,5 @@ Designed with expansion in mind, Astro websites can handle significant growth wi
 Astro uses a technique called partial hydration that guarantees that only necessary JavaScript is loaded on the site resulting in insanely-quick load times.
 
 Astro is the ideal solution for small businesses aiming for performance, security, and simplicity, if you want to create a new website or redesign your existing one. At <a href="https://jawebdesign.ca/services/web-design" target="_blank" rel="noopener">J.A Web Design</a>, we specialize in utilizing Astro to deliver fast, secure, and scalable websites that meet your business needs.
->>>>>>> 704e55e91f51c102e761d3e26070e45f1cd3d93b:src/content/post/is-traditional-wordpress-still-right-for-small-business-websites-in-edmonton.md
+
+> > > > > > > 704e55e91f51c102e761d3e26070e45f1cd3d93b:src/content/post/is-traditional-wordpress-still-right-for-small-business-websites-in-edmonton.md

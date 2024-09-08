@@ -30,7 +30,7 @@ Although plugins add extra functionality to WordPress sites, they often present 
 
 ### Why Astro is a better choice
 
-Astro is a lightweight JavaScript framework for building fast, content-driven websites. It addresses the drawbacks of WordPress by delivering a streamlined, performance-optimized solution for small business websites. Here are some ways that the combination of **headless WordPress** with an **Astro** front end ** ** outshines traditional WordPress:
+Astro is a lightweight JavaScript framework for building fast, content-driven websites. It addresses the drawbacks of WordPress by delivering a streamlined, performance-optimized solution for small business websites. Here are some ways that the combination of **headless WordPress** with an **Astro** front end outshines traditional WordPress:
 
 #### Low Maintenance
 

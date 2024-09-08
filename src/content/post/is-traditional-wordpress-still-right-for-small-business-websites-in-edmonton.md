@@ -46,8 +46,10 @@ Designed with expansion in mind, Astro websites can handle significant growth wi
 
 #### Performance
 
-Astro uses a technique called partial hydration that guarantees that only necessary JavaScript is loaded on the site resulting in insanely-quick load times.
+Astro uses a technique called partial hydration that guarantees that only necessary JavaScript is loaded on the site resulting in insanely quick load times.
 
-Astro is the ideal solution for small businesses aiming for performance, security, and simplicity, if you want to create a new website or redesign your existing one. At <a href="https://jawebdesign.ca/services/web-design" target="_blank" rel="noopener">J.A Web Design</a>, we specialize in utilizing Astro to deliver fast, secure, and scalable websites that meet your business needs.
+&nbsp;
+
+*Astro is the ideal solution for small businesses aiming for performance, security, and simplicity if you want to create a new website or redesign your existing one. At* <a href="https://jawebdesign.ca/services/web-design" target="_blank" rel="noopener"><em>J.A Web Design</em></a>*, we specialize in utilizing Astro to deliver fast, secure, and scalable websites that meet your business needs.*
 
 ---

@@ -98,18 +98,15 @@
 .dd *:first-child {
   margin-top: 0;
 }
+header,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family:  'Segoe UI', Helvetica, 'Gill Sans', sans-serif;
+  font-family:  'Raleway','Segoe UI', Helvetica, 'Gill Sans', sans-serif;
 }
-header{
-  font-family: 'Raleway', Helvetica, 'Gill Sans', sans-serif;
-}
-
 
 
 .logos-slider-container img {

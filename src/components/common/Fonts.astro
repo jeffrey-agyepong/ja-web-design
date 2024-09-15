@@ -4,10 +4,14 @@ import { AstroFont } from "astro-font";
 <AstroFont
       config={[
         {
-          src: [],
+            src: [
+            {
+              style: 'normal',
+              weight: '400, 600, 700, 900',
+              path: './public/fonts/Raleway-VariableFont.woff2'
+            },
+          ],
           name: "Raleway",
-          // Google Fonts URL
-          googleFontsURL: 'https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap',
           preload: true,
           display: "swap",
           selector: "body",

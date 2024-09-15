@@ -1,18 +1,19 @@
-
 import astrowind from './vendor/integration';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { defineConfig, squooshImageService } from 'astro/config';
+import { defineConfig, passthroughImageService } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import mdx from '@astrojs/mdx';
 import partytown from '@astrojs/partytown';
 import icon from 'astro-icon';
-import compress from 'astro-compress';
 import tasks from './src/utils/tasks';
 import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin } from './src/utils/frontmatter.mjs';
 import { ANALYTICS, SITE } from './src/utils/config.ts';
 import react from "@astrojs/react";
+
+
+import playformCompress from '@playform/compress';
 
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -23,10 +24,9 @@ export default defineConfig({
   site: 'https://jawebdesign.ca/',
   base: SITE.base,
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
-  integrations: [
-    tailwind({
-      applyBaseStyles: false
-    }), sitemap(), mdx(), icon({
+  integrations: [tailwind({
+    applyBaseStyles: false
+  }), sitemap(), mdx(), icon({
       include: {
         tabler: ['*'],
         'flat-color-icons': ['template', 'gallery', 'approval', 'document', 'advertising', 'currency-exchange', 'voice-presentation', 'business-contact', 'database']
@@ -35,7 +35,11 @@ export default defineConfig({
       config: {
         forward: ['dataLayer.push']
       }
-    })), compress({
+    })),
+    tasks(), react(), astrowind({
+    config: './src/config.yaml',
+  }), playformCompress(
+    {
       CSS: true,
       HTML: {
         'html-minifier-terser': {
@@ -46,14 +50,10 @@ export default defineConfig({
       JavaScript: true,
       SVG: false,
       Logger: 1
-    }), tasks(),
-    react(),
-    astrowind({
-      config: './src/config.yaml',
-    }),
-  ],
+    }
+  )],
   image: {
-    service: squooshImageService()
+    service: passthroughImageService()
   },
   markdown: {
     remarkPlugins: [readingTimeRemarkPlugin],

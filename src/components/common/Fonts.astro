@@ -1,6 +1,20 @@
 ---
-import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
+import { AstroFont } from "astro-font";
 ---
-<GoogleFontsOptimizer url="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap">
-</GoogleFontsOptimizer>
+<AstroFont
+      config={[
+        {
+          src: [],
+          name: "Raleway",
+          // Google Fonts URL
+          googleFontsURL: 'https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap',
+          preload: true,
+          display: "swap",
+          selector: "body",
+          fallback: "sans-serif",
+        },
+      ]}
+    />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+
+

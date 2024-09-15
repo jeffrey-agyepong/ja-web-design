@@ -24,7 +24,7 @@
     "@fontsource/ubuntu": "^5.0.13",
     "@types/react-dom": "^18.2.23",
     "astro": "^4.4.9",
-    "astro-google-fonts-optimizer": "^0.2.2",
+    "astro-font": "^0.1.81",
     "astro-icon": "^1.1.0",
     "flowbite": "^2.3.0",
     "limax": "4.1.0",

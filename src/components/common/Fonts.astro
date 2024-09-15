@@ -7,14 +7,14 @@ import { AstroFont } from "astro-font";
             src: [
             {
               style: 'normal',
-              weight: '400, 500, 600, 700, 900',
+              weight: '400, 500, 600, 700, 800, 900',
               path: './fonts/Raleway-VariableFont.woff2'
             },
           ],
           name: "Raleway",
           googleFontsURL: 'https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap',
           preload: true,
-          display: "swap",
+          display: "fallback",
           selector: "body",
           fallback: 'sans-serif', // Corrected fallback syntax
         },

@@ -2,6 +2,7 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import About from '~/components/widgets/About.astro';
+
 import Badges from '~/components/widgets/Badges.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
@@ -15,11 +16,13 @@ import TrustLogos from '~/components/ui/TrustLogos.astro';
 
 import { getPermalink } from '../utils/permalinks';
 import { AstroSeo } from '@astrolib/seo';
+import Accordion from '../components/ui/Accordion.astro';
 
 const metadata = {
   title: 'J.A Web Design | Edmonton Web Design & Development Company',
   ignoreTitleTemplate: true,
 };
+
 ---
 
 <AstroSeo
@@ -218,44 +221,17 @@ const metadata = {
     }}
   />
   <!-- FAQs Widget ******************* -->
-
-  <FAQs
-    title="Frequently Asked Questions"
-    subtitle=""
-    tagline=""
-    classes={{ container: 'max-w-6xl' }}
-    items={[
-      {
-        title: ' How do we approach designing a website?',
-        description:
-          "The process begins with strategy. Our designers explore with you the goals of the website and your target audience. Once content is created and finalized a wire frame is created. The wireframe serves to outline the structure of the website, ensuring usability. Design follows, a visual representation of the website is created, once this set has been finalized with you, the client, it is handed over to our developer who will create a dependable, responsive, secure website. Once launched, ongoing maintenance and support will ensure your business has a website that it can depend upon.",
-      },
-      {
-        title: 'Are our websites mobile-friendly and responsive?',
-        description:"Most definitely! Responsiveness is a must in our world. Typically, over 50% of traffic comes from mobile devices. Never would we allow our clients' businesses to lose such a huge piece of their target audience. By using mobile-friendly practices in development we can guarantee a seamless transition between screen sizes.",
-      },
-      {
-        title: 'How long does it take to design a website?',
-        description:
-          'The length of a project is influenced by factors such as the size and complexity of the site, the needed resources, and our clients availability. Websites such as an e-commerce website may take much longer, perhaps a few weeks, while a single page website could be completed within a week. The length also depends on which of our services a project requires. ',
-      },
-      {
-        title: ' What platforms or tools do we use?',
-        description:
-          'The web design and development process requires a wide range of tools. Figma is used for the design. While programs such as Vue, Astro, Vite, PHP, Netlify, Cloudflare, and WordPress are used with the base code (HTML, CSS, JavaScript) to create the final functioning website to be posted on the web.',
-      },
-      {
-        title: 'How often should a website be updated?',
-        description:
-          "The short answer; when needed. Websites with different goals and functionality will require a different amount of attention. All websites should be checked periodically for bugs or security issues. Some websites, for example e-commerce, will require updates frequently. Others may feature fluctuating content in order to target the right audience. Whatever your website requires, it is our top priority to meet these needs.",
-      },
-      {
-        title: 'Can we help with maintenance/updates after launch?',
-        description:
-          "Yes, we offer ongoing maintenance services so that our client's websites remain functional, bug free, optimized, and up to date. We’ll help with edits to the content, needed software updates, security patches, and fixing any bugs that may present themselves. We are also happy to help with additions to the website or design enhancement so your website will grow with your business as it evolves. ",
-      },
-    ]}
-  />
+  <Accordion faqs={[
+    { question: "How do we approach designing a website?", answer: "The process begins with strategy. Our designers explore with you the goals of the website and your target audience. Once content is created and finalized a wire frame is created. The wireframe serves to outline the structure of the website, ensuring usability. Design follows, a visual representation of the website is created, once this set has been finalized with you, the client, it is handed over to our developer who will create a dependable, responsive, secure website. Once launched, ongoing maintenance and support will ensure your business has a website that it can depend upon." },
+    { question: "Are our websites mobile-friendly and responsive?", answer: "Most definitely! Responsiveness is a must in our world. Typically, over 50% of traffic comes from mobile devices. Never would we allow our clients' businesses to lose such a huge piece of their target audience. By using mobile-friendly practices in development we can guarantee a seamless transition between screen sizes." },
+    { question: "How long does it take to design a website?", answer: "The length of a project is influenced by factors such as the size and complexity of the site, the needed resources, and our clients availability. Websites such as an e-commerce website may take much longer, perhaps a few weeks, while a single page website could be completed within a week. The length also depends on which of our services a project requires. " },
+    { question: "What platforms or tools do we use?", answer: "The web design and development process requires a wide range of tools. Figma is used for the design. While programs such as Vue, Astro, Vite, PHP, Netlify, Cloudflare, and WordPress are used with the base code (HTML, CSS, JavaScript) to create the final functioning website to be posted on the web." },
+    { question: "How often should a website be updated?", answer: "The short answer; when needed. Websites with different goals and functionality will require a different amount of attention. All websites should be checked periodically for bugs or security issues. Some websites, for example e-commerce, will require updates frequently. Others may feature fluctuating content in order to target the right audience. Whatever your website requires, it is our top priority to meet these needs." },
+    { question: "Can we help with maintenance after launch?", answer: "Yes, we offer ongoing maintenance services so that our client's websites remain functional, bug free, optimized, and up to date. We’ll help with edits to the content, needed software updates, security patches, and fixing any bugs that may present themselves. We are also happy to help with additions to the website or design enhancement so your website will grow with your business as it evolves. " },
+    // More FAQs
+  ]}/>
+  
+  
 
   <!-- CallToAction Widget *********** -->
 

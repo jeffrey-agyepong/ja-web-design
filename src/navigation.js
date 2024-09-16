@@ -58,15 +58,15 @@ export const footerData = {
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
     { text: 'Sitemap', href: 'https://jawebdesign.ca/sitemap-0.xml' },
     {
-      text: 'Responsive design icons created by Flat Icons - Flaticon',
+      text: 'Responsive design icons by Flat Icons',
       href: 'https://www.flaticon.com/free-icons/responsive-design',
     },
     {
-      text: 'Backend icons created by Flat Icons - Flaticon',
+      text: 'Backend icons by Flat Icons',
       href: 'https://www.flaticon.com/free-icons/backend',
     },
     {
-      text: 'Web development icons created by Roundicons Premium - Flaticon',
+      text: 'Web development icons created by Roundicons Premium',
       href: 'https://www.flaticon.com/free-icons/web-development',
     }
   ],

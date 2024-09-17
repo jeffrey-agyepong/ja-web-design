@@ -1,5 +1,6 @@
 ---
 title: 'Privacy Policy | Edmonton, Alberta'
+excerpt: Learn more about our privacy policy
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 

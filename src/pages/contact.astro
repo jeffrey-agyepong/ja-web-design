@@ -2,19 +2,14 @@
 import Header from '~/components/ui/Header.astro';
 import Layout from '~/layouts/PageLayout.astro';
 import ContactUs from '~/components/widgets/Contact.astro';
-import { AstroSeo } from '@astrolib/seo';
 
 const metadata = {
   title: 'Contact Us | J.A Web Design | Edmonton, Alberta',
+   description:"Contact J.A Web Design for professional and affordable web design services. Let's collaborate and create a stunning website that represents your brand. Get in touch with us today!",
 };
 ---
 
-<AstroSeo
-  title={metadata.title}
-  description="Contact J.A Web Design for professional and affordable web design services. Let's collaborate and create a stunning website that represents your brand. Get in touch with us today!"
-/>
-
-<Layout>
+<Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
 <Header title="Contact Us" />

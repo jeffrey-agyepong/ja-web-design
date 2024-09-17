@@ -6,18 +6,13 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import { getPermalink } from '../utils/permalinks';
 
-import { AstroSeo } from '@astrolib/seo';
-
 const metadata = {
   title: 'Services | J.A Web Design | Edmonton, Alberta',
+  description:"Experience our tailored web design services at J.A Web Design. We specialize in crafting captivating websites that embody your brand essence. From concept to launch, our services ensure your online presence stands out. Contact us today to kick-start your custom web design project."
 };
 ---
 
-<AstroSeo
-  title={metadata.title}
-  description="Experience our tailored web design services at J.A Web Design. We specialize in crafting captivating websites that embody your brand essence. From concept to launch, our services ensure your online presence stands out. Contact us today to kick-start your custom web design project."
-/>
-<Layout>
+<Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
   <section

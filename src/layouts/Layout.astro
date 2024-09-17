@@ -34,11 +34,11 @@ const { language, textDirection } = I18N;
 <!doctype html>
 <html lang={language} dir={textDirection} class="2xl:text-[20px]">
   <head>
+    <Metadata {...metadata} />
     <CommonMeta />
     <Favicons />
     <CustomStyles />
     <ApplyColorMode />
-    <!-- <Metadata {...metadata} /> -->
     <SiteVerification />
     <Analytics />
     <Schema />

@@ -15,21 +15,17 @@ import Testimonials from '~/components/widgets/Testimonials.astro';
 import TrustLogos from '~/components/ui/TrustLogos.astro';
 
 import { getPermalink } from '../utils/permalinks';
-import { AstroSeo } from '@astrolib/seo';
 import Accordion from '../components/ui/Accordion.astro';
 
 const metadata = {
   title: 'J.A Web Design | Edmonton Web Design & Development Company',
+  description: "J.A Web Design is an award-winning web design company in Edmonton, Alberta, specializing in custom web development and design.",
   ignoreTitleTemplate: true,
 };
 
 ---
 
-<AstroSeo
-  title={metadata.title}
-  description="J.A Web Design is an award-winning web design company in Edmonton, Alberta, specializing in custom web development and design."
-/>
-<Layout>
+<Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
   <Hero actions={[{ text: 'Our Services', href: '/services' },{text: 'Get In Touch', href: '/contact', class:'bg-red-900' }]}>

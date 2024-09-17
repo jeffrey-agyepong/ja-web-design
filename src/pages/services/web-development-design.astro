@@ -1,5 +1,4 @@
 ---
-import { AstroSeo } from '@astrolib/seo';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Content from '~/components/widgets/Content.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
@@ -8,14 +7,11 @@ import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
   title: 'Web Design & Development | J.A Web Design | Edmonton, Alberta',
+  description:"Experience our tailored web design services at J.A Web Design. We specialize in crafting captivating websites that embody your brand essence. From concept to launch, our services ensure your online presence stands out. Contact us today to kick-start your custom web design project."
 };
 ---
 
-<AstroSeo
-  title={metadata.title}
-  description="Experience our tailored web design services at J.A Web Design. We specialize in crafting captivating websites that embody your brand essence. From concept to launch, our services ensure your online presence stands out. Contact us today to kick-start your custom web design project."
-/>
-<Layout>
+<Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
   <section

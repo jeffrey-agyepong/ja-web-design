@@ -1,6 +1,7 @@
 ---
 _schema: default
 title: Why does my website need a clear call to action?
+excerpt: Discover why a clear call to action (CTA) is crucial for your website's success. Learn how to design effective CTAs that capture visitor interest, build trust, and drive conversions. Enhance your website's performance by optimizing buttons and links to ensure your audience takes the desired actions.
 author: Eden Maas
 image: https://ik.imagekit.io/boxhuwbys/JA-Web-Design-CTA.webp
 ---

@@ -25,6 +25,7 @@ const currentPage = page.currentPage ?? 1;
 
 const metadata = {
   title: `Blog${currentPage > 1 ? ` — Page ${currentPage}` : ''}`,
+  description:"Stay updated with J.A Web Design's blog, offering insights on web design trends, development tips, and industry news. Explore expert advice, tutorials, and the latest updates to enhance your online presence. Read our latest posts and stay informed!",
   robots: {
     index: blogListRobots?.index && currentPage === 1,
     follow: blogListRobots?.follow,

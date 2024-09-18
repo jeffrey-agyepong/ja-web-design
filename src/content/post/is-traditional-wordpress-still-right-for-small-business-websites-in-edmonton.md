@@ -1,7 +1,12 @@
 ---
 _schema: default
-title: Is traditional WordPress still the right choice for small business websites in Edmonton?
-excerpt: Explore why traditional WordPress might fall short and how headless WordPress with Astro offers better security, performance, and scalability. Learn why Astro is becoming the preferred solution for modern small business websites.
+title: >-
+  Is traditional WordPress still the right choice for small business websites in
+  Edmonton?
+excerpt: >-
+  Explore why traditional WordPress might fall short and how headless WordPress
+  with Astro offers better security, performance, and scalability. Learn why
+  Astro is becoming the preferred solution for modern small business websites.
 author: Jeffrey Agyepong
 image: https://ik.imagekit.io/boxhuwbys/wordpress-dev-ja-web-design.webp
 ---
@@ -49,5 +54,4 @@ Astro uses a technique called partial hydration that guarantees that only necess
 
 &nbsp;
 
-*Astro is the ideal solution for small businesses aiming for performance, security, and simplicity if you want to create a new website or redesign your existing one. At* <a href="https://jawebdesign.ca/services/web-design" target="_blank" rel="noopener"><em>J.A Web Design</em></a>*, we specialize in utilizing Astro to deliver fast, secure, and scalable websites that meet your business needs.*
-
+*Astro is the ideal solution for small businesses aiming for performance, security, and simplicity if you want to create a new website or redesign your existing one. At* [*J.A Web Design*](https://jawebdesign.ca/services/web-development-design)*, we specialize in utilizing Astro to deliver fast, secure, and scalable websites that meet your business needs.*

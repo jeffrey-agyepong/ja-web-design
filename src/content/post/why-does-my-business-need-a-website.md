@@ -24,9 +24,9 @@ Every business wants to flourish, this means cost effective marketing is a numbe
 
 A high quality website pays for itself in the long run. As mentioned, in the world of marketing, websites are a steal. Why invest in a quality site? What benefits and returns will you receive?
 
-The cost to host a website is pretty consistent across the board. The highest rates are usually the ‘template based’ providers such as Wix and SquareSpace. What do you receive in return? A website that looks like every other.
+The cost to host a website is pretty consistent across the board. The highest rates are usually the ‘template-based’ providers such as Wix and SquareSpace. What do you receive in return? A website that looks like every other.
 
-Instead, working with a custom developer and designer will maximize your money spent on hosting and upkeep. How can you do so?
+Instead, working with a web developer and designer will maximize your money spent on hosting and upkeep. How can you do so?
 
 *Utilize SEO (Search Engine Optimization).* By working with an expert you will ensure your website is getting found by the right people.
 

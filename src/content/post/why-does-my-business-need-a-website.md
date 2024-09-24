@@ -1,7 +1,11 @@
 ---
 _schema: default
 title: Why Does My Business Need a Website?
-excerpt:
+excerpt: >-
+  A website is your business’s most powerful tool in today’s digital age. It
+  helps you reach more customers, market cost-effectively, and build trust with
+  your audience. With the right design and SEO, your website works around the
+  clock to grow your business and stay ahead of the competition.
 author: Eden Maas
 image: >-
   https://ik.imagekit.io/boxhuwbys/ja-web-design-why-does-my-business-need-a-website.webp

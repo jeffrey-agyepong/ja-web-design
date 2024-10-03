@@ -1,17 +1,22 @@
 ---
 _schema: default
 title: Why does my website need a clear call to action?
-excerpt: Discover why a clear call to action (CTA) is crucial for your website's success. Learn how to design effective CTAs that capture visitor interest, build trust, and drive conversions. Enhance your website's performance by optimizing buttons and links to ensure your audience takes the desired actions.
+excerpt: >-
+  Discover why a clear call to action (CTA) is crucial for your website's
+  success. Learn how to design effective CTAs that capture visitor interest,
+  build trust, and drive conversions. Enhance your website's performance by
+  optimizing buttons and links to ensure your audience takes the desired
+  actions.
 author: Eden Maas
 image: https://ik.imagekit.io/boxhuwbys/JA-Web-Design-CTA.webp
 ---
 Calls to action (CTAs) are a fundamental concept in website design. They are a powerhouse when used properly.
 
-**What is a CTA exactly?**
+## **What is a CTA exactly?**
 
 Simply put, the buttons and links on your website. “Clicking” is the action you are getting the visitor to take. Surprisingly, it is harder than it looks. In many cases a great portion of a website's traffic leaves before clicking anything on the website. Humans do not like commitment! For that reason it takes careful communication and convincing to obtain the action we’re looking for.
 
-**How to use buttons as effective CTAs?**
+## **How to use buttons as effective CTAs?**
 
 You need to acquire a visitor's interest and address their needs and/or desires. Next, build their trust. It is only once this is done that a visitor will take action.
 

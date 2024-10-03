@@ -14,13 +14,13 @@ When was the last time you saw a phone book? They used to be a main resource to 
 
 This has changed what effective marketing is. As a result businesses have had to adapt their approach to the needs of their clientele. Consumers are now using the web to search for the products and services businesses supply. Below are ways a website will meet the needs of your business.
 
-### **Reach a Market Without Boundaries in a Cost-Effective Way**
+## **Reach a Market Without Boundaries in a Cost-Effective Way**
 
 Without a website, there are few ways your business is getting found. Perhaps people see your storefront when they drive by. This would reach only a fraction of your potential customers. Besides, their focus is not on your service, but instead, it is where it should be, on the road. Your business may be getting by with tools such as Facebook or paid marketing like advertisements, but is that the goal?
 
 Every business wants to flourish, this means cost effective marketing is a number one priority. A website is ‘at work’ 24/7. It can be fine-tuned and reiterated continually to target the right audience. It lets small businesses compete with the major corporations. Reaching your potential audience world wide.
 
-### **Maximize Your Return on Investment**
+## **Maximize Your Return on Investment**
 
 A high quality website pays for itself in the long run. As mentioned, in the world of marketing, websites are a steal. Why invest in a quality site? What benefits and returns will you receive?
 
@@ -34,7 +34,7 @@ Instead, working with a web developer and designer will maximize your money spen
 
 *Use CTAs (Calls to Action) in a powerful way.* To learn more about how CTAs convert viewers and how it is done <a href="https://jawebdesign.ca/why-does-my-website-need-a-clear-call-to-action" title="Why does my website need a clear call to action?" target="_blank" rel="noopener"><em>click here</em></a> for the blog.
 
-### **Meet People's Expectations While Boosting Conversions**
+## **Meet People's Expectations While Boosting Conversions**
 
 The web is the main source of information these days. When people search for your company's services, they expect to find it on the web. But not only do they expect to find information such as your location and open hours (information found in a Google business profile) they also expect to find details.
 
@@ -42,6 +42,6 @@ The web is the main source of information these days. When people search for you
 
 *A website provides social proof.* Featuring testimonials, years of service, awards and recognition, expertise, and collaborations on your website are all different ways to create trust.
 
-### **So, does your business need a website?**
+## **So, does your business need a website?**
 
 The short answer, yes. You may be able to get by without it, but with the help of a quality website, your business can flourish and grow. Reach customers you’ve never been able to. Convert them with clear content and an easy-to-navigate website. Compete with those big corporations. Solidify your brand.

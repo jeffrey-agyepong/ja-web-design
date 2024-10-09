@@ -11,9 +11,13 @@ image: https://ik.imagekit.io/boxhuwbys/j-a-web-design-why-hire-a-web-developer.
 ---
 If your business is very small and still evolving, maybe ‘doing it yourself’ is the right decision. However, if you want your business to flourish and grow, that requires a quality website. One that will reach the right audience and convert them effectively. Here are a few reasons it may be in your best interest to invest in a quality custom website.
 
+&nbsp;
+
 **Wading Through this Huge Industry Takes Time and Effort**
 
 The web design and development industry is always changing and in a constant state of growth. There are dozens of options and ways to achieve your desired outcome. As Web Designers and Developers it is our job to maintain an up-to-date knowledge of the industry. With our help you’ll be able to find the right solutions for your business in a timely manner, while also being able to maintain your focus on what you do best, running your business.
+
+&nbsp;
 
 **Template Based Websites are Limited in What They Can Accomplish**
 

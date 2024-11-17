@@ -1,5 +1,12 @@
 {
   "projects": [
+    
+    {
+      "title": "Mint Mantis",
+      "link": "https://mintmantis.com/",
+      "image": "https://ik.imagekit.io/boxhuwbys/ja-web-design-mint-mantis.webp?updatedAt=1731810708783",
+      "description": "Astro, Tailwind CSS, Netlify"
+    },
     {
       "title": "Mako Construction & Renovation",
       "link": "https://makoprojects.ca/",
@@ -8,14 +15,12 @@
       
     },
     {
-      "id": 1,
       "title": "India Garden",
       "link": "https://indiagarden.ca/",
       "image": "https://ik.imagekit.io/boxhuwbys/indiagarden-mockup.webp",
       "description": "WordPress, PHP, Cloudflare"
     },
     {
-      "id": 2,
       "title": "Nest Eatery",
       "link": "https://jagyepong.com/nest",
       "image": "https://ik.imagekit.io/boxhuwbys/nest.webp?updatedAt=1714555353113",
@@ -23,7 +28,6 @@
     },
    
     {
-      "id": 3,
       "title": "All India Restaurant and Sweets",
       "link": "https://allindiarestaurant.com/",
       "image": "https://ik.imagekit.io/boxhuwbys/allindia.webp?updatedAt=1714553068241",
@@ -31,19 +35,10 @@
     },
  
     {
-      "id": 4,
       "title": "Valencia Prep Hockey Academy",
       "link": "https://vpahockey.com/",
       "image": "https://ik.imagekit.io/boxhuwbys/vpahockey.webp?updatedAt=1714552553548",
       "description": "WordPress, Elementor"
-    },
-
-    {
-      "id": 6,
-      "title": "J.A Web Design",
-      "link": "index.html",
-      "image": "https://ik.imagekit.io/boxhuwbys/jawebdesign.webp?updatedAt=1714550475083",
-      "description": "Astro, Tailwind CSS, Sanity.io, Cloudflare, Netlify"
     }
   ]
 }

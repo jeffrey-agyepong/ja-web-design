@@ -1,11 +1,8 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-
 import About from '~/components/widgets/About.astro';
-
 import Badges from '~/components/widgets/Badges.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Hero from '~/components/widgets/Hero.astro';
@@ -45,6 +42,10 @@ const metadata = {
     </Fragment>
   </Hero>
 
+    <!-- Slider -->
+    <div class="dark:bg-blue-900">
+      <Slider />
+    </div>
 
 
   <Features
@@ -106,19 +107,28 @@ const metadata = {
   
   <Badges/>
 
-  <!-- Slider -->
-  <Slider />
+
 
   <!-- Projects Widget ************** -->
   <Projects />
 
-  <div class="mt-8">
+  <CallToAction
+  actions={[
+    {
+      variant: 'primary',
+      text: 'Get In Touch',
+      href: getPermalink('/contact'),
+    },
+  ]}
+>
+  <Fragment slot="title"> Start Your Project </Fragment>
+</CallToAction>
+
+  <div class="mt-8 pt-8 dark:bg-blue-900">
     <TrustLogos />
   </div>
 
-  <!-- About Us Widget ****************** -->
-
-  <About />
+ 
 
   <!-- Services Widget ************** -->
 
@@ -173,6 +183,19 @@ const metadata = {
   </Features3>
   </div>
 
+    <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Get In Touch',
+        href: getPermalink('/contact'),
+      },
+    ]}
+  >
+    <Fragment slot="title"> Ready to get started on your website? </Fragment>
+  </CallToAction>
+
+
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
@@ -216,6 +239,12 @@ const metadata = {
       icon: 'tabler:chevron-right',
     }}
   />
+
+
+   <!-- About Us Widget ****************** -->
+
+ <About />
+
   <!-- FAQs Widget ******************* -->
   <Accordion faqs={[
     { question: "How do we approach designing a website?", answer: "The process begins with strategy. Our designers explore with you the goals of the website and your target audience. Once content is created and finalized a wire frame is created. The wireframe serves to outline the structure of the website, ensuring usability. Design follows, a visual representation of the website is created, once this set has been finalized with you, the client, it is handed over to our developer who will create a dependable, responsive, secure website. Once launched, ongoing maintenance and support will ensure your business has a website that it can depend upon." },
@@ -231,15 +260,17 @@ const metadata = {
 
   <!-- CallToAction Widget *********** -->
 
+ <div class="dark:bg-blue-900">
   <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Get In Touch',
-        href: getPermalink('/contact'),
-      },
-    ]}
-  >
-    <Fragment slot="title"> Ready to get started? <br> Have any questions? </Fragment>
-  </CallToAction>
+  actions={[
+    {
+      variant: 'primary',
+      text: 'Get In Touch',
+      href: getPermalink('/contact'),
+    },
+  ]}
+>
+  <Fragment slot="title"> Ready to Get Started? <br> Have Any Questions? </Fragment>
+</CallToAction>
+ </div>
 </Layout>

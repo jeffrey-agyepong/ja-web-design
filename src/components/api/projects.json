@@ -3,25 +3,37 @@
     
     {
       "title": "Mint Mantis",
+      "type":"Website Rebuild",
+      "servicesProvided":"Web Development, SEO, Web Hosting",
+      "completed":"Ongoing",
       "link": "https://mintmantis.com/",
       "image": "https://ik.imagekit.io/boxhuwbys/ja-web-design-mint-mantis.webp?updatedAt=1731810708783",
       "description": "Astro, Tailwind CSS, Netlify"
     },
     {
       "title": "Mako Construction & Renovation",
+      "type":"Website Development & Design",
+      "servicesProvided":"Web Development & Design, SEO, Logo Design, Web Hosting",
+      "completed":"August 2024",
       "link": "https://makoprojects.ca/",
       "image": "https://ik.imagekit.io/azupnt3mqx/ja-web-design-mako-construction-renovation.webp",
       "description": "Astro, CloudCannon, Cloudflare, Netlify"
       
     },
     {
-      "title": "India Garden",
+      "title": "India Garden Restaurant",
+      "type":"Website Rebuild",
+      "servicesProvided":"Web Development",
+      "completed":"May 2024",
       "link": "https://indiagarden.ca/",
-      "image": "https://ik.imagekit.io/boxhuwbys/indiagarden-mockup.webp",
+      "image": "https://ik.imagekit.io/boxhuwbys/ja-web-design-india-garden.webp",
       "description": "WordPress, PHP, Cloudflare"
     },
     {
       "title": "Nest Eatery",
+      "type":"Website Redesign",
+      "servicesProvided":"Web Development & Design, SEO",
+      "completed":"April 2024",
       "link": "https://jagyepong.com/nest",
       "image": "https://ik.imagekit.io/boxhuwbys/nest.webp?updatedAt=1714555353113",
       "description": "WordPress, PHP"
@@ -29,6 +41,9 @@
    
     {
       "title": "All India Restaurant and Sweets",
+      "type":"Website Redesign",
+      "servicesProvided":"Web Development & Design, SEO",
+      "completed":"November 2023",
       "link": "https://allindiarestaurant.com/",
       "image": "https://ik.imagekit.io/boxhuwbys/allindia.webp?updatedAt=1714553068241",
       "description": "WordPress, Genesis Framework"
@@ -36,6 +51,9 @@
  
     {
       "title": "Valencia Prep Hockey Academy",
+      "type":"Website Development & Design",
+      "servicesProvided":"Web Development & Design, SEO",
+      "completed":"May 2023",
       "link": "https://vpahockey.com/",
       "image": "https://ik.imagekit.io/boxhuwbys/vpahockey.webp?updatedAt=1714552553548",
       "description": "WordPress, Elementor"

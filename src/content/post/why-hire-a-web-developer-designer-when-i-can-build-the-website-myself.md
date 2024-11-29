@@ -13,13 +13,13 @@ If your business is very small and still evolving, maybe ‘doing it yourself’
 
 &nbsp;
 
-**Wading Through this Huge Industry Takes Time and Effort**
+## **Wading Through this Huge Industry Takes Time and Effort**
 
 The web design and development industry is always changing and in a constant state of growth. There are dozens of options and ways to achieve your desired outcome. As Web Designers and Developers it is our job to maintain an up-to-date knowledge of the industry. With our help you’ll be able to find the right solutions for your business in a timely manner, while also being able to maintain your focus on what you do best, running your business.
 
 &nbsp;
 
-**Template Based Websites are Limited in What They Can Accomplish**
+## **Template Based Websites are Limited in What They Can Accomplish**
 
 If you were to build your own website, you would not have the time, nor would it be beneficial, for you to educate yourself in the art of custom websites. That leaves you with one option, building a template based website using services like Wix or SquareSpace.
 
@@ -27,7 +27,7 @@ If you’re looking for a quick way to throw information on the web, well, this 
 
 &nbsp;
 
-**Quality Requires Knowledge**
+## **Quality Requires Knowledge**
 
 It takes time and effort to learn a trade. Web design and development is no different. Good design and content writing requires a deep knowledge of how people interact with the web. Every word of a website must be carefully considered and the structure crafted to capture a visitor's attention and keep it long enough to prompt action. If the creator of a website fails to use principles such as these, visitors will be leaving the website before they’ve even scrolled to the next section.
 

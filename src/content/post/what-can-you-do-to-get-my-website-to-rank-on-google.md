@@ -17,7 +17,7 @@ Beyond content there are many different avenues which an SEO expert will utilize
 
 &nbsp;
 
-**On-page SEO**
+## **On-page SEO**
 
 On-page SEO is the strategy you take on your website itself. Even on a web page there is much we can do to help your website rank well. First off, we would figure out what types of searches you want your web page feature on. For example, a restaurant could target searches such as ‘Good Restaurants in Edmonton’ or ‘Restaurant that Cater in Edmonton’, depending on what they offer to their patrons. While a construction company or health care agent would target completely different topics.
 
@@ -25,7 +25,7 @@ In this way, a website can answer the questions of their preferred audience so a
 
 &nbsp;
 
-**Off-page SEO**
+## **Off-page SEO**
 
 Off-page SEO is a completely different ball park. It is basically, steps you can take outside your website. There are many different tools that will improve what Google sees of your website. The search engines like to see activity. A ‘dead’ or inactive website loses its credibility.
 
@@ -33,6 +33,6 @@ What does off-page SEO consist of? We use tactics such as active social media ac
 
 &nbsp;
 
-**The benefits of Search Engine Optimization**
+## **The benefits of Search Engine Optimization**
 
 As you are looking to improve your website's SEO, it probably goes without saying what a benefit it is and the power it can lend in the marketing for your company. Getting your website found by the right people will give it the power to actively produce leads and new clientele. It is a huge leap to success online. However, it does require patience and a guide that has the knowledge to help you navigate SEO’s confusing world. Search engines are often unpredictable, and the same approach or strategies will not work for every business. Let us help you discover the best strategy for you.

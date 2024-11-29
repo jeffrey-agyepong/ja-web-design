@@ -32,7 +32,7 @@ What if they are exploring and don't have a clear purpose? People don’t like m
 
 &nbsp;
 
-**The end result, better conversion rates.**
+## **The end result, better conversion rates.**
 
 You don’t want people leaving your website before they’ve clicked. Know your target audience.
 

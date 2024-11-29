@@ -35,7 +35,7 @@ A design alone is not functional, thus to bring a quality website to life requir
 
 &nbsp;
 
-**Custom Content and Design Helps Your Business Stand Out**
+## **Custom Content and Design Helps Your Business Stand Out**
 
 Your business is unique. This uniqueness plays a large role in individuals choosing your service over that of your competitors. A custom website will provide your business the best chance at communicating this to your visitors on the web.
 

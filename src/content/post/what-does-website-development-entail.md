@@ -1,7 +1,11 @@
 ---
 _schema: default
 title: 'What does website development entail? '
-excerpt:
+excerpt: >-
+  Website development, also known as web development, is the building and
+  maintaining of a website. Think for example, of the construction process,
+  first a blueprint and plan is created, then a builder brings that plan to
+  life. 
 author: Eden Maas
 image: https://ik.imagekit.io/boxhuwbys/j-a-web-design-why-hire-a-web-developer.webp
 ---

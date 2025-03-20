@@ -80,7 +80,7 @@ export const footerData = {
     <p>Developed by <a href="https://jawebdesign.ca/" class="text-gray-900 dark:text-green-400">J.A Web Design</a>
     </p>
      <p>
-    © 2024 J.A Web Design 
+    © 2025 J.A Web Design 
     </p>
     </div>
   `,

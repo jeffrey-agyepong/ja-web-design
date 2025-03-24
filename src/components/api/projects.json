@@ -1,6 +1,14 @@
 {
   "projects": [
-    
+    {
+      "title": "Alberta Vison Care",
+      "type":"Website Rebuild",
+      "servicesProvided":"Web Development, SEO, Web Hosting",
+      "completed":"August 2024",
+      "link": "https://abvisioncare.ca/",
+      "image": "https://ik.imagekit.io/boxhuwbys/abvisioncare.webp?updatedAt=1742855280862",
+      "description": "Astro, Tailwind CSS, Netlify"
+    },
     {
       "title": "Mint Mantis",
       "type":"Website Rebuild",

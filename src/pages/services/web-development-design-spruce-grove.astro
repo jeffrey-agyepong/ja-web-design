@@ -1,0 +1,203 @@
+---
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content from '~/components/widgets/Content.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Web Design & Development | Spruce Grove, Alberta',
+  description:"Experience our tailored web design services at J.A Web Design. We specialize in crafting captivating websites that embody your brand essence. From concept to launch, our services ensure your online presence stands out. Contact us today to kick-start your custom web design project."
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <section
+    class="mt-16 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] min-h-fit dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]"
+  >
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
+      <h2
+        class="max-w-24ch mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-4xl dark:text-white text-left capitalize"
+      >
+        Explore Our Spruce Grove Web Design & Development Services
+      </h2>
+    </div>
+  </section>
+
+ <!-- Content Widget **************** -->
+
+ <Content
+   isReversed
+   items={[
+     {
+       title: 'Custom Design',
+       description:
+         'We partner with you to craft a website that is not only tailored to fit your brand and but also seamlessly fits within your brand guidelines. Whether you need a brand new website or looking to revamp your existing our custom design solution ensure a unique and professional online presence.',
+       icon: 'tabler:wand',
+     },
+     {
+       title: 'Mobile Responsive',
+       description:
+         'Over 60% of website traffic comes from mobile devices. That’s why we design our websites with a “mobile first” approach ensuring that your website not only looks stunning on desktops but also functions superbly on smartphones and tablets.',
+       icon: 'tabler:settings',
+     },
+     {
+       title: 'Ongoing Maintenance & Support',
+       description:
+         'We provide comprehensive ongoing maintenance services to ensure that websites remain up-to-date, secure, and optimized. After the website is launched, we offer support and assistance with regular updates, such as content updates, software updates, security patches, and bug fixes.',
+       icon: 'tabler:presentation',
+     },
+     
+   ]}
+   image={{
+     src: 'https://ik.imagekit.io/boxhuwbys/web-development-ja-web-design.webp',
+     alt: 'J.A Web Design - Web Development',
+   }}
+ >
+   <Fragment slot="content">
+     <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Main Features</h3>
+   </Fragment>
+ </Content>
+
+ <!-- Content Widget **************** -->
+
+ <Content
+   isAfterContent
+   items={[
+     {
+       title: 'Web Hosting',
+       description:
+         'We assist you in finding the best web hosting solution, ensuring reliable performance and constant uptime.',
+       icon: 'tabler:clock',
+     },
+     {
+       title: 'Domain Registration',
+       description:
+         'We assist you in securing a unique and affordable domain name.',
+       icon: 'tabler:school',
+     },
+     {
+       title: 'Website Speed Optimization',
+       description:
+         'We ensure your site performs at optimal speed to reduce bounce rates caused by slow loading times.',
+       icon: 'tabler:coin',
+     },
+    //  {
+    //    title: 'Instant Download',
+    //    description:
+    //      '',
+    //    icon: 'tabler:file-download',
+    //  },
+   ]}
+   image={{
+     src: 'https://ik.imagekit.io/boxhuwbys/web-design-ja-web-design.webp',
+     alt: 'Benefits Image',
+   }}
+ >
+   <Fragment slot="content">
+     <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">More Features</h3>
+   </Fragment>
+ </Content>
+
+ <!-- Testimonials Widget *********** -->
+
+
+ <Testimonials
+ id="testimonials"
+ title="Testimonials"
+ testimonials={[
+   {
+     testimonial: `Easily one of the best young web designers that I have worked with.`,
+     name: 'Jessal Parmar',
+     job: 'Bussiness Owner',
+     image: {
+       src: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png',
+       alt: 'Jessal Parmar',
+     },
+   },
+
+   {
+     testimonial: `J.A Web Design delivered the project on time and provided reliable, timely technical support after. The responsive team strictly adhered to the established timeline and budget and was quick to implement feedback throughout.`,
+     name: 'Darcy Hodge',
+     job: 'General Manager',
+     image: {
+       src: 'https://ik.imagekit.io/boxhuwbys/darcy.webp?updatedAt=1711693732156',
+       alt: 'Darcy Hodge',
+     },
+   },
+   {
+     testimonial:
+       'Jeffrey is such a wonderful person and a very knowledgeable web designer! He taught me how to use the different web design platforms and what to watch out for. I highly recommend him thanks Jeffrey!',
+     name: 'Kareena Virdi',
+     job: 'Social Media Consultant',
+     image: {
+       src: 'https://ik.imagekit.io/boxhuwbys/kreen.webp?updatedAt=1711693732194',
+       alt: 'Kareena Virdi',
+     },
+   },
+ ]}
+ callToAction={{
+   target: '_blank',
+   text: 'More testimonials',
+   href: 'https://maps.app.goo.gl/hLyxj8vZL1CU9Y5n7',
+   icon: 'tabler:chevron-right',
+ }}
+/>
+
+ <!-- CallToAction Widget *********** -->
+
+ <CallToAction
+   actions={[
+     {
+       variant: 'primary',
+       text: 'Call Now',
+       href: 'tel:780-983-7309',
+     },
+   ]}
+   title="Ready to make your website a reality?"
+   subtitle=""
+ />
+
+ <!-- FAQs Widget ******************* -->
+
+ <FAQs
+ title="Frequently Asked Questions"
+ subtitle=""
+ tagline=""
+ classes={{ container: 'max-w-6xl' }}
+ items={[
+   {
+  title: 'How do we approach designing a website?',
+  description: 
+    "The process begins with strategy. Our designers explore with you the goals of the website and your target audience. Once content is created and finalized, a wireframe is created. The wireframe serves to outline the structure of the website, ensuring usability. Design follows, a visual representation of the website is created. Once this set has been finalized with you, the client, it is handed over to our developer who will create a dependable, responsive, secure website. Once launched, ongoing maintenance and support will ensure your business has a website that it can depend upon."
+},
+{
+  title: 'Are our websites mobile-friendly and responsive?',
+  description: 
+    "Most definitely! Responsiveness is a must in our world. Typically, over 50% of traffic comes from mobile devices. Never would we allow our clients' businesses to lose such a huge piece of their target audience. By using mobile-friendly practices in development we can guarantee a seamless transition between screen sizes."
+},
+{
+  title: 'How long does it take to design a website?',
+  description: 
+    "The length of a project is influenced by factors such as the size and complexity of the site, the needed resources, and our client's availability. Websites such as an e-commerce website may take much longer, perhaps a few weeks, while a single-page website could be completed within a week. The length also depends on which of our services a project requires."
+},
+{
+  title: 'What platforms or tools do we use?',
+  description: 
+    "The web design and development process requires a wide range of tools. Figma is used for the design. While programs such as Vue, Astro, Vite, PHP, Netlify, Cloudflare, and WordPress are used with the base code (HTML, CSS, JavaScript) to create the final functioning website to be posted on the web."
+},
+{
+  title: 'How often should a website be updated?',
+  description: 
+    "The short answer: when needed. Websites with different goals and functionality will require a different amount of attention. All websites should be checked periodically for bugs or security issues. Some websites, for example, e-commerce, will require updates frequently. Others may feature fluctuating content in order to target the right audience. Whatever your website requires, it is our top priority to meet these needs."
+},
+{
+  title: 'Can we help with maintenance after launch?',
+  description: 
+    "Yes, we offer ongoing maintenance services so that our client's websites remain functional, bug-free, optimized, and up to date. We’ll help with edits to the content, needed software updates, security patches, and fixing any bugs that may present themselves. We are also happy to help with additions to the website or design enhancement so your website will grow with your business as it evolves."
+}
+ ]}
+/>
+</Layout>

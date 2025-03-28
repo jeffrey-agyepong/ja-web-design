@@ -29,6 +29,32 @@ export const headerData = {
       ],
     },
     {
+      text: 'Area',
+      href: getPermalink('/services'),
+      links: [
+        {
+          text: 'Calgary Web Design',
+          href: getPermalink('/services/web-development-design-calgary'),
+        },
+        {
+          text: 'Spruce Grove Web Design',
+          href: getPermalink('/services/web-development-design-spruce-grove'),
+        },
+        {
+          text: 'St. Albert Web Design',
+          href: getPermalink('/services/web-development-design-st-albert'),
+        },
+        {
+          text: 'Sherwood Park Web Design',
+          href: getPermalink('/services/web-development-design-sherwood-park'),
+        },
+        {
+          text: 'Stony Plain Web Design',
+          href: getPermalink('/services/web-development-design-stony-plain'),
+        },
+      ],
+    },
+    {
       text: 'About',
       href: getPermalink('/about'),
     },

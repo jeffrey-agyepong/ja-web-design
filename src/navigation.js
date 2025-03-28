@@ -24,7 +24,7 @@ export const headerData = {
         // },
         {
           text: 'SEO',
-          href: getPermalink('/services/seo'),
+          href: getPermalink('/services/edmonton-seo'),
         },
       ],
     },

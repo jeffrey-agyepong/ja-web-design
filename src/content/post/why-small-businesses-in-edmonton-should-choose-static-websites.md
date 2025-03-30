@@ -4,9 +4,7 @@ title: Why Small Businesses in Edmonton Should Choose Static Websites
 excerpt: >-
   In today’s competitive market, a fast, secure, and cost-effective website is
   essential for small businesses. Many business owners in Edmonton still rely on
-  slow, outdated websites that hurt their online visibility. At J.A Web Design,
-  we recommend static websites as the best solution for businesses looking to
-  improve speed, security, and performance. Here’s why:
+  slow, outdated websites that hurt their online visibility. 
 author: Jeffrey A.
 image: https://ik.imagekit.io/boxhuwbys/ja-web-design-edmonton-static-websites.webp
 ---

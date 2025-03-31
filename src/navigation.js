@@ -18,13 +18,31 @@ export const headerData = {
           text: 'Web Design',
           href: getPermalink('/services/edmonton-web-development-design'),
         },
-        // {
-        //   text: 'Calgary Web Design',
-        //   href: getPermalink('/services/web-development-design-calgary'),
-        // },
         {
           text: 'SEO',
           href: getPermalink('/services/edmonton-seo'),
+        },
+      ],
+    },
+    {
+      text: 'Areas',
+      href: getPermalink('/services'),
+      links: [
+        {
+          text: 'Calgary Web Design',
+          href: getPermalink('/areas/calgary-web-development-design'),
+        },
+        {
+          text: 'Sherwood Park Web Design',
+          href: getPermalink('/areas/sherwood-park-web-development-design'),
+        },
+        {
+          text: 'Spruce Grove Web Design',
+          href: getPermalink('/areas/spruce-grove-web-development-design'),
+        },
+        {
+          text: 'St. Albert Web Design',
+          href: getPermalink('/areas/st-albert-web-development-design'),
         },
       ],
     },

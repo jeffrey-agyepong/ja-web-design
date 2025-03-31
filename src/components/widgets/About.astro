@@ -1,82 +1,202 @@
-<section id="about" class="pt-20 lg:pt-[50px] pb-20 lg:pb-[50px]">
-  <div class="container py-16 mx-auto p-4">
-    <!-- <div class="wow fadeInUp  " data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s;"> -->
-    <div class="flex flex-wrap">
-      <div class="w-full sm:px-4">
-        <div
-          class="lg:flex
-                items-center
-                justify-between
-                overflow-hidden rounded-2xl dark:bg-blue-900 bg-blue-300"
-        >
-          <div
-            class="lg:max-w-[565px]
-                  xl:max-w-[640px]
-                  w-full
-                  py-12
-                  px-7
-                  sm:px-12
-                  md:p-16
-                  lg:py-9 lg:px-16
-                  xl:p-[70px]"
-          >
-            <h2
-              class="font-extrabold
-                    text-3xl
-                    sm:text-4xl
-                    2xl:text-[40px]
-                    sm:leading-snug text-blue-800 dark:text-white capitalize
-                    mb-6"
-            >
-              A little bit about me
-            </h2>
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
 
-            <p
-              class="mb-3 text-black dark:text-gray-200 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left"
-            >
-            I'm a NAIT graduate based in Edmonton, Alberta, with a background that evolved from five years of freelancing to specializing in web development and design. My focus is on crafting custom, modern and user-friendly websites for small to medium-sized businesses, e-commerce, and personal portfolios.
-            </p>
-
-            <a
-              href="about.html"
-              class="inline-flex
-                    items-center
-                    justify-center
-                    py-4
-                    px-6
-                    rounded-lg
-                    med:rounded
-                    text-white
-                    bg-blue-800
-                    dark:bg-red-700
-                    dark:hover:bg-green-800
-                    text-base
-                    font-medium
-                    hover:bg-opacity-50 hover:shadow-lg
-                    transition
-                    duration-300
-                    ease-in-out"
-            >
-              Read More About Me
-            </a>
-          </div>
-
-          <div class="text-center container">
-            <div class="relative inline-block z-10">
-              <img
-                src="https://ik.imagekit.io/boxhuwbys/jeff.webp?updatedAt=1711694070119"
-                alt="Jeffrey Agyepong - J.A Web Design"
-                class="w-32 md:w-32 lg:w-48 mx-auto transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
-                width="400"
-                height="599"
-                loading="lazy"
-                />
-              <p class="text-black dark:text-gray-200 p-1">Jeffrey Agyepong</p>
-              <p class="text-black dark:text-gray-200 p-1">Owner, Web Developer</p>
-            </div>
-          </div>
-        </div>
+<section id="sbs-311">
+  <div class="cs-container">
+      <!-- Left Image Section -->
+      <div class="cs-image-group">
+          <picture class="cs-picture cs-picture1">
+              <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/boxhuwbys/ja-web-design-edmonton.webp">
+              <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/boxhuwbys/ja-web-design-edmonton.webp">
+              <img loading="lazy" decoding="async" src="https://ik.imagekit.io/boxhuwbys/ja-web-design-edmonton.webp" alt="Picture of the city of Edmonton" width="522" height="581" aria-hidden="true">
+          </picture>
+          <picture class="cs-picture cs-picture2">
+              <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/boxhuwbys/ja-web-design.webp">
+              <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/boxhuwbys/ja-web-design.webp">
+              <img loading="lazy" decoding="async" src="https://ik.imagekit.io/boxhuwbys/ja-web-design.webp" alt="J.A Web Design founder, Jeffrey Agyepong" width="414" height="400" aria-hidden="true">
+          </picture>
       </div>
-    </div>
+      <!-- Right Content Section-->
+      <div class="cs-content">
+          <h2 class="cs-title">About J.A Web Design</h2>
+          <p class="cs-text">
+              My name is Jeffrey, I am the owner and lead web developer of J.A Web Design. My programming journey began when I was a kid, inspired by watching my brother code. I went on to study computer science in high school and and started freelancing after taking a few web design courses. To further refine my skills, I later pursued a Digital Media and IT diploma at NAIT.
+          </p>
+          <p class="cs-text">
+            At J.A Web Design we focus on creating high-performance custom websites for small businesses, e-commerce stores and personal portfolios. Our sites are designed not only to look great but also to load fast, perform well, and rank higher on Google through SEO best practices.
+        </p>
+
+          <a href="tel:780-983-7309" class="cs-button-solid">Call Us Today</a>
+      </div>
   </div>
 </section>
+<style>
+  /*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #sbs-311 {
+        padding: var(--sectionPadding);
+    }
+    #sbs-311 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #sbs-311 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        max-width: 33.875rem;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+    }
+
+    #sbs-311 .cs-text {
+        margin-bottom: 1rem;
+    }
+    #sbs-311 .cs-text:last-of-type {
+        margin-bottom: 2rem;
+    }
+    #sbs-311 .cs-button-solid {
+        font-size: 1rem;
+        /* 46px - 56px */
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        color: #fff;
+        min-width: 9.375rem;
+        padding: 0 1.5rem;
+        background-color: var(--primary);
+        border-radius: 0.5rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        /* prevents padding from adding to the width */
+        box-sizing: border-box;
+    }
+    #sbs-311 .cs-button-solid:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #03543f;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 0.5rem;
+    }
+    #sbs-311 .cs-button-solid:hover:before {
+        width: 100%;
+    }
+    #sbs-311 .cs-quote {
+        margin: 0 0 2rem 0;
+        /* 16px - 32px */
+        padding: clamp(1rem, 3vw, 2rem);
+        background-color: #f7f7f7;
+        border-radius: 1rem;
+        position: relative;
+    }
+    #sbs-311 .cs-quote-text {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        line-height: 1.5em;
+        margin: 0 0 1rem;
+        color: #000000;
+        display: block;
+    }
+    #sbs-311 .cs-name {
+        font-size: 1rem;
+        line-height: 1.2em;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 0 0 0.25rem;
+        color: #000;
+        display: block;
+    }
+    #sbs-311 .cs-job {
+        font-size: 0.875rem;
+        line-height: 1.5em;
+        color: #767676;
+        display: block;
+    }
+    #sbs-311 .cs-quote-icon {
+        /* 60px - 136px */
+        width: clamp(3.75rem, 10vw, 8.5rem);
+        height: auto;
+        position: absolute;
+        bottom: 0rem;
+        /* 16px - 32px */
+        right: clamp(1rem, 4vw, 2rem);
+    }
+    #sbs-311 .cs-image-group {
+        /* scaling the font size with the view width */
+        font-size: min(2.31vw, 0.7em);
+        /* using ems so we can use font size to scale the whole section */
+        width: 39.4375em;
+        height: 39.75em;
+        position: relative;
+    }
+    #sbs-311 .cs-picture {
+        border-radius: 1.5em;
+        /* clips img tag corners */
+        overflow: hidden;
+        position: absolute;
+        display: block;
+    }
+    #sbs-311 .cs-picture img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        /* makes image act like a background image */
+        object-fit: cover;
+    }
+    #sbs-311 .cs-picture1 {
+        width: 32.625em;
+        height: 36.3125em;
+        left: 0;
+        top: 0;
+    }
+    #sbs-311 .cs-picture2 {
+        width: 20.875em;
+        height: 25em;
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
+        /* 6px - 12px */
+        right: 0;
+        bottom: 150px;
+    }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #sbs-311 .cs-container {
+        flex-flow: row;
+        justify-content: space-between;
+        gap: 3.25rem;
+    }
+    #sbs-311 .cs-image-group {
+        font-size: min(1.2vw, 1em);
+        flex: none;
+    }
+    #sbs-311 .cs-content {
+        margin: 0;
+    }
+}
+
+                                
+</style>                              

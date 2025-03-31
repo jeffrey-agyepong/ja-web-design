@@ -1,6 +1,5 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import About from '~/components/widgets/About.astro';
 import Badges from '~/components/widgets/Badges.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Features from '~/components/widgets/Features.astro';
@@ -30,8 +29,8 @@ const metadata = {
       <h2
         class="max-w-22ch mb-4 text-2xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-5xl dark:text-white text-left capitalize"
       >
-      High-Performance <span class="dark:text-blue-300 text-blue-800 font-extrabold">Websites</span>
-        That Drive Growth
+      High-Performance <span class="dark:text-blue-300 text-blue-800 font-extrabold">Websites</span><br>
+      to Accelerate Your Growth
       </h2>
     </Fragment>
 
@@ -241,9 +240,6 @@ const metadata = {
   />
 
 
-   <!-- About Us Widget ****************** -->
-
- <About />
 
   <!-- FAQs Widget ******************* -->
   <Accordion faqs={[

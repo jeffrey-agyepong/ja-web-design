@@ -44,6 +44,22 @@ export const headerData = {
           text: 'St. Albert Web Design',
           href: getPermalink('/areas/st-albert-web-development-design'),
         },
+        {
+          text: 'Calgary SEO',
+          href: getPermalink('/areas/calgary-seo'),
+        },
+        {
+          text: 'Sherwood Park SEO',
+          href: getPermalink('/areas/sherwood-park-seo'),
+        },
+        {
+          text: 'Spruce Grove SEO',
+          href: getPermalink('/areas/spruce-grove-seo'),
+        },
+        {
+          text: 'St. Albert SEO',
+          href: getPermalink('/areas/st-albert-seo'),
+        },
       ],
     },
     

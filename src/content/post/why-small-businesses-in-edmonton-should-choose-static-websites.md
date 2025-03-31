@@ -12,7 +12,7 @@ In today’s competitive market, a fast, secure, and cost-effective website is e
 
 ## **1\. Faster Load Times = Better User Experience**
 
-Did you know that **47% of visitors expect a website to load in under two seconds**? Slow websites drive customers away, costing you sales. **Static websites load instantly** because they don’t rely on databases or complex processing. A fast website means **better user experience, higher conversions, and improved SEO rankings.**
+Did you know that <a href="https://www.portagecybertech.com/en/blog/how-fast-should-my-website-load" target="_blank" rel="noopener"><strong>47% of visitors expect a website to load in under two seconds</strong></a>? Slow websites drive customers away, costing you sales. **Static websites load instantly** because they don’t rely on databases or complex processing. A fast website means **better user experience, higher conversions, and improved SEO rankings.**
 
 ## **2\. Stronger Security: Protect Your Business**
 
@@ -32,7 +32,7 @@ Unlike traditional websites that depend on databases and servers, **static websi
 
 ## **Is a Static Website Right for Your Business?**
 
-If you run a **local service business, restaurant, portfolio, or e-commerce store**, switching to a static website can improve **performance, security, and cost-efficiency.**
+If you run a **local service business, restaurant, or portfolio** switching to a static website can improve **performance, security, and SEO.**
 
 ### **Let’s Build a Website That Works for You**
 

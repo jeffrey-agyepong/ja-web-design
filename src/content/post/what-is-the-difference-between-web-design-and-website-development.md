@@ -27,12 +27,10 @@ What is strategy? It is deciding who a company's target audience is and specific
 * What are they looking for?
 * How can we build trust?
 
-A designer will take these answers, and many more, to create the appropriate navigational structure, graphics, and visual design of the website. Check out <u>Our Services</u> to learn more.
-
-&nbsp;
+A designer will take these answers, and many more, to create the appropriate navigational structure, graphics, and visual design of the website. Check out <a href="https://jawebdesign.ca/services" title="Our Services" target="_blank" rel="noopener"><u>Our Services</u></a> to learn more.
 
 **What is Web Development?**
 
-Once the design has been completed the prototype is handed over to the developer. They will then take it and create the functional version through coding and the use of various platforms. Quality development requires attention to detail, such as making sure the website is responsive and that it loads quickly to ensure you don’t lose viewers due to impatience, these are a couple of our top priorities. A developer will often look after acquiring a domain name for their client, hosting of the website, upkeep, and assuring fast loading times. Check out <u>Our Services</u> to learn more.
+Once the design has been completed the prototype is handed over to the developer. They will then take it and create the functional version through coding and the use of various platforms. Quality development requires attention to detail, such as making sure the website is responsive and that it loads quickly to ensure you don’t lose viewers due to impatience, these are a couple of our top priorities. A developer will often look after acquiring a domain name for their client, hosting of the website, upkeep, and assuring fast loading times. Check out <a href="https://jawebdesign.ca/services" title="Our Services" target="_blank" rel="noopener"><u>Our Services</u></a> to learn more.
 
 <br>

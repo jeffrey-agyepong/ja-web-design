@@ -25,40 +25,40 @@ export const headerData = {
       ],
     },
     {
-      text: 'Areas',
+      text: 'Area',
       href: getPermalink('/services'),
       links: [
         {
           text: 'Calgary Web Design',
-          href: getPermalink('/areas/calgary-web-development-design'),
+          href: getPermalink('/area/calgary-web-development-design'),
         },
         {
           text: 'Sherwood Park Web Design',
-          href: getPermalink('/areas/sherwood-park-web-development-design'),
+          href: getPermalink('/area/sherwood-park-web-development-design'),
         },
         {
           text: 'Spruce Grove Web Design',
-          href: getPermalink('/areas/spruce-grove-web-development-design'),
+          href: getPermalink('/area/spruce-grove-web-development-design'),
         },
         {
           text: 'St. Albert Web Design',
-          href: getPermalink('/areas/st-albert-web-development-design'),
+          href: getPermalink('/area/st-albert-web-development-design'),
         },
         {
           text: 'Calgary SEO',
-          href: getPermalink('/areas/calgary-seo'),
+          href: getPermalink('/area/calgary-seo'),
         },
         {
           text: 'Sherwood Park SEO',
-          href: getPermalink('/areas/sherwood-park-seo'),
+          href: getPermalink('/area/sherwood-park-seo'),
         },
         {
           text: 'Spruce Grove SEO',
-          href: getPermalink('/areas/spruce-grove-seo'),
+          href: getPermalink('/area/spruce-grove-seo'),
         },
         {
           text: 'St. Albert SEO',
-          href: getPermalink('/areas/st-albert-seo'),
+          href: getPermalink('/area/st-albert-seo'),
         },
       ],
     },

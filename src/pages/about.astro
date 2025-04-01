@@ -4,6 +4,7 @@ import Badges from '~/components/widgets/Badges.astro';
 import Header from '~/components/ui/Header.astro';
 import Layout from '~/layouts/PageLayout.astro';
 import Skills from '~/components/widgets/Skills.astro';
+import Team from '~/components/widgets/Team.astro';
 import TrustLogos from '~/components/ui/TrustLogos.astro';
 
 const metadata = {
@@ -18,7 +19,8 @@ const metadata = {
 <Header title="About" />
 
 <About/>
-  <TrustLogos />
-  <Badges />
-  <Skills />
+<Team/>
+<TrustLogos />
+<Badges />
+<Skills />
 </Layout>

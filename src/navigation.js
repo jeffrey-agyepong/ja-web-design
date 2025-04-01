@@ -15,7 +15,7 @@ export const headerData = {
           href: getPermalink('/services'),
         },
         {
-          text: 'Web Design',
+          text: 'Web Development & Design',
           href: getPermalink('/services/edmonton-web-development-design'),
         },
         {

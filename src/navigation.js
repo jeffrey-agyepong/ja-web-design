@@ -35,8 +35,58 @@ export const headerData = {
       href: getPermalink('/blog'),
     },
     {
-      text: 'Locations',
-      href: getPermalink('/services'),
+      text: 'Pricing',
+      href: getPermalink('/pricing'),
+    },
+    {
+      text: 'Contact',
+      href: getPermalink('/contact'),
+    },
+  ],
+  actions: [{ text: 'Free Consultation', href: 'https://calendly.com/jawebdesign', target: '_blank' }],
+};
+
+export const footerData = {
+  links: [
+    {
+      title: 'Quick Links',
+      links: [
+        { text: 'About', href: getPermalink('/about') },
+        { text: 'Projects', href: getPermalink('/index.html#projects') },
+        {
+          text: 'Performance', href: getPermalink('/posts/performance')
+        },
+        { text: 'Services', href: getPermalink('/services') },
+        { text: 'Contact', href: getPermalink('/contact') },
+        { text: 'Pricing', href: getPermalink('/pricing') },
+      ],
+    },
+
+  ],
+  secondaryLinks: [
+    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'Sitemap', href: 'https://jawebdesign.ca/sitemap-0.xml' },
+    {
+      text: 'Responsive design icons by Flat Icons',
+      href: 'https://www.flaticon.com/free-icons/responsive-design',
+    },
+    {
+      text: 'Backend icons by Flat Icons',
+      href: 'https://www.flaticon.com/free-icons/backend',
+    },
+    {
+      text: 'Web development icons created by Roundicons Premium',
+      href: 'https://www.flaticon.com/free-icons/web-development',
+    }
+  ],
+  socialLinks: [
+    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/company/j-a-web-design/' },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://instagram.com/j.a.webdesign' },
+    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/jeffrey-agyepong' },
+  ],
+  byLocation: [
+    {
+      title: 'By Location',
       links: [
         {
           text: 'Calgary Web Design',
@@ -72,55 +122,6 @@ export const headerData = {
         },
       ],
     },
-    // {
-    //   text: 'Pricing',
-    //   href: getPermalink('/pricing'),
-    // },
-    {
-      text: 'Contact',
-      href: getPermalink('/contact'),
-    },
-  ],
-  actions: [{ text: 'Free Consultation', href: 'https://calendly.com/jawebdesign', target: '_blank' }],
-};
-
-export const footerData = {
-  links: [
-    {
-      title: 'Quick Links',
-      links: [
-        { text: 'About', href: getPermalink('/about') },
-        { text: 'Projects', href: getPermalink('/index.html#projects') },
-        // {
-        //   text: 'Performance', href: getPermalink('/posts/performance')
-        // },
-        { text: 'Services', href: getPermalink('/services') },
-        { text: 'Contact', href: getPermalink('/contact') },
-        { text: 'Pricing', href: getPermalink('/pricing') },
-      ],
-    },
-
-  ],
-  secondaryLinks: [
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
-    { text: 'Sitemap', href: 'https://jawebdesign.ca/sitemap-0.xml' },
-    {
-      text: 'Responsive design icons by Flat Icons',
-      href: 'https://www.flaticon.com/free-icons/responsive-design',
-    },
-    {
-      text: 'Backend icons by Flat Icons',
-      href: 'https://www.flaticon.com/free-icons/backend',
-    },
-    {
-      text: 'Web development icons created by Roundicons Premium',
-      href: 'https://www.flaticon.com/free-icons/web-development',
-    }
-  ],
-  socialLinks: [
-    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/company/j-a-web-design/' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://instagram.com/j.a.webdesign' },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/jeffrey-agyepong' },
   ],
   footNote: `
     <div class="sm:flex gap-80 justify-center items-center">

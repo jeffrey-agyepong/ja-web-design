@@ -23,7 +23,7 @@ export interface Props {
   theme?: string;
 }
 
-const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme = 'light' } = Astro.props;
+const { socialLinks = [], secondaryLinks = [], links = [], byLocation = [], footNote = '', theme = 'light' } = Astro.props;
 ---
 
 <footer
@@ -34,7 +34,7 @@ const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme 
 >
   <div class="dark:bg-slate-900 absolute inset-0 pointer-events-none" aria-hidden="true"></div>
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 dark:text-slate-300">
-    <div class="grid grid-cols-12 gap-2 gap-y-8 sm:gap-8 py-8 md:py-8">
+    <div class="grid grid-cols-12 gap-1 gap-y-8 sm:gap-2 py-8 md:py-8">
       <div class="col-span-12 lg:col-span-5">
         <div class="mb-2">
           <a class="inline-block font-bold text-xl" href={getHomePermalink()}>{SITE?.name}</a>
@@ -56,11 +56,39 @@ const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme 
             ))
           }
         </div>
+       <div class="flex gap-8">
+        <div class="mt-4">
+          <a
+            href="https://www.sortlist.com/agency/j-a-web-design"
+            target="_blank"
+            style="display:inline-block; width:210px; height:60px;"
+            ><img
+              src="https://core.sortlist.com//_/apps/core/images/badges-en/badge-flag-white-dark-xl.svg"
+              alt="flag"
+              loading="lazy"
+            /></a
+          >
+          <!-- Begin: HubSpot Academy - SEO Badge -->
+          <div class='academy-badge'>
+          <a href='https://app.hubspot.com/academy/achievements/f9zm98cn/en/1/jeffrey-agyepong/seo' title='SEO'>
+          <img class="mt-4 rounded" alt="J.A Web Design - SEO certification" src='https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/0c02d12b7f7b4611ac5ba143a0d327b7.png' width="200" height="200" />
+          </a>
+          </div>
+          <!-- End: HubSpot Academy - SEO Badge -->
+        </div>
+        <div class="mt-4">
+          <a href="https://upcity.com/profiles/j-a-web-design#reviews">
+            <img src="https://agencyapp-assets.upcity.com/badge/322/full_color/bb4cd9881b7550a4bc1693dbdea62aee.png" width="180px" height="180px" alt="TOP WEBSITE DEVELOPER" loading="lazy" />
+            </a>
+        </div>
+
+       </div>
+
       </div>
       {
         links.map(({ title, links }) => (
           <div class="col-span-6 md:col-span-3 lg:col-span-2">
-            <div class="dark:text-gray-300 font-medium mb-2">{title}</div>
+            <h3 class="dark:text-gray-300 font-medium mb-2">{title}</h3>
             {links && Array.isArray(links) && links.length > 0 && (
               <ul class="text-sm">
                 {links.map(({ text, href, ariaLabel }) => (
@@ -80,7 +108,7 @@ const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme 
         ))
       }
       <div class="col-span-12 lg:col-span-3">
-        <div class="dark:text-gray-300 font-medium mb-2">Contact Us</div>
+        <h3 class="dark:text-gray-300 font-medium mb-2">Contact Us</h3>
         <div class="text-sm dark:text-gray-400">
           <p class="mb-2">
             <span class="font-medium">Email:</span>
@@ -90,34 +118,31 @@ const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme 
             <span class="font-medium">Phone:</span>
             <a href="tel:7809837309" class="hover:underline">780 983 7309</a>
           </p>
-          <div class="mt-4">
-            <a
-              href="https://www.sortlist.com/agency/j-a-web-design"
-              target="_blank"
-              style="display:inline-block; width:210px; height:60px;"
-              ><img
-                src="https://core.sortlist.com//_/apps/core/images/badges-en/badge-flag-white-dark-xl.svg"
-                alt="flag"
-                loading="lazy"
-              /></a
-            >
-            <!-- Begin: HubSpot Academy - SEO Badge -->
-            <div class='academy-badge'>
-            <a href='https://app.hubspot.com/academy/achievements/f9zm98cn/en/1/jeffrey-agyepong/seo' title='SEO'>
-            <img class="mt-4 rounded" alt="J.A Web Design - SEO certification" src='https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/0c02d12b7f7b4611ac5ba143a0d327b7.png' />
-            </a>
-            </div>
-            <!-- End: HubSpot Academy - SEO Badge -->
+        
+        </div>
+      </div>
+      {
+        byLocation.map(({ title, links }) => (
+          <div class="col-span-6 md:col-span-3 lg:col-span-2">
+            <h3 class="dark:text-gray-300 font-medium mb-2">{title}</h3>
+            {links && Array.isArray(links) && links.length > 0 && (
+              <ul class="text-sm">
+                {links.map(({ text, href, ariaLabel }) => (
+                  <li class="mb-2">
+                    <a
+                      class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out"
+                      href={href}
+                      aria-label={ariaLabel}
+                    >
+                      <Fragment set:html={text} />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
-        </div>
-      </div>
-      <div class="col-span-12 lg:col-span-2">
-        <div class="mt-4">
-          <a href="https://upcity.com/profiles/j-a-web-design#reviews">
-            <img src="https://agencyapp-assets.upcity.com/badge/322/full_color/bb4cd9881b7550a4bc1693dbdea62aee.png" width="180px" height="180px" alt="TOP WEBSITE DEVELOPER" loading="lazy" />
-            </a>
-        </div>
-      </div>
+        ))
+      }
     </div>
 
     <div class="md:flex md:items-center md:justify-between py-6 md:py-4">

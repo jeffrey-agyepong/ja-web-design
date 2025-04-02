@@ -123,7 +123,7 @@ const { socialLinks = [], secondaryLinks = [], links = [], byLocation = [], foot
       </div>
       {
         byLocation.map(({ title, links }) => (
-          <div class="col-span-6 md:col-span-3 lg:col-span-2">
+          <div class="col-span-12 md:col-span-3 lg:col-span-2">
             <h3 class="dark:text-gray-300 font-medium mb-2">{title}</h3>
             {links && Array.isArray(links) && links.length > 0 && (
               <ul class="text-sm">

@@ -164,3 +164,10 @@ import { UI } from '~/utils/config';
   src="https://js.sentry-cdn.com/5abb691d06fb43699312028667ff72e4.min.js"
   crossorigin="anonymous"
 ></script>
+<script>
+  Sentry.onLoad(function() {
+    Sentry.init({
+        // You can add any additional configuration here
+      });
+  });
+</script>

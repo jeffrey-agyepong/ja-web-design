@@ -5,7 +5,7 @@
       "type":"Website Rebuild",
       "servicesProvided":"Web Development, SEO, Web Hosting",
       "completed":"August 2024",
-      "link": "https://abvisioncare.ca/",
+      "link": "https://abvisioncare.netlify.app/",
       "image": "https://ik.imagekit.io/boxhuwbys/abvisioncare.webp?updatedAt=1742855280862",
       "description": "Astro, Tailwind CSS, Netlify"
     },

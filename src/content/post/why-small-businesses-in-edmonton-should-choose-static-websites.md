@@ -12,7 +12,7 @@ In today’s markets, competition is growing fast. For this reason, a fast, secu
 
 **What is a Static Website?**
 
-Static websites are custom-coded, providing the opportunity to handcraft your website to your businesses' unique needs and goals. In contrast, the websites that many rely on are referred to as dynamic websites, these are sites built using page builders like wordpress or wix. While dynamic may be the only option for some, a static website has the power to take your business to the next level. At J.A. Web Design, we recommend static websites as the best solution for businesses looking to improve speed, security, and performance. Here’s why:
+Static websites are custom-coded, providing the opportunity to handcraft your website to your businesses' unique needs and goals. In contrast, the websites that many rely on are referred to as dynamic websites, these are sites built using page builders like WordPress or Wix. While dynamic may be the only option for some, a static website has the power to take your business to the next level. At J.A. Web Design, we recommend static websites as the best solution for businesses looking to improve speed, security, and performance. Here’s why:
 
 &nbsp;
 

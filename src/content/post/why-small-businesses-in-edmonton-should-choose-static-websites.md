@@ -1,6 +1,6 @@
 ---
 _schema: default
-title: Static Websites - The Best Solution for Small Business in Edmonton
+title: Static Websites - The Best Solution for Small Businesses in Edmonton
 excerpt: >-
   In today’s competitive market, a fast, secure, and cost-effective website is
   essential for small businesses. Many business owners in Edmonton still rely on

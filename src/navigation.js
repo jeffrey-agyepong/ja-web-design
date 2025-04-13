@@ -105,6 +105,10 @@ export const footerData = {
           href: getPermalink('/locations/st-albert-web-development-design'),
         },
         {
+          text: 'Leduc Web Design',
+          href: getPermalink('/locations/leduc-web-development-design'),
+        },
+        {
           text: 'Calgary SEO',
           href: getPermalink('/locations/calgary-seo'),
         },
@@ -119,6 +123,10 @@ export const footerData = {
         {
           text: 'St. Albert SEO',
           href: getPermalink('/locations/st-albert-seo'),
+        },
+        {
+          text: 'Leduc SEO',
+          href: getPermalink('/locations/leduc-seo'),
         },
       ],
     },

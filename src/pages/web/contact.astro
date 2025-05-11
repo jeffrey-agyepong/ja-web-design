@@ -1,0 +1,73 @@
+---
+import Header from '~/components/ui/Header.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import ContactUs from '~/components/widgets/Contact.astro';
+
+const metadata = {
+  title: 'Contact Us | Edmonton, Alberta',
+   description:"Contact J.A Web Design for professional and affordable web design services. Let's collaborate and create a stunning website that represents your brand. Get in touch with us today!",
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+<Header title="Contact Us" />
+
+  
+
+  <div class="py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white text-center mb-8">We are here to help!</h2>
+      <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
+        <div class="flex flex-col p-6 bg-white dark:bg-slate-900 rounded-lg shadow-md w-full md:w-1/3">
+          <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-12 h-12 mb-6 text-primary" data-icon="tabler:headset" data-astro-source-file="/node_modules/astro-icon/components/Icon.astro" data-astro-source-loc="117:44">  <symbol id="ai:tabler:headset" data-astro-source-file="/node_modules/astro-icon/components/Icon.astro" data-astro-source-loc="124:28"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 14v-3a8 8 0 1 1 16 0v3m-2 5c0 1.657-2.686 3-6 3"></path><path d="M4 14a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm11 0a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2z"></path></g></symbol><use xlink:href="#ai:tabler:headset" data-astro-source-file="/node_modules/astro-icon/components/Icon.astro" data-astro-source-loc="125:10"></use>  </svg>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Phone</h3>
+         <p class="text-muted mt-2">
+          <a href="tel:+15878036496" class="mt-2 text-gray-600 dark:text-gray-300 hover:underline">(587) 803-6496</a>
+         </p>
+        </div>
+        <div class="flex flex-col p-6 bg-white dark:bg-slate-900 rounded-lg shadow-md w-full md:w-1/3">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            class="w-12 h-12 mb-6 text-primary"
+            data-icon="tabler:mail"
+            data-astro-source-loc="117:44"
+            data-astro-source-file="/node_modules/astro-icon/components/Icon.astro"
+          >
+            <symbol
+              id="ai:tabler:mail"
+              data-astro-source-file="/node_modules/astro-icon/components/Icon.astro"
+              data-astro-source-loc="124:28"
+              ><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                ><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><path
+                  d="m3 7l9 6l9-6"></path></g
+              ></symbol
+            ><use
+              xlink:href="#ai:tabler:mail"
+              data-astro-source-file="/node_modules/astro-icon/components/Icon.astro"
+              data-astro-source-loc="125:10"></use>
+          </svg>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Email</h3>
+         <p class="text-muted mt-2">
+          <a href="mailto:hello@jawebdesign.ca" target="_blank" class="mt-2 text-gray-600 dark:text-gray-300 lowercase hover:underline"
+          >hello@jawebdesign.ca</a
+        >
+         </p>
+        </div>
+        <div class="flex flex-col p-6 bg-white dark:bg-slate-900 rounded-lg shadow-md w-full md:w-1/3">
+          <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-12 h-12 mb-6 text-primary" data-icon="tabler:map-pin" data-astro-source-file="/node_modules/astro-icon/components/Icon.astro" data-astro-source-loc="117:44">  <symbol id="ai:tabler:map-pin" data-astro-source-file="/node_modules/astro-icon/components/Icon.astro" data-astro-source-loc="124:28"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0-6 0"></path><path d="M17.657 16.657L13.414 20.9a2 2 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0"></path></g></symbol><use xlink:href="#ai:tabler:map-pin" data-astro-source-file="/node_modules/astro-icon/components/Icon.astro" data-astro-source-loc="125:10"></use>  </svg>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Location</h3>
+          <p class="mt-2 text-gray-600 dark:text-gray-300 hover:underline">
+            <a href="https://maps.app.goo.gl/68gRkBhSk3XtzBsm8" target="_blank" rel="noopener noreferrer">
+              Edmonton, Alberta</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ContactUs />
+</Layout>

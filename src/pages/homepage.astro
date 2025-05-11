@@ -1,0 +1,273 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Badges from '~/components/widgets/Badges.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Projects from '~/components/widgets/Projects.astro';
+import Slider from '~/components/ui/Slider.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import TrustLogos from '~/components/ui/TrustLogos.astro';
+
+import { getPermalink } from '../utils/permalinks';
+import Accordion from '../components/ui/Accordion.astro';
+
+const metadata = {
+  title: 'J.A Web Design | Edmonton Web Design & Development Company',
+  description: "J.A Web Design is an award-winning web design company in Edmonton, Alberta, specializing in custom web development and design.",
+  ignoreTitleTemplate: true,
+};
+
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero actions={[{text: 'Let’s Build Your Website', href: '/contact', class:'bg-red-900' }]}>
+    <Fragment slot="title">
+      <h2
+        class="max-w-22ch mb-4 text-2xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-5xl dark:text-white text-left capitalize"
+      >
+      High-Performance <span class="dark:text-blue-300 text-blue-800 font-extrabold">Websites</span><br>
+      to Accelerate Your Growth
+      </h2>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <p class="mb-8 text-lg font-bold text-gray-900 lg:text-xl dark:text-gray-200 text-left">
+        We create custom websites built for speed, engagement, and results. Our websites are optimized to help you get found and keep visitors engaged, giving your business the power to turn viewers into clients
+      </p>
+    </Fragment>
+  </Hero>
+
+ 
+  <Badges/>
+
+  <Features
+  id="features"
+  tagline="Features"
+  title="What Does Your Business Need in a Website?"
+  subtitle="Every business is different. But whether in Edmonton, Canada, or the United States, all businesses share a variety of goals in differing order of priority. "
+  items={[
+    {
+      title: 'Custom Web Development',
+      description:
+        "Performance, reliability, and a website that's uniquely yours.",
+      icon: 'tabler:code-circle-2',
+    },
+    {
+      title: 'Performance and Speed',
+      description:
+        "Captivate your audience with fast-loading, high-performance websites tailored to maintain viewer interest.",
+      icon: 'tabler:rocket',
+    },
+    {
+      title: 'Scalable Solutions',
+      description:
+        'Build now, grow later.',
+      icon: 'tabler:text-resize',
+    },
+    {
+      title: 'Search Engine Optimization (SEO)',
+      description:
+        'A website cannot have power if no one can find it. Draw more attention by ranking in organic searches.',
+      icon: 'tabler:seo',
+    },
+    {
+      title: 'Security',
+      description:
+        'Protect your site and your visitors from fraud and scams, while ensuring a secure browsing experience.',
+      icon: 'tabler:lock',
+    },
+    {
+      title: 'Responsiveness',
+      description:
+        "Effectively reach all your prospective clients, including the vast majority on those small mobile devices.",
+      icon: 'tabler:device-mobile',
+    },
+    {
+      title: 'Copywriting and Web Design',
+      description:
+        'Through accurate strategy, communicate effectively, capture interest, and convert viewers to clients',
+      icon: 'tabler:pencil-code',
+    },
+    {
+      title: 'Maintenance and Support',
+      description:
+        'Enjoy peace of mind with ongoing maintenance and support, allowing you to focus on your business.',
+      icon: 'tabler:message-chatbot',
+    }
+  ]}
+/>
+  
+   <!-- Slider -->
+    <div class="dark:bg-blue-900">
+      <Slider />
+    </div>
+ 
+
+
+
+  <!-- Projects Widget ************** -->
+  <Projects />
+
+  <CallToAction
+  actions={[
+    {
+      variant: 'primary',
+      text: 'Get In Touch',
+      href: 'tel:7809837309',
+    },
+  ]}
+>
+  <Fragment slot="title"> Start Your Project </Fragment>
+</CallToAction>
+
+  <div class="mt-8 pt-8 dark:bg-blue-900">
+    <TrustLogos />
+  </div>
+
+ 
+
+  <!-- Services Widget ************** -->
+
+  <div class="container-lg">
+    <Features3
+    title="Services"
+    subtitle="Your experience matters. Throughout the process we focus on clear, forthright communication, and timely delivery. Together we'll create a powerful online presence that will grow your business now and into the future. "
+    tagline=""
+    items={[
+      {
+        title: 'Web Development ',
+        description:
+          'Custom coding and programming without limitations. Single landing pages to full on e-commerce websites.',
+        image: 'https://ik.imagekit.io/boxhuwbys/backend.png?updatedAt=1722065229172',
+      },
+      {
+        title: 'Web Design',
+        description:
+          "Through proper strategy and research your website can communicate effectively with potential clients. A branded experience will help your business stand out among its competitors.",
+        image: 'https://ik.imagekit.io/boxhuwbys/responsive-design.png?updatedAt=1722064019152',
+      },
+      
+      {
+        title: 'Copywriting',
+        description:
+          'Through proper strategy and research your website can communicate effectively with potential clients. Content can make all the difference in converting visitors to clients and getting found on Google.',
+        image: 'https://ik.imagekit.io/boxhuwbys/ja-web-design-services-copywriting.png',
+      },
+      {
+        title: 'Website Maintenance & Support',
+        description:
+          'You will never be alone. Let the experts look after the website so you can focus on what matters. Without stress your website will remain optimized, up-to-date, and secure.',
+        image: 'https://ik.imagekit.io/boxhuwbys/ja-web-design-services-website-maintainance.png',
+      },
+      {
+        title: 'Graphic Design ',
+        description:
+          ' Custom graphics will create a coherent brand identity and resonate with your desired clientele.',
+        image: 'https://ik.imagekit.io/boxhuwbys/ja-web-design-services-graphic-design.png',
+      },
+      {
+        title: 'SEO',
+        description:
+          'Your website will be optimized to rank well on Google and drive organic traffic.',
+        image: 'https://ik.imagekit.io/boxhuwbys/ja-web-design-search-engine-optimization.png',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features3>
+  </div>
+
+    <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Get In Touch',
+        href: getPermalink('/contact'),
+      },
+    ]}
+  >
+    <Fragment slot="title"> Ready to get started on your website? </Fragment>
+  </CallToAction>
+
+
+  <!-- Testimonials Widget *********** -->
+
+  <Testimonials
+    id="testimonials"
+    title="Testimonials"
+    testimonials={[
+      {
+        testimonial: `J.A Web Design was easygoing throughout the collaboration and ensured consistent progress and deliveries. The team adhered to deadlines, demonstrated noticeable effort and attention to the project, and maintained communication with the client through virtual meetings, email, and messaging apps.`,
+        name: 'Matthew Prothero',
+        job: 'Owner - Mako Construction and Renovations',
+        image: {
+          src: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png',
+          alt: 'Matthew Prothero',
+        },
+      },
+
+      {
+        testimonial: `J.A Web Design delivered the project on time and provided reliable, timely technical support after. The responsive team strictly adhered to the established timeline and budget and was quick to implement feedback throughout.`,
+        name: 'Darcy Hodge',
+        job: 'General Manager - VPA Hockey',
+        image: {
+          src: 'https://ik.imagekit.io/boxhuwbys/darcy.webp?updatedAt=1711693732156',
+          alt: 'Darcy Hodge',
+        },
+      },
+      {
+        testimonial:
+          'It was a pleasure working with Jeffrey Agyepong on our website! Grateful for his ability to optimize for security & performance, develop, and ongoing support to bring it to this stage. Looking forward to more projects together.',
+        name: 'Ari Saeidi-pour',
+        job: 'Owner - Mint Mantis',
+        image: {
+          src: 'https://ik.imagekit.io/boxhuwbys/ari.webp?updatedAt=1742326279224',
+          alt: 'Ari Saeidi-pour',
+        },
+      },
+    ]}
+    callToAction={{
+      target: '_blank',
+      text: 'More testimonials',
+      href: 'https://maps.app.goo.gl/hLyxj8vZL1CU9Y5n7',
+      icon: 'tabler:chevron-right',
+    }}
+  />
+
+
+
+  <!-- FAQs Widget ******************* -->
+  <Accordion faqs={[
+    { question: "How do we approach designing a website?", answer: "The process begins with strategy. Our designers explore with you the goals of the website and your target audience. Once content is created and finalized a wire frame is created. The wireframe serves to outline the structure of the website, ensuring usability. Design follows, a visual representation of the website is created, once this set has been finalized with you, the client, it is handed over to our developer who will create a dependable, responsive, secure website. Once launched, ongoing maintenance and support will ensure your business has a website that it can depend upon." },
+    { question: "Are our websites mobile-friendly and responsive?", answer: "Most definitely! Responsiveness is a must in our world. Typically, over 50% of traffic comes from mobile devices. Never would we allow our clients' businesses to lose such a huge piece of their target audience. By using mobile-friendly practices in development we can guarantee a seamless transition between screen sizes." },
+    { question: "How long does it take to design a website?", answer: "The length of a project is influenced by factors such as the size and complexity of the site, the needed resources, and our clients availability. Websites such as an e-commerce website may take much longer, perhaps a few weeks, while a single page website could be completed within a week. The length also depends on which of our services a project requires. " },
+    { question: "What platforms or tools do we use?", answer: "The web design and development process requires a wide range of tools. Figma is used for the design. While programs such as Vue, Astro, Vite, PHP, Netlify, Cloudflare, and WordPress are used with the base code (HTML, CSS, JavaScript) to create the final functioning website to be served on the web." },
+    { question: "How often should a website be updated?", answer: "The short answer; when needed. Websites with different goals and functionality will require a different amount of attention. All websites should be checked periodically for bugs or security issues. Some websites, for example e-commerce, will require updates frequently. Others may feature fluctuating content in order to target the right audience. Whatever your website requires, it is our top priority to meet these needs." },
+    { question: "Can we help with maintenance after launch?", answer: "Yes, we offer ongoing maintenance services so that our client's websites remain functional, bug free, optimized, and up to date. We’ll help with edits to the content, needed software updates, security patches, and fixing any bugs that may present themselves. We are also happy to help with additions to the website or design enhancement so your website will grow with your business as it evolves. " },
+    // More FAQs
+  ]}/>
+  
+  
+
+  <!-- CallToAction Widget *********** -->
+
+ <div class="dark:bg-blue-900">
+  <CallToAction
+  actions={[
+    {
+      variant: 'primary',
+      text: 'Get In Touch',
+      href: getPermalink('/contact'),
+    },
+  ]}
+>
+  <Fragment slot="title"> Ready to Get Started? <br> Have Any Questions? </Fragment>
+</CallToAction>
+ </div>
+</Layout>

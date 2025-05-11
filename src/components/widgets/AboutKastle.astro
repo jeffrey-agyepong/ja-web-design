@@ -1,0 +1,203 @@
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-311">
+  <div class="cs-container">
+      <!-- Left Image Section -->
+      <div class="cs-image-group">
+          <picture class="cs-picture cs-picture1">
+              <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/boxhuwbys/ja-web-design-edmonton.webp">
+              <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/boxhuwbys/ja-web-design-edmonton.webp">
+              <img loading="lazy" decoding="async" src="https://ik.imagekit.io/boxhuwbys/ja-web-design-edmonton.webp" alt="Picture of the city of Edmonton" width="522" height="581" aria-hidden="true">
+          </picture>
+          <picture class="cs-picture cs-picture2">
+              <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/boxhuwbys/ja-web-design.webp">
+              <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/boxhuwbys/ja-web-design.webp">
+              <img loading="lazy" decoding="async" src="https://ik.imagekit.io/boxhuwbys/ja-web-design.webp" alt="J.A Web Design founder, Jeffrey Agyepong" width="414" height="400" aria-hidden="true">
+          </picture>
+      </div>
+      <!-- Right Content Section-->
+      <div class="cs-content">
+          <h2 class="cs-title">Thank you for visiting my portfolio.</h2>
+          <p class="cs-text">
+            As of May 2025, I’ve joined <a href="https://www.kastlemedia.ca/" target="_blank" rel="noopener noreferrer">Kastle Media Solutions</a> as a full-time web developer. I’m excited to be part of a creative team focused on building high-performance, scalable websites for clients who value clean design and results-driven development.
+
+            While I’m no longer taking on freelance projects directly, you can still work with me through Kastle. Below is a selection of my past work, showcasing the approach and quality I bring to every project.
+            
+            Let’s build something great together.
+          </p>
+
+          <a href="tel:+1 780 851 3186" class="cs-button-solid">Call Us Today</a>
+      </div>
+  </div>
+</section>
+<style>
+  /*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #sbs-311 {
+        padding: var(--sectionPadding);
+    }
+    #sbs-311 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #sbs-311 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        max-width: 33.875rem;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+    }
+
+    #sbs-311 .cs-text {
+        margin-bottom: 1rem;
+    }
+    #sbs-311 .cs-text:last-of-type {
+        margin-bottom: 2rem;
+    }
+    #sbs-311 .cs-button-solid {
+        font-size: 1rem;
+        /* 46px - 56px */
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        color: #fff;
+        min-width: 9.375rem;
+        padding: 0 1.5rem;
+        background-color: var(--primary);
+        border-radius: 0.5rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        /* prevents padding from adding to the width */
+        box-sizing: border-box;
+    }
+    #sbs-311 .cs-button-solid:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #03543f;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 0.5rem;
+    }
+    #sbs-311 .cs-button-solid:hover:before {
+        width: 100%;
+    }
+    #sbs-311 .cs-quote {
+        margin: 0 0 2rem 0;
+        /* 16px - 32px */
+        padding: clamp(1rem, 3vw, 2rem);
+        background-color: #f7f7f7;
+        border-radius: 1rem;
+        position: relative;
+    }
+    #sbs-311 .cs-quote-text {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        line-height: 1.5em;
+        margin: 0 0 1rem;
+        color: #000000;
+        display: block;
+    }
+    #sbs-311 .cs-name {
+        font-size: 1rem;
+        line-height: 1.2em;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 0 0 0.25rem;
+        color: #000;
+        display: block;
+    }
+    #sbs-311 .cs-job {
+        font-size: 0.875rem;
+        line-height: 1.5em;
+        color: #767676;
+        display: block;
+    }
+    #sbs-311 .cs-quote-icon {
+        /* 60px - 136px */
+        width: clamp(3.75rem, 10vw, 8.5rem);
+        height: auto;
+        position: absolute;
+        bottom: 0rem;
+        /* 16px - 32px */
+        right: clamp(1rem, 4vw, 2rem);
+    }
+    #sbs-311 .cs-image-group {
+        /* scaling the font size with the view width */
+        font-size: min(2.31vw, 0.7em);
+        /* using ems so we can use font size to scale the whole section */
+        width: 39.4375em;
+        height: 39.75em;
+        position: relative;
+    }
+    #sbs-311 .cs-picture {
+        border-radius: 1.5em;
+        /* clips img tag corners */
+        overflow: hidden;
+        position: absolute;
+        display: block;
+    }
+    #sbs-311 .cs-picture img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        /* makes image act like a background image */
+        object-fit: cover;
+    }
+    #sbs-311 .cs-picture1 {
+        width: 32.625em;
+        height: 36.3125em;
+        left: 0;
+        top: 0;
+    }
+    #sbs-311 .cs-picture2 {
+        width: 20.875em;
+        height: 25em;
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
+        /* 6px - 12px */
+        right: 0;
+        bottom: 150px;
+    }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #sbs-311 .cs-container {
+        flex-flow: row;
+        justify-content: space-between;
+        gap: 3.25rem;
+    }
+    #sbs-311 .cs-image-group {
+        font-size: min(1.2vw, 1em);
+        flex: none;
+    }
+    #sbs-311 .cs-content {
+        margin: 0;
+    }
+}
+
+                                
+</style>                              

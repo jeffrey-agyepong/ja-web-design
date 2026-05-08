@@ -14,7 +14,7 @@
       "type":"Website Rebuild",
       "servicesProvided":"Web Development, SEO, Web Hosting",
       "completed":"Ongoing",
-      "link": "https://mintmantis.com/",
+      "link": "https://mintmantis.netlify.app/",
       "image": "https://ik.imagekit.io/boxhuwbys/ja-web-design-mint-mantis.webp?updatedAt=1731810708783",
       "description": "Astro, Tailwind CSS, Netlify"
     },
